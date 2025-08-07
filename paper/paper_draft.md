@@ -104,11 +104,10 @@ R = 0.5\,\text{structure} + 0.5\,(\text{outcome}/10)
 ```
 
 ### 2.3  Offline-RL algorithm (GSPO)
-
-We follow the variant by Wu et al. (2024):
+We follow the core GSPO formulation:
 
 ```math
-L = - \mathbb{E}_{(x,y) \sim D} \Big[ \sum_t \log p_θ(y_t \mid x, y_{<t}) \cdot R \Big]
+L = -\mathbb{E}_{(x,y)\sim D}\bigl[\sum_t \log p_\theta(y_t \mid x, y_{<t}) \cdot R\bigr]
 ```
 
 Gradient is computed token-wise; Adam (lr = 1e-7) updates Qwen-3-0.6B.  No explicit KL penalty is added – empirically KL stays stable (Fig. `figs/kl_stability.png`).
