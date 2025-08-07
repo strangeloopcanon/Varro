@@ -1,0 +1,31 @@
+{
+  "model_name": "Qwen/Qwen3-0.6B",
+  "sampler_config": {
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 50
+  },
+  "rollout_config": {
+    "basic_threshold": 0.6,
+    "max_tokens": 512,
+    "num_rollouts": 8
+  },
+  "training_config": {
+    "learning_rate": 1e-6,
+    "rollouts_per_step": 8,
+    "save_every": 1,
+    "num_epochs": 1,
+    "steps_per_epoch": 5
+  },
+  "reward_config": {
+    "structure_weight": 0.4,
+    "specificity_weight": 0.35,
+    "coherence_weight": 0.25,
+    "diversity_threshold": 0.6
+  },
+  "evaluation_config": {
+    "llm_evaluation": true,
+    "outcome_threshold": 0.7,
+    "max_headlines_per_evaluation": 100
+  }
+} 

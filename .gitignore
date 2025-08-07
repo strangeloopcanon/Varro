@@ -132,6 +132,9 @@ dmypy.json
 vestigial/
 training/
 data/
+timestamped_storage/
+OLD_ARCHIVE/
+__pycache__/
 *.safetensors
 *.safetensors.npz
 *.bin
