@@ -90,7 +90,7 @@ graph TD
   E --> B
 ```
 
-The loop executes once per calendar day, forming a **24-hour delayed reward** scenario—ideal for an offline RL formulation where on-policy interaction would leak future information.
+The loop executes once per calendar day, forming a **24 h delayed reward** scenario—naturally suited to offline RL, since on‑policy interaction would leak future information.
 
 ### 2.2  Reward design
 
