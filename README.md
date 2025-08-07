@@ -175,6 +175,12 @@ Training Data → GSPO Training → Updated Model
 3. Train model on August 4th data
 4. Continue daily pipeline for continuous learning
 
+## 📦 Sample Data
+
+A small CC‑BY sample dataset is now available in `data/sample/` to help you try the pipeline without live RSS feeds.
+
+Copy or link the `data/sample` folder into your working timestamped storage, and run the morning/evening/night pipeline stages against it as a demonstration.
+
 ## 📄 License
 
 This project is licensed under the MIT License.

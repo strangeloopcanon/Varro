@@ -132,6 +132,8 @@ dmypy.json
 vestigial/
 training/
 data/
+!data/sample/
+!data/sample/**
 timestamped_storage/
 OLD_ARCHIVE/
 __pycache__/
