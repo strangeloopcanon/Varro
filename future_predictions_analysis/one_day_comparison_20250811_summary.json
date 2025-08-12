@@ -1,0 +1,10 @@
+{
+  "date": "20250811",
+  "num_headlines": 31,
+  "avg_base_immediate_reward": 0.8333333333333333,
+  "avg_latest_immediate_reward": 0.7419354838709677,
+  "avg_delta_immediate_reward": -0.0913978494623656,
+  "avg_base_len_words": 395.0967741935484,
+  "avg_latest_len_words": 366.4516129032258,
+  "avg_delta_len_words": -28.64516129032258
+}

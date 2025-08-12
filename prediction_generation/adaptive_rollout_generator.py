@@ -12,6 +12,12 @@ from typing import List, Dict, Any
 import mlx.core as mx
 from mlx_lm import load, generate as mlx_generate
 from mlx_lm.sample_utils import make_sampler
+import re
+try:
+    # Optional: trade-thinking rubric scorer (analysis/trade_thinking.py)
+    from analysis.trade_thinking import score_trade_thinking
+except Exception:
+    score_trade_thinking = None
 
 # Removed diversity assessor import since we always use same prompt
 
@@ -117,7 +123,7 @@ Think like a trader - be specific about what to buy/sell and why."""
             prompt = f"{horizon_prefix}{base_prompt}" if horizon_prefix else base_prompt
 
             try:
-                prediction = mlx_generate(
+                raw_prediction = mlx_generate(
                     self.model,
                     self.tokenizer,
                     prompt,
@@ -125,14 +131,23 @@ Think like a trader - be specific about what to buy/sell and why."""
                     sampler=self.sampler
                 )
 
+                # Clean prompt-echo and scaffold noise
+                prediction = self._clean_prediction_response(raw_prediction)
+
                 # Calculate immediate structure-based reward
                 immediate_reward = self._calculate_structure_reward(prediction)
+
+                # Optional: trade-thinking score (for later analysis). Does not affect selection or reward.
+                trade_thinking = None
+                if score_trade_thinking is not None:
+                    trade_thinking = score_trade_thinking(prediction, horizon=horizon)
 
                 rollouts.append({
                     "rollout_id": i,
                     "prediction": prediction,
                     "method": "basic_stochastic",
                     "immediate_reward": immediate_reward,
+                    **({"trade_thinking_score": trade_thinking} if trade_thinking is not None else {}),
                     "timestamp": datetime.now().isoformat(),
                     **({"horizon": horizon} if horizon else {})
                 })
@@ -241,6 +256,59 @@ Think like a trader - be specific about what to buy/sell and why."""
             return ""
         key = horizon.strip().lower()
         return mapping.get(key, "")
+
+    def _clean_prediction_response(self, text: str) -> str:
+        """Remove prompt scaffolding and instruction echo from model outputs.
+
+        Heuristics:
+        - Drop fenced code blocks and backticks
+        - Drop lines that start with meta-instructions (e.g., 'Also,', 'Please', 'Ensure', 'Use ... markdown', 'Answer:')
+        - If structured section headers exist, keep from the first header onwards
+        - Collapse excessive whitespace
+        """
+        if not text:
+            return text
+
+        # Remove code fences and inline backticks
+        text = re.sub(r"```[\s\S]*?```", " ", text)
+        text = text.replace("```", " ").replace("`", " ")
+
+        # Split into lines and filter instruction-like lines
+        meta_patterns = [
+            r"^\s*(Also|Please|Ensure|Now|Note|Remember|Make sure|Use|Start with|Answer|Your response)\b",
+            r"markdown",
+            r"format",
+            r"in English",
+            r"one paragraph",
+        ]
+        def is_meta(line: str) -> bool:
+            low = line.strip()
+            if not low:
+                return False
+            for pat in meta_patterns:
+                if re.search(pat, low, flags=re.IGNORECASE):
+                    return True
+            return False
+
+        lines = [ln for ln in text.splitlines() if not is_meta(ln)]
+        cleaned = "\n".join(lines).strip()
+
+        # If structured sections exist, keep from first section onwards
+        sections = ["Market Impact", "Specific Assets", "Trade Recommendation", "Timeframe", "Risk Factors", "World View"]
+        first_idx = None
+        for sec in sections:
+            m = re.search(re.escape(sec), cleaned, flags=re.IGNORECASE)
+            if m:
+                if first_idx is None or m.start() < first_idx:
+                    first_idx = m.start()
+        if first_idx is not None:
+            cleaned = cleaned[first_idx:]
+
+        # Collapse multiple newlines/spaces
+        cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+        cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+
+        return cleaned.strip()
 
 def main():
     """Test the adaptive rollout generator."""

@@ -284,6 +284,8 @@ def main():
     parser.add_argument("--horizon", type=str, default=None, choices=["next_day", "next_month", "next_year"], help="Optional prediction horizon directive")
     parser.add_argument("--override_headlines_date", type=str, default=None,
                         help="Optional override: use this date's headlines when evaluating prediction_date")
+    parser.add_argument("--use_composite_reward", action="store_true",
+                        help="Prefer composite_reward over LLM-only reward when available (doc flag; behavior handled in evaluation storage)")
 
     args = parser.parse_args()
 

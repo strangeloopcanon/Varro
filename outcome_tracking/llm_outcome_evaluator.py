@@ -12,6 +12,10 @@ from typing import List, Dict, Any
 import mlx.core as mx
 from mlx_lm import load, generate as mlx_generate
 from mlx_lm.sample_utils import make_sampler
+try:
+    from analysis.trade_thinking import score_trade_thinking
+except Exception:
+    score_trade_thinking = None
 
 logger = logging.getLogger(__name__)
 
@@ -400,11 +404,24 @@ Answer:"""
             rank = ranking[i]
             N = 8  # Total number of predictions
             reward = 1.0 - (rank - 1) / (N - 1) if N > 1 else 1.0
+
+            # Optional: trade-thinking score from text
+            s = score_trade_thinking(prediction, horizon="next_day") if score_trade_thinking is not None else None
+            # Composite reward (soft AND) if trade-thinking available
+            composite = None
+            if s is not None:
+                w = 0.7  # weight on LLM reward
+                # Guard rails
+                r = max(0.0, min(1.0, reward))
+                s = max(0.0, min(1.0, s))
+                composite = (r ** w) * (s ** (1.0 - w))
             
             result = {
                 'prediction': prediction,
                 'ranking': ranking[i],
                 'reward': reward,
+                **({ 'trade_thinking_score': s } if s is not None else {}),
+                **({ 'composite_reward': composite } if composite is not None else {}),
                 'headlines': next_day_headlines,
                 'evaluation_method': 'find_best_8_rounds'
             }

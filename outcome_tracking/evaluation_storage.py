@@ -110,6 +110,15 @@ class EvaluationStorage:
     def get_gspo_training_data(self, start_date: str, end_date: str) -> List[Dict[str, Any]]:
         """Get training data specifically formatted for GSPO training."""
         training_data = self.get_training_data(start_date, end_date)
+        # Build a quick evaluation lookup again for composite/trade-thinking carry-over
+        eval_lookup = {}
+        evaluations_data = self.storage.get_date_range(start_date, end_date, "evaluations")
+        for ed in evaluations_data:
+            if "evaluations" in ed:
+                for ev in ed["evaluations"]:
+                    pid = ev.get("prediction_id")
+                    if pid:
+                        eval_lookup[pid] = ev
         
         gspo_data = []
         for item in training_data:
@@ -118,7 +127,8 @@ class EvaluationStorage:
                 gspo_item = {
                     "prompt": item["prompt"],
                     "response": item["prediction"],
-                    "reward": item["normalized_score"],  # Use normalized_score for GSPO
+                    # Default: normalized_score (LLM reward); will be overridden by composite if present
+                    "reward": item["normalized_score"],
                     "headline": item["headline"],
                     "method": item["method"],
                     "date": item["date"],
@@ -126,6 +136,17 @@ class EvaluationStorage:
                     "outcome_score": item["outcome_score"],
                     "explanation": item["explanation"]
                 }
+                # If evaluation row had composite/trade-thinking, prefer composite for reward and carry both
+                pred_id = f"{item['date']}_{item['headline'][:20].replace(' ', '_')}_{item['rollout_id']}"
+                ev = eval_lookup.get(pred_id)
+                if isinstance(ev, dict):
+                    comp = ev.get("composite_reward")
+                    tscore = ev.get("trade_thinking_score")
+                    if isinstance(comp, (int, float)):
+                        gspo_item["reward"] = comp
+                        gspo_item["composite_reward"] = comp
+                    if isinstance(tscore, (int, float)):
+                        gspo_item["trade_thinking_score"] = tscore
                 gspo_data.append(gspo_item)
         
         logger.info(f"Created {len(gspo_data)} GSPO training examples")
@@ -200,6 +221,8 @@ Think like a trader - be specific about what to buy/sell and why.
         # Calculate outcome scores
         outcome_scores = [eval.get("outcome_score", 0) for eval in evaluations]
         normalized_scores = [eval.get("normalized_score", 0) for eval in evaluations]
+        composite_scores = [ev.get("composite_reward") for ev in evaluations if isinstance(ev.get("composite_reward"), (int, float))]
+        trade_scores = [ev.get("trade_thinking_score") for ev in evaluations if isinstance(ev.get("trade_thinking_score"), (int, float))]
         
         # Count methods
         methods_used = {}
@@ -219,6 +242,8 @@ Think like a trader - be specific about what to buy/sell and why.
             "total_evaluations": len(evaluations),
             "avg_outcome_score": sum(outcome_scores) / len(outcome_scores) if outcome_scores else 0.0,
             "avg_normalized_score": sum(normalized_scores) / len(normalized_scores) if normalized_scores else 0.0,
+            "avg_composite_reward": (sum(composite_scores) / len(composite_scores)) if composite_scores else 0.0,
+            "avg_trade_thinking_score": (sum(trade_scores) / len(trade_scores)) if trade_scores else 0.0,
             "score_distribution": score_ranges,
             "methods_used": methods_used,
             "score_range": {

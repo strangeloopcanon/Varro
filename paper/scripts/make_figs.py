@@ -1,22 +1,23 @@
-"""Generate figures for the paper.
+"""Generate figures for the paper from run logs and snapshot the inputs.
 
-Assumes TRAINING_SUMMARY_REPORT.md contains the same tables as in
-Section 1 of the manuscript.  The script extracts numbers with simple
-regex and produces three PNGs in paper/figs/:
+Outputs (saved under paper/figs/):
+- reward_curve.png – average reward vs. training step (from training_state.json)
+- kl_stability.png – loss proxy over steps (from training_state.json)
+- pipeline_throughput.png – evaluated vs. dropped roll-outs per day (from timestamped storage)
 
-* reward_curve.png – reward vs. training step
-* pipeline_throughput.png – evaluated vs. dropped roll-outs per day
-* kl_stability.png – KL divergence over steps
-
-The plots are meant for rough illustration; they can be replaced by
-more rigorous notebooks later.
+Additionally, this script snapshots the source data into paper/data/ so the
+paper folder is self-contained for archiving/printing:
+- paper/data/training_state.json – copy of the training state used for curves
+- paper/data/throughput.csv – per-day counts used for the throughput plot
 """
 
 from __future__ import annotations
 
 import re
+import shutil
+import json
 import pathlib
-from typing import List
+from typing import List, Dict, Any
 
 import matplotlib.pyplot as plt
 
@@ -30,94 +31,128 @@ plt.rcParams.update({
 })
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-REPORT = ROOT / "TRAINING_SUMMARY_REPORT.md"
 FIG_DIR = ROOT / "paper" / "figs"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
+DATA_DIR = ROOT / "paper" / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+def _find_training_state() -> pathlib.Path | None:
+    """Find a plausible training_state.json to use for curves.
+
+    Preference order:
+      1) training/checkpoints/gspo_NEWRUN/final_model/training_state.json
+      2) training/checkpoints/gspo/final_model/training_state.json
+    """
+    cand1 = ROOT / "training" / "checkpoints" / "gspo_NEWRUN" / "final_model" / "training_state.json"
+    if cand1.exists():
+        return cand1
+    cand2 = ROOT / "training" / "checkpoints" / "gspo" / "final_model" / "training_state.json"
+    if cand2.exists():
+        return cand2
+    return None
 
 
-def _parse_table(lines: List[str]) -> List[List[str]]:
-    """Parse a simple pipe-separated markdown table."""
-    rows = []
-    for ln in lines:
-        if not ln.strip() or ln.startswith("|-"):
+def _load_training_state(path: pathlib.Path) -> Dict[str, Any]:
+    with open(path, "r") as f:
+        state = json.load(f)
+    # snapshot a copy into paper/data
+    shutil.copy2(path, DATA_DIR / "training_state.json")
+    return state
+
+
+def _collect_throughput(storage_dir: pathlib.Path) -> List[Dict[str, Any]]:
+    """Collect per-day throughput from timestamped storage.
+
+    For each predictions JSON in storage_dir, attempt to find matching
+    evaluations CSV. Return a list of dicts with date, headlines, rollouts,
+    evaluated, dropped, avg_reward.
+    """
+    import csv
+    rows: List[Dict[str, Any]] = []
+    preds = sorted(storage_dir.glob("*_predictions.json"))
+    for pf in preds:
+        date = pf.name.split("_")[0]
+        try:
+            pdata = json.loads(pf.read_text())
+        except Exception:
             continue
-        if ln.strip().startswith("|"):
-            cells = [c.strip() for c in ln.strip().strip("|").split("|")]
-            rows.append(cells)
+        headlines = len(pdata.get("predictions", []))
+        rollouts = 0
+        for item in pdata.get("predictions", []):
+            if isinstance(item, dict):
+                rollouts += item.get("total_rollouts", len(item.get("rollouts", [])))
+        csv_path = storage_dir / f"{date}_evaluations.csv"
+        evaluated = 0
+        avg_rew = None
+        if csv_path.exists():
+            with open(csv_path, newline="") as f:
+                r = csv.DictReader(f)
+                arr = [float(row.get("reward", 0.0)) for row in r]
+            evaluated = len(arr)
+            if evaluated:
+                avg_rew = sum(arr) / evaluated
+        dropped = max(0, rollouts - evaluated)
+        rows.append({
+            "date": date,
+            "headlines": headlines,
+            "rollouts": rollouts,
+            "evaluated": evaluated,
+            "dropped": dropped,
+            "avg_reward": round(avg_rew, 6) if avg_rew is not None else None,
+        })
+    # Save snapshot CSV
+    import csv as csvm
+    out_csv = DATA_DIR / "throughput.csv"
+    with open(out_csv, "w", newline="") as f:
+        w = csvm.DictWriter(f, fieldnames=["date", "headlines", "rollouts", "evaluated", "dropped", "avg_reward"])
+        w.writeheader()
+        for row in rows:
+            w.writerow(row)
     return rows
 
 
-def extract_summary():
-    """Extract per-day metrics from TRAINING_SUMMARY_REPORT.md."""
-    if not REPORT.exists():
-        raise SystemExit("TRAINING_SUMMARY_REPORT.md not found; cannot build figures.")
-
-    lines = REPORT.read_text().splitlines()
-
-    day_blocks: List[dict] = []
-    current_day = None
-    for ln in lines:
-        m = re.match(r"### Day (\d+): ([A-Za-z]+) (\d+)[a-z]{2}, (\d{4})", ln)
-        if m:
-            current_day = {
-                "day": int(m.group(1)),
-                "date": f"{m.group(2)} {m.group(3)}",
-            }
-            day_blocks.append(current_day)
-        else:
-            # look for metrics
-            if current_day is None:
-                continue
-            m2 = re.search(r"Average reward: ([0-9.]+)", ln)
-            if m2:
-                current_day["avg_reward"] = float(m2.group(1))
-            m3 = re.search(r"Average KL: ([0-9.]+)", ln)
-            if m3:
-                current_day["kl"] = float(m3.group(1))
-            m4 = re.search(r"Headlines collected: (\d+)", ln)
-            if m4:
-                current_day["headlines"] = int(m4.group(1))
-            m5 = re.search(r"Predictions generated: (\d+)", ln)
-            if m5:
-                current_day["rollouts"] = int(m5.group(1))
-            m6 = re.search(r"Evaluations completed: (\d+)", ln)
-            if m6:
-                current_day["evaluated"] = int(m6.group(1))
-
-    return day_blocks
-
-
-def reward_curve(days):
+def reward_curve_from_state(state: Dict[str, Any]):
+    rewards = state.get("total_rewards", [])
+    if not rewards:
+        return
     plt.figure(figsize=(4, 3))
-    plt.plot([d["day"] for d in days], [d["avg_reward"] for d in days], marker="o")
-    plt.xlabel("Day")
-    plt.ylabel("Average normalised reward")
+    plt.plot(range(1, len(rewards) + 1), rewards, linewidth=1.2)
+    plt.xlabel("Training step")
+    plt.ylabel("Average reward")
     plt.title("Reward progression")
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(FIG_DIR / "reward_curve.png", dpi=300)
 
 
-def kl_curve(days):
+def kl_curve_from_state(state: Dict[str, Any]):
+    kl = state.get("kl_history", [])
+    if not kl:
+        return
     plt.figure(figsize=(4, 3))
-    plt.plot([d["day"] for d in days], [d["kl"] for d in days], marker="o", color="orange")
-    plt.xlabel("Day")
-    plt.ylabel("KL Divergence")
-    plt.title("KL stability")
+    plt.plot(range(1, len(kl) + 1), kl, linewidth=1.0, color="orange")
+    plt.xlabel("Training step")
+    plt.ylabel("Loss proxy")
+    plt.title("Training stability")
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(FIG_DIR / "kl_stability.png", dpi=300)
 
 
-def throughput_bars(days):
+def throughput_bars(rows: List[Dict[str, Any]]):
+    if not rows:
+        return
+    # Sort by date string
+    rows = sorted(rows, key=lambda r: r.get("date", ""))
     plt.figure(figsize=(4, 3))
-    evaluated = [d.get("evaluated", 0) for d in days]
-    dropped = [d.get("rollouts", 0) - d.get("evaluated", 0) for d in days]
-    labels = [d["day"] for d in days]
-    width = 0.5
-    plt.bar(labels, evaluated, width, label="Evaluated")
-    plt.bar(labels, dropped, width, bottom=evaluated, label="Dropped", color="#cccccc")
-    plt.xlabel("Day")
+    evaluated = [r.get("evaluated", 0) for r in rows]
+    dropped = [r.get("dropped", 0) for r in rows]
+    labels = [r.get("date", "") for r in rows]
+    x = range(len(labels))
+    width = 0.6
+    plt.bar(x, evaluated, width, label="Evaluated")
+    plt.bar(x, dropped, width, bottom=evaluated, label="Dropped", color="#cccccc")
+    plt.xticks(x, labels, rotation=45, ha="right")
+    plt.xlabel("Date")
     plt.ylabel("Count")
     plt.title("Evaluator throughput")
     plt.legend()
@@ -126,14 +161,23 @@ def throughput_bars(days):
 
 
 def main():
-    days = extract_summary()
-    if not days:
-        print("No data parsed.")
-        return
+    # 1) Training curves from training_state.json
+    ts_path = _find_training_state()
+    if ts_path is None:
+        print("No training_state.json found; skipping reward and stability figures.")
+        state = None
+    else:
+        state = _load_training_state(ts_path)
+        reward_curve_from_state(state)
+        kl_curve_from_state(state)
 
-    reward_curve(days)
-    kl_curve(days)
-    throughput_bars(days)
+    # 2) Throughput from timestamped storage (prefer NEWRUN)
+    storage = ROOT / "timestamped_storage_NEWRUN"
+    if not storage.exists():
+        storage = ROOT / "timestamped_storage"
+    rows = _collect_throughput(storage)
+    throughput_bars(rows)
+
     print("Figures saved to", FIG_DIR)
 
 

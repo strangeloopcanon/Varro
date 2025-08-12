@@ -94,6 +94,8 @@ class OutcomeTracker:
                     "rollout_id": rollout["rollout_id"],
                     "method": rollout["method"],
                     "immediate_reward": rollout["immediate_reward"],
+                        # Optional: carry trade-thinking score for composite reward downstream
+                        **({"trade_thinking_score": rollout.get("trade_thinking_score")} if "trade_thinking_score" in rollout else {}),
                     "timestamp": rollout["timestamp"],
                     "date": prediction_date
                 }
