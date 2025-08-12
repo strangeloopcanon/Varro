@@ -1,40 +1,37 @@
-# Next-Step Research Checklist
+# Roadmap (Next Steps)
 
-This file records the high-priority tasks that will bring the paper and codebase from “good” to camera-ready.
+Concise, living checklist to guide the next iterations. Use GitHub Issues for details; keep this file high-level.
 
-## 1  Baseline & Ablation Experiments
+## 1) Pipeline hardening and ops
+- [ ] Night stage: optionally auto-run GSPO training after preparing training/gspo_training_<date>.json (training JSON prepared; training not yet invoked)
+- [x] Evaluations CSV: write timestamped_storage/<date>_evaluations.csv for analysis
+- [ ] Simple dashboard/notebook to plot daily counts and avg reward from CSVs
+- [ ] Add minimal unit tests for storage read/write and date-range utilities
 
-- [ ] Train **Supervised-MLE** baseline on the 622 scored roll-outs; log reward, hit-rate, KL.  
-- [ ] Train **KTO offline-RL** baseline on the same data; collect identical metrics.  
-- [ ] Run **reward-mix ablation** (structure-only, outcome-only, 30/70 mix, 70/30 mix) and populate a comparison matrix.
+## 2) Evaluator resiliency and quality
+- [x] Deterministic fallback when stochastic selection fails to yield a valid letter
+- [ ] Log a small sample of failed rounds for forensics (inputs + outputs, redacted) (basic logging present; add sampling/redaction)
+- [ ] Unit test _extract_single_letter with tricky cases (JSON/brackets/parentheses/“A.” line-start)
+- [ ] Optional: add failure reason tags and a daily failure summary
 
-## 2  Economic Back-Test
+## 3) Training experiments (GSPO)
+- [x] Toggle: response-only loss masking (default ON)
+- [x] Toggle: EMA reward baseline (default OFF)
+- [ ] Optional: add length-normalization for response loss (toggle)
+- [x] Auto-log both raw reward and advantage when EMA is enabled
+- [ ] Wire pipeline night stage to invoke run_gspo_training.py with toggles via config
 
-- [ ] Parse the “Trade Recommendation” sections into long/short calls on ETF proxies (SPY, TLT, GLD, USO).  
-- [ ] Compute cumulative return, Sharpe ratio, and max draw-down versus buy-and-hold and zero-shot Qwen.  
-- [ ] Add equity curve figure to `paper/figs/` and Discussion section.
+## 4) Data and scale-up
+- [ ] 30-day extended run; monitor evaluator completion and reward trends
+- [ ] Improve de-duplication (optional fuzzy match) and source coverage via config/rss_sources.json
+- [ ] Add a small deterministic sample bundle and mini E2E test script (sample data present; add E2E script)
 
-## 3  Robustness & Error Analysis
+## 5) Baselines (lower priority)
+- [x] Supervised MLE baseline (minimal pass) using current training data
+- [x] KTO preference baseline (pair construction from rank-derived rewards)
+- [ ] Compare zero-shot vs GSPO vs MLE/KTO on mean reward and hit-rate
 
-- [ ] Re-score Day-1 roll-outs with the *latest* evaluator to isolate model improvements.  
-- [ ] Manually tag ~50 lowest-reward examples; classify error types and create a pie chart + qualitative table.
+## 6) Optional paper polish
+- [ ] Archive final paper assets; keep code/docs aligned with the deployed pipeline
 
-## 4  30-Day Extended Run
-
-- [ ] Let the daily pipeline run for three additional weeks; retrain GSPO on the enlarged dataset.  
-- [ ] Update all figures and statistics to reflect ~5 k examples; examine learning-curve saturation.
-
-## 5  Figure & Paper Polish
-
-- [ ] Export Mermaid architecture diagram as `paper/figs/architecture.png` via mermaid-cli.  
-- [ ] Replace placeholder BibTeX keys with real citations.  
-- [ ] Trim manuscript to venue page limit; move overflow to appendix.
-
-## 6  Reproducibility & Release
-
-- [x] Publish a small CC-BY sample dataset under `data/sample/`.
-- [ ] Create a Colab notebook that recreates one GSPO epoch and regen figures.  
-- [ ] Add acknowledgements, funding & license statements.
-
----
-Maintainers: check off items as they complete them so future contributors (human or LLM) can immediately see project status.
+Legend: [x] done, [ ] planned

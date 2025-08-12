@@ -13,7 +13,6 @@ from pathlib import Path
 
 from data_collection.timestamped_storage import TimestampedStorage
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class EvaluationStorage:
@@ -44,6 +43,11 @@ class EvaluationStorage:
         
         # Update statistics
         self._update_stats(evaluations)
+        # Also write a flat CSV for observability
+        try:
+            self._write_csv_summary(evaluations, date)
+        except Exception as e:
+            logger.warning(f"Failed to write CSV summary: {e}")
         
         logger.info(f"Saved {len(evaluations)} evaluations for date: {date}")
         return filename
@@ -126,6 +130,22 @@ class EvaluationStorage:
         
         logger.info(f"Created {len(gspo_data)} GSPO training examples")
         return gspo_data
+
+    def _write_csv_summary(self, evaluations: List[Dict[str, Any]], date: str):
+        """Write evaluations as a CSV file for quick analysis."""
+        import csv
+        out_dir = Path(self.storage.storage_dir)
+        csv_path = out_dir / f"{date}_evaluations.csv"
+        fields = [
+            "prediction_id", "headline", "rollout_id", "method", "ranking", "reward",
+            "date", "status"
+        ]
+        with open(csv_path, "w", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fields)
+            writer.writeheader()
+            for ev in evaluations:
+                row = {k: ev.get(k) for k in fields}
+                writer.writerow(row)
     
     def save_gspo_training_data(self, training_data: List[Dict[str, Any]], filename: str = None):
         """Save GSPO training data to file."""

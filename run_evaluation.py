@@ -7,8 +7,9 @@ import json
 import logging
 from outcome_tracking.llm_outcome_evaluator import LLMOutcomeEvaluator
 from data_collection.timestamped_storage import TimestampedStorage
+from outcome_tracking.evaluation_storage import EvaluationStorage
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
 def run_evaluation(date: str):
@@ -17,22 +18,23 @@ def run_evaluation(date: str):
     
     # Load outcome tracking data
     outcome_data = storage.load_data('outcome_tracking', date)
-    if not outcome_data or 'outcome_tracking' not in outcome_data:
+    if not outcome_data or 'outcomes' not in outcome_data:
         logger.error(f"No outcome tracking data found for {date}")
         return
     
-    outcome_tracking = outcome_data['outcome_tracking']
+    outcome_tracking = outcome_data['outcomes']
     logger.info(f"Loaded {len(outcome_tracking)} outcome tracking entries for {date}")
     
     # Initialize evaluator with find_best approach
     evaluator = LLMOutcomeEvaluator()
+    eval_storage = EvaluationStorage()
     
     # Run evaluations
     evaluations = evaluator.evaluate_outcomes(outcome_tracking)
     
     if evaluations:
-        # Save results
-        storage.save_data({'evaluations': evaluations}, 'evaluations', date)
+        # Save results via EvaluationStorage (includes CSV + summary)
+        eval_storage.save_evaluations(evaluations, date)
         logger.info(f"Saved {len(evaluations)} evaluations for {date}")
         
         # Print summary

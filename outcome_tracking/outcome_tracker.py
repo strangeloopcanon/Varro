@@ -14,7 +14,6 @@ from pathlib import Path
 from data_collection.timestamped_storage import TimestampedStorage
 from data_collection.enhanced_rss_collector import EnhancedRSSCollector
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class OutcomeTracker:
@@ -24,8 +23,10 @@ class OutcomeTracker:
         self.storage = TimestampedStorage()
         self.rss_collector = EnhancedRSSCollector()
     
-    def track_outcomes_for_date(self, prediction_date: str) -> List[Dict[str, Any]]:
-        """Track outcomes for predictions made on a specific date."""
+    def track_outcomes_for_date(self, prediction_date: str, next_headlines_date: Optional[str] = None) -> List[Dict[str, Any]]:
+        """Track outcomes for predictions made on a specific date.
+        If next_headlines_date is provided, use headlines from that date (override next-day logic).
+        """
         logger.info(f"Tracking outcomes for predictions from {prediction_date}")
         
         # Load previous day's predictions
@@ -34,8 +35,10 @@ class OutcomeTracker:
             logger.warning(f"No predictions found for date: {prediction_date}")
             return []
         
-        # Get next day's headlines
-        next_date = self._get_next_date(prediction_date)
+        # Get next day's headlines (or override)
+        next_date = next_headlines_date or self._get_next_date(prediction_date)
+        if next_headlines_date:
+            logger.info(f"Override: using headlines from {next_headlines_date} for outcomes of {prediction_date}")
         next_day_headlines = self._get_next_day_headlines(next_date)
         
         if not next_day_headlines:

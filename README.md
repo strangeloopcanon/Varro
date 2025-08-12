@@ -61,9 +61,8 @@ Varro/
 │   ├── llm_outcome_evaluator.py     # LLM-based evaluation
 │   └── evaluation_storage.py        # Evaluation score storage
 ├── training/
-│   ├── gspo_training_20250802.json  # 272 examples (34 headlines × 8 rollouts)
-│   ├── stats/                       # Training statistics
-│   └── checkpoints/                 # Model checkpoints
+│   ├── checkpoints/                  # Model checkpoints
+│   └── stats/                       # Training statistics
 ├── config/
 │   ├── rss_sources.json             # RSS feed configuration
 │   ├── training_config.json         # Training parameters
@@ -90,6 +89,16 @@ python run_gspo_training.py --epochs 1
 
 # Train with custom parameters
 python run_gspo_training.py --learning_rate 5e-7 --epochs 1
+
+# Train from checkpoint
+python run_gspo_training.py --load_checkpoint training/checkpoints/gspo/final_model
+
+# Optional training toggles
+# Use response-only loss masking (recommended, default on)
+python run_gspo_training.py --response_only_loss 1
+
+# Enable EMA reward baseline (variance reduction, default off)
+python run_gspo_training.py --ema_baseline 1 --ema_momentum 0.9
 ```
 
 ### Run Daily Pipeline
@@ -98,13 +107,19 @@ python run_gspo_training.py --learning_rate 5e-7 --epochs 1
 python run_daily_pipeline.py --mode full
 
 # Run morning pipeline only (collect headlines and generate predictions)
-python run_daily_pipeline.py --mode morning
+python run_daily_pipeline.py --mode morning --date 20250807
 
 # Run evening pipeline only (evaluate previous day's predictions)
-python run_daily_pipeline.py --mode evening
+python run_daily_pipeline.py --mode evening --date 20250807
 
-# Run night training only (train GSPO model)
-python run_daily_pipeline.py --mode night
+# Run night training only (prepare GSPO training data)
+python run_daily_pipeline.py --mode night --date 20250807
+
+# Use trained model for predictions
+python run_daily_pipeline.py --mode morning --trained-model training/checkpoints/gspo/final_model
+
+# Optional reproducibility hint (best-effort)
+python run_daily_pipeline.py --mode morning --seed 1234
 ```
 
 ### Manage Model Versions
@@ -126,16 +141,19 @@ python manage_models.py --archive 7
 - **Policy gradients**: Uses evaluation scores as rewards
 - **Normalized rewards**: Within-group reward normalization
 - **Model updates**: Updates Qwen3-0.6B parameters
+- **Step-by-step processing**: One prediction at a time for stability
 
 ### **Rollout Generation**
 - **8 rollouts per headline**: Diverse trading predictions
 - **MLX sampler**: Stochastic generation for diversity
 - **Structured responses**: Consistent format across all rollouts
+- **Trained model support**: Can use previous day's trained model
 
 ### **LLM Evaluation**
-- **0-10 scoring**: Detailed evaluation of predictions
+- **Stack ranking**: 8 predictions per headline are ranked; dense rewards are derived from rank
 - **Next-day comparison**: Evaluates against actual outcomes
-- **Normalized rewards**: Converts scores to 0-1 for training
+- **Robust extraction**: Regex-based extraction with a deterministic fallback to enforce a single valid letter
+- **Iterative selection**: Dynamic letter mapping (A, B, C...) only for available options each round
 
 ## 📊 Data Flow
 
@@ -152,28 +170,57 @@ Training Data → GSPO Training → Updated Model
 ### **Completed Components**
 - ✅ RSS headline collection
 - ✅ 8-rollout generation per headline
-- ✅ LLM-based evaluation system
+- ✅ LLM-based evaluation system (65% success rate)
 - ✅ GSPO training algorithm
 - ✅ Daily pipeline orchestration
+- ✅ Model versioning and management
+- ✅ Continuous learning pipeline
 
-### **Current Training Data**
-- **133 examples**: 25 unique headlines × 8 rollouts each (August 3rd)
-- **Evaluation scores**: 0-10 scale from LLM evaluation
+### **Latest Training Data (August 6th)**
+- **622 examples**: 77 unique headlines × 8 rollouts each
+- **Evaluation success rate**: 65% (improved from 40%)
 - **Training completed**: GSPO training successful with step-by-step processing
+- **Model saved**: `training/checkpoints/gspo/final_model`
 
-### **Training Results (August 3rd)**
-- **Total steps**: 133 (one per evaluated prediction)
-- **Average reward**: 0.0721 (7.2% average score)
-- **Reward range**: 0.0429 - 0.1000 (4.3% to 10%)
-- **Checkpoints**: Saved every 10 steps (13 total checkpoints)
+### **August 7th Pipeline Status**
+- ✅ **35 headlines** collected from RSS sources
+- ✅ **280 predictions** generated (35 × 8 rollouts)
+- ⏳ **Waiting for August 8th headlines** for evaluation
+- **Model used**: Trained model from August 6th
+
+### **Training Results (August 6th)**
+- **Total steps**: 622 (one per evaluated prediction)
+- **Checkpoints**: Saved every 50 steps
 - **Model**: Qwen3-0.6B with MLX-LM 0.25.2
-- **Evaluation success rate**: 48.4% (120/248 predictions evaluated)
+- **Evaluation improvements**: Dynamic letter mapping, enhanced prompts, robust extraction
 
 ### **Next Steps**
-1. Process August 4th data (headlines available)
-2. Generate predictions and evaluations for August 4th
-3. Train model on August 4th data
-4. Continue daily pipeline for continuous learning
+1. **August 8th**: Collect headlines and evaluate August 7th predictions
+2. **August 8th**: Train model on new evaluation data
+3. **Continue daily pipeline** for continuous learning
+
+## 🔧 Recent Improvements
+
+### **Evaluation System**
+- **Dynamic letter mapping**: Sequential A, B, C... for available predictions
+- **Enhanced prompts**: Explicit single-letter format with reasoning tags
+- **Robust extraction**: Handles JSON, markdown, typos, and various formats; adds a deterministic fallback query
+- **Lowered threshold**: 4 rankings minimum (down from 5)
+- **Fallback ranking**: Unranked predictions get rank 7
+
+Note: The older Ollama/Llama-based evaluator has been removed; the system uses a single MLX/Qwen-based evaluator.
+
+### **Training System**
+- **Step-by-step processing**: One prediction at a time for stability
+- **Checkpoint management**: Saves every 50 steps, final model to dated directory
+- **Model versioning**: Daily trained models with cleanup capabilities
+- **Trained model integration**: Can use previous day's model for predictions
+
+### **Pipeline Automation**
+- **Complete daily cycle**: Morning, evening, night modes
+- **Trained model support**: Automatic integration of trained models
+- **Error handling**: Robust error recovery and logging
+- **Data organization**: Clean timestamped storage structure
 
 ## 📦 Sample Data
 

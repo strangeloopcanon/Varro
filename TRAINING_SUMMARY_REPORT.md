@@ -1,247 +1,80 @@
-# GSPO Training Summary Report
-*Generated on August 6th, 2025*
+# Varro: Continuous GSPO Training Summary (Aug 2–Aug 11, 2025)
 
 ## Executive Summary
+- We implemented a fully automated daily loop for financial prediction with Qwen/Qwen3‑0.6B (MLX) and a GSPO‑inspired offline update.
+- A strict evaluation fix (1–8 ranks with deduplication, clamping, and deterministic padding) eliminated invalid labels and negative rewards.
+- From Aug 4–Aug 10 training JSONs, rewards are bounded in [0,1], avg≈0.50, negatives=0 for every day; training is stable and improving.
+- In‑epoch average reward increased steadily day‑over‑day, while KL divergence rose moderately (healthy specialization without collapse).
+- The pipeline is reproducible, versioned (dated + “final_model”), and runs on a single Apple M4 Max laptop.
 
-We have successfully implemented and executed a continuous learning pipeline for Group Sequence Policy Optimization (GSPO) on financial prediction data. The system has processed 4 days of data (August 2nd-5th) and trained the model through multiple iterations, showing consistent improvement in prediction quality.
+## System Overview
+- Model: Qwen/Qwen3‑0.6B via MLX/MLX‑LM
+- Training: GSPO‑inspired, response‑only loss, 1 epoch/day
+- Generation: 8 stochastic roll‑outs/headline (temp=0.8, top_p=0.95, top_k=50)
+- Evaluation: Iterative A–H selection with strict final 1–8 ranks (dedupe, clamp [1,8], pad unpicked=7)
+- Checkpointing: dated `final_model_YYYYMMDD/` + rolling `final_model/`
+- Namespaces: base `timestamped_storage/`; isolated run `timestamped_storage_NEWRUN/`
 
-## Pipeline Architecture
+## NEWRUN Fixes (Aug 8–Aug 11)
+- Enforced strict 8‑rank validation (deduplicate, stop at 8, clamp to 1–8, pad unpicked=7)
+- Removed evaluator overflow (ranks > 8) and eliminated negative rewards
+- Added override option to evaluate predictions from date D against headlines from date H (for backfill/recovery)
 
-### Core Components
-1. **Data Collection**: RSS feed collection for daily financial headlines
-2. **Prediction Generation**: 8 diverse rollouts per headline using Qwen3-0.6B model
-3. **Evaluation**: LLM-based ranking system comparing predictions to next-day headlines
-4. **Training**: GSPO algorithm using evaluation scores as rewards
-5. **Model Management**: Versioned checkpoints and final model storage
+## Data & Timeline (post‑fix, used for training)
+- 2025‑08‑04: n=256, avg=0.50, min=0.0, max=1.0, negatives=0
+- 2025‑08‑05: n=224, avg=0.50, min=0.0, max=1.0, negatives=0
+- 2025‑08‑06: n=216, avg=0.50, min=0.0, max=1.0, negatives=0
+- 2025‑08‑07: n=280, avg=0.50, min=0.0, max=1.0, negatives=0
+- 2025‑08‑08: n=248, avg=0.50, min=0.0, max=1.0, negatives=0
+- 2025‑08‑10: n=144, avg=0.50, min=0.0, max=1.0, negatives=0 (evaluated with 2025‑08‑11 headlines via override)
 
-### File Structure
+Today’s generation (2025‑08‑11): 248 roll‑outs; avg structure score ≈ 0.826
+
+## Training Dynamics (epoch summaries)
+- 2025‑08‑04: steps≈1480, avg_reward≈0.0135, avg_KL≈4.52, improvement≈+0.0021
+- 2025‑08‑05: steps≈1704, avg_reward≈0.0183, avg_KL≈5.99, improvement≈+0.0145
+- 2025‑08‑06: steps≈1920, avg_reward≈0.0219, avg_KL≈7.05, improvement≈+0.0238
+- 2025‑08‑07: steps≈2200, avg_reward≈0.0254, avg_KL≈8.16, improvement≈+0.0358
+- 2025‑08‑08: steps≈2448, avg_reward≈0.0279, avg_KL≈8.88, improvement≈+0.0441
+- 2025‑08‑10: steps≈2592, avg_reward≈0.0292, avg_KL≈9.01, improvement≈+0.0417
+
+Observations:
+- In‑epoch average reward increases monotonically across days
+- KL grows gradually (≈4.5 → ≈9.0), indicating stable specialization
+
+## Evaluation Integrity
+- Strict 1–8 ranks ensured clean [0,1] reward mapping with negatives=0
+- Rankings are varied (not trivially sequential); logs show diverse permutations
+
+## Operations
+- Daily update (yesterday→today):
 ```
-Varro/
-├── config/                          # Configuration files
-├── data_collection/                 # RSS collection and storage
-├── prediction_generation/           # Rollout generation
-├── outcome_tracking/               # Evaluation system
-├── training/                       # GSPO training data and checkpoints
-├── timestamped_storage/           # Daily data files
-└── run_daily_pipeline.py          # Main orchestration script
+python run_next_update.py --resume_from_last_model --run_suffix NEWRUN --seed 1234
 ```
-
-## Training Timeline & Results
-
-### Day 1: August 2nd, 2025
-**Data Collection:**
-- Headlines collected: 34 headlines
-- Predictions generated: 272 rollouts (8 per headline)
-- Evaluations completed: 89 predictions successfully ranked
-- Evaluation success rate: ~33% (89/272)
-
-**Training Results:**
-- Training examples: 89
-- Total steps: 89
-- Average reward: 0.0584 (5.84%)
-- Reward std: 0.0312 (3.12%)
-- Average KL: 38.2341
-- Model saved: `final_model_20250802/`
-
-### Day 2: August 3rd, 2025
-**Data Collection:**
-- Headlines collected: 32 headlines
-- Predictions generated: 256 rollouts (8 per headline)
-- Evaluations completed: 120 predictions successfully ranked
-- Evaluation success rate: ~47% (120/256)
-
-**Training Results:**
-- Training examples: 209 (89 + 120)
-- Total steps: 209
-- Average reward: 0.0598 (5.98%)
-- Reward std: 0.0308 (3.08%)
-- Average KL: 37.9123
-- Model saved: `final_model_20250803/`
-
-### Day 3: August 4th, 2025
-**Data Collection:**
-- Headlines collected: 28 headlines
-- Predictions generated: 224 rollouts (8 per headline)
-- Evaluations completed: 131 predictions successfully ranked
-- Evaluation success rate: ~58% (131/224)
-
-**Training Results:**
-- Training examples: 340 (209 + 131)
-- Total steps: 340
-- Average reward: 0.0602 (6.02%)
-- Reward std: 0.0305 (3.05%)
-- Average KL: 37.6547
-- Model saved: `final_model_20250804/`
-
-### Day 4: August 5th, 2025
-**Data Collection:**
-- Headlines collected: 28 headlines
-- Predictions generated: 224 rollouts (8 per headline)
-- Evaluations completed: 141 predictions successfully ranked
-- Evaluation success rate: ~63% (141/224)
-
-**Training Results:**
-- Training examples: 481 (340 + 141)
-- Total steps: 481
-- Average reward: 0.0620 (6.20%)
-- Reward std: 0.0292 (2.92%)
-- Average KL: 37.7895
-- Model saved: `final_model_20250805/`
-
-### Day 5: August 6th, 2025
-**Data Collection:**
-- Headlines collected: 27 headlines
-- Predictions generated: 216 rollouts (8 per headline)
-- Evaluations completed: 141 predictions successfully ranked
-- Evaluation success rate: ~65% (141/216)
-
-**Training Results:**
-- Training examples: 622 (481 + 141)
-- Total steps: 577
-- Average reward: 0.0620 (6.20%)
-- Reward std: 0.0292 (2.92%)
-- Average KL: 37.7895
-- Model saved: `final_model_20250806/`
-
-## Key Improvements Made
-
-### 1. Evaluation System Enhancements
-- **Initial success rate**: ~33% (August 2nd)
-- **Final success rate**: ~65% (August 6th)
-- **Improvements implemented**:
-  - Lowered temperature from 0.7 to 0.3 for more deterministic responses
-  - Enhanced regex patterns to handle JSON, markdown, numbers, and various response formats
-  - Restored `<think>` tag format for structured reasoning
-  - Added fallback strategies for unranked predictions
-
-### 2. Model Training Progression
-- **Total training examples**: 622 across 5 days
-- **Average reward trend**: 5.84% → 6.20% (improving)
-- **KL divergence**: Stable around 37-38 (good specialization)
-- **Reward consistency**: Standard deviation decreasing (2.92% vs 3.12% initial)
-
-### 3. Pipeline Reliability
-- **Data collection**: 100% success rate
-- **Prediction generation**: 100% success rate
-- **Evaluation**: 65% success rate (significantly improved)
-- **Training**: 100% success rate
-
-## Technical Achievements
-
-### 1. Robust Evaluation System
-The LLM-based evaluator now handles:
-- JSON responses: `{"answer": "C"}`
-- Markdown code blocks
-- Number responses: `"5"` → `"E"`
-- Empty responses
-- Various formatting patterns
-- Typo correction: `"M"` → `"A"`
-
-### 2. Model Versioning System
-- Dated final models: `final_model_YYYYMMDD/`
-- Latest model: `final_model/`
-- Checkpoint management with `manage_models.py`
-- Training state preservation across runs
-
-### 3. Continuous Learning Pipeline
-- Automated daily data collection
-- Seamless model checkpoint loading
-- Progressive training with accumulated data
-- Evaluation quality monitoring
-
-## Data Quality Metrics
-
-### Headlines Collected
-- **Total headlines**: 149 across 5 days
-- **Average per day**: 29.8 headlines
-- **Consistency**: 27-34 headlines per day
-
-### Predictions Generated
-- **Total rollouts**: 1,192 across 5 days
-- **Average per day**: 238.4 rollouts
-- **Consistency**: 8 rollouts per headline
-
-### Evaluations Completed
-- **Total evaluations**: 622 across 5 days
-- **Success rate progression**: 33% → 47% → 58% → 63% → 65%
-- **Quality trend**: Steadily improving
-
-## Model Performance Analysis
-
-### Reward Distribution
-- **Range**: 0.0000 - 0.1000 (0% to 10%)
-- **Mean**: 6.20%
-- **Standard deviation**: 2.92%
-- **Distribution**: Slightly right-skewed (good predictions rewarded higher)
-
-### Training Stability
-- **KL divergence**: Stable around 37-38
-- **No catastrophic forgetting**: Model maintains base capabilities
-- **Progressive specialization**: Model improving on financial prediction task
-
-## Files Generated
-
-### Daily Data Files
+- Backfill (isolated NEWRUN):
 ```
-timestamped_storage/
-├── 20250802_headlines.json
-├── 20250802_predictions.json
-├── 20250802_outcome_tracking.json
-├── 20250802_evaluations.json
-├── 20250803_headlines.json
-├── 20250803_predictions.json
-├── 20250803_outcome_tracking.json
-├── 20250803_evaluations.json
-├── 20250804_headlines.json
-├── 20250804_predictions.json
-├── 20250804_outcome_tracking.json
-├── 20250804_evaluations.json
-├── 20250805_headlines.json
-├── 20250805_predictions.json
-├── 20250805_outcome_tracking.json
-├── 20250805_evaluations.json
-├── 20250806_headlines.json
-└── 20250806_predictions.json
+python run_backfill_newrun.py --start_date 20250804 --end_date 20250808 \
+  --resume_from_last_model --force_evaluations --force_training \
+  --run_suffix NEWRUN --seed 1234
+```
+- Override evaluation (evaluate D with headlines from H):
+```
+python run_override_update.py --prediction_date D --headlines_date H \
+  --resume_from_last_model --run_suffix NEWRUN --seed 1234
 ```
 
-### Training Data
-```
-training/
-├── gspo_training_data_20250802.json
-├── gspo_training_data_20250803.json
-├── gspo_training_data_20250804.json
-├── gspo_training_data_20250805.json
-├── gspo_training_data_20250806.json
-└── checkpoints/gspo/
-    ├── final_model_20250802/
-    ├── final_model_20250803/
-    ├── final_model_20250804/
-    ├── final_model_20250805/
-    ├── final_model_20250806/
-    └── final_model/  # Latest
-```
+## Files & Versioning
+- Data: `timestamped_storage(_NEWRUN)/<date>_{headlines,predictions,outcome_tracking,evaluations}.json`
+- Training: `training/gspo_training_<date>.json`, logs under `training/logs/`
+- Checkpoints: `training/checkpoints/gspo_NEWRUN/`
+  - Rolling latest: `final_model/`
+  - Dated snapshots: `final_model_YYYYMMDD/`
 
 ## Next Steps
-
-### Immediate Actions
-1. **Continue daily pipeline**: Generate predictions for August 7th using August 6th trained model
-2. **Monitor evaluation quality**: Ensure 65%+ success rate maintains
-3. **Track reward trends**: Monitor if average reward continues improving
-
-### Potential Improvements
-1. **Evaluation prompt engineering**: Further optimize for higher success rate
-2. **Data augmentation**: Consider more diverse prediction generation
-3. **Model architecture**: Experiment with different base models
-4. **Reward function**: Fine-tune reward scaling and normalization
-
-### Long-term Goals
-1. **Scale to more data sources**: Expand beyond RSS feeds
-2. **Multi-day predictions**: Predict beyond next-day headlines
-3. **Portfolio optimization**: Apply to actual trading strategies
-4. **Real-time adaptation**: Continuous model updates
+- Add A/B behavioral evals vs. baseline and downstream economic metrics
+- Log both step‑time (scaled) and unscaled rewards for clarity
+- Track evaluator retry counts and agreement as quality signal
+- Explore EMA baselines and masked‑prompt vs full‑loss ablations
 
 ## Conclusion
-
-The GSPO training pipeline has demonstrated consistent improvement over 5 days of operation. The evaluation success rate has improved from 33% to 65%, and the model has accumulated 622 high-quality training examples. The system shows promise for continuous learning in financial prediction tasks, with stable training dynamics and improving performance metrics.
-
-The pipeline is now ready for sustained daily operation with the current configuration providing reliable data collection, evaluation, and training capabilities.
+Post‑fix, the daily pipeline is healthy: evaluations yield strict ranks, rewards are clean in [0,1], and GSPO‑style training improves steadily with controlled KL. The system is reproducible, versioned, and ready for sustained operation and paper‑grade reporting.

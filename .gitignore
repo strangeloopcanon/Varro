@@ -136,6 +136,7 @@ data/
 !data/sample/**
 timestamped_storage/
 OLD_ARCHIVE/
+archive/
 __pycache__/
 *.safetensors
 *.safetensors.npz

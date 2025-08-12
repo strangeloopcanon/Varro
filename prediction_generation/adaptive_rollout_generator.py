@@ -15,7 +15,6 @@ from mlx_lm.sample_utils import make_sampler
 
 # Removed diversity assessor import since we always use same prompt
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class AdaptiveRolloutGenerator:
@@ -91,23 +90,32 @@ Think like a trader - be specific about what to buy/sell and why."""
                 "macro_economist": "Headline: \"{headline}\"\n\nThink like a macro economist..."
             }
     
-    def generate_rollouts_for_headline(self, headline: str) -> List[Dict[str, Any]]:
-        """Generate 8 rollouts for a single headline using same prompt with sampling diversity."""
+    def generate_rollouts_for_headline(self, headline: str, num_rollouts: int = 8, horizon: str | None = None) -> List[Dict[str, Any]]:
+        """Generate N rollouts for a single headline using same prompt with sampling diversity.
+
+        Args:
+            headline: Headline text to condition on
+            num_rollouts: Number of rollouts to generate (default 8)
+            horizon: Optional horizon directive: "next_day", "next_month", or "next_year"
+        """
         logger.info(f"Generating rollouts for headline: {headline[:50]}...")
-        
-        # Always use basic stochastic approach (same prompt, sampling diversity)
-        rollouts = self._generate_basic_rollouts(headline)
+
+        rollouts = self._generate_basic_rollouts(headline, num_rollouts=num_rollouts, horizon=horizon)
         logger.info(f"Generated {len(rollouts)} rollouts using same prompt with sampling diversity")
         return rollouts
     
-    def _generate_basic_rollouts(self, headline: str) -> List[Dict[str, Any]]:
-        """Generate 8 rollouts using basic stochastic approach."""
-        rollouts = []
-        
-        for i in range(8):
+    def _generate_basic_rollouts(self, headline: str, num_rollouts: int = 8, horizon: str | None = None) -> List[Dict[str, Any]]:
+        """Generate N rollouts using basic stochastic approach with optional horizon directive."""
+        rollouts: List[Dict[str, Any]] = []
+
+        # Optional horizon directive to bias timeframe
+        horizon_prefix = self._build_horizon_directive(horizon) if horizon else ""
+
+        for i in range(max(1, int(num_rollouts))):
             # Use same prompt, let MLX sampler create diversity
-            prompt = self.basic_prompt.format(headline=headline)
-            
+            base_prompt = self.basic_prompt.format(headline=headline)
+            prompt = f"{horizon_prefix}{base_prompt}" if horizon_prefix else base_prompt
+
             try:
                 prediction = mlx_generate(
                     self.model,
@@ -116,22 +124,23 @@ Think like a trader - be specific about what to buy/sell and why."""
                     max_tokens=512,
                     sampler=self.sampler
                 )
-                
+
                 # Calculate immediate structure-based reward
                 immediate_reward = self._calculate_structure_reward(prediction)
-                
+
                 rollouts.append({
                     "rollout_id": i,
                     "prediction": prediction,
                     "method": "basic_stochastic",
                     "immediate_reward": immediate_reward,
-                    "timestamp": datetime.now().isoformat()
+                    "timestamp": datetime.now().isoformat(),
+                    **({"horizon": horizon} if horizon else {})
                 })
-                
+
             except Exception as e:
                 logger.error(f"Error generating rollout {i}: {e}")
                 continue
-        
+
         return rollouts
     
     def _generate_advanced_rollouts(self, headline: str) -> List[Dict[str, Any]]:
@@ -189,17 +198,21 @@ Think like a trader - be specific about what to buy/sell and why."""
         
         return section_score / len(required_sections)
     
-    def generate_daily_predictions(self, headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Generate predictions for all headlines."""
-        daily_predictions = []
-        
+    def generate_daily_predictions(self, headlines: List[Dict[str, Any]], num_rollouts: int = 8, horizon: str | None = None) -> List[Dict[str, Any]]:
+        """Generate predictions for all headlines.
+
+        Args:
+            headlines: list of headline dicts with key "text"
+            num_rollouts: number of rollouts per headline
+            horizon: optional horizon directive ("next_day" | "next_month" | "next_year")
+        """
+        daily_predictions: List[Dict[str, Any]] = []
+
         for headline_data in headlines:
             headline_text = headline_data["text"]
-            
-            # Generate 8 rollouts for this headline
-            rollouts = self.generate_rollouts_for_headline(headline_text)
-            
-            # Create prediction entry
+
+            rollouts = self.generate_rollouts_for_headline(headline_text, num_rollouts=num_rollouts, horizon=horizon)
+
             prediction_entry = {
                 "headline": headline_text,
                 "headline_data": headline_data,
@@ -207,14 +220,27 @@ Think like a trader - be specific about what to buy/sell and why."""
                 "total_rollouts": len(rollouts),
                 "methods_used": list(set(r["method"] for r in rollouts)),
                 "avg_immediate_reward": sum(r["immediate_reward"] for r in rollouts) / len(rollouts) if rollouts else 0.0,
-                "generated_at": datetime.now().isoformat()
+                "generated_at": datetime.now().isoformat(),
+                **({"horizon": horizon} if horizon else {})
             }
-            
+
             daily_predictions.append(prediction_entry)
-            
+
             logger.info(f"Generated {len(rollouts)} rollouts for headline: {headline_text[:50]}...")
-        
+
         return daily_predictions
+
+    def _build_horizon_directive(self, horizon: str) -> str:
+        """Return a directive prefix to bias the model toward a given prediction horizon."""
+        mapping = {
+            "next_day": "You must generate a prediction calibrated to the next 1 trading day. Be explicit and concrete about the 24–48h horizon.\n\n",
+            "next_month": "You must generate a prediction calibrated to roughly the next 1 month. Focus on medium-term drivers and positioning.\n\n",
+            "next_year": "You must generate a prediction calibrated to roughly the next 12 months. Focus on longer-term fundamentals and regime shifts.\n\n",
+        }
+        if not horizon:
+            return ""
+        key = horizon.strip().lower()
+        return mapping.get(key, "")
 
 def main():
     """Test the adaptive rollout generator."""

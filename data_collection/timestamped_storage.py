@@ -11,14 +11,31 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 from pathlib import Path
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class TimestampedStorage:
-    """Manages timestamped storage for daily data."""
+    """Manages timestamped storage for daily data.
+
+    Supports an alternate run storage directory controlled by the env var
+    VARRO_RUN_DIR_SUFFIX (e.g., NEWRUN). When set, data is saved under
+    `timestamped_storage_<SUFFIX>` while reads will fall back to the base
+    `timestamped_storage` if a file isn't found in the run directory.
+    """
     
     def __init__(self, storage_dir: str = "timestamped_storage"):
-        self.storage_dir = Path(storage_dir)
+        # Base directory always exists for reading historical headlines
+        self.base_storage_dir = Path("timestamped_storage")
+        self.base_storage_dir.mkdir(exist_ok=True)
+
+        # Optional alternate run directory (e.g., timestamped_storage_NEWRUN)
+        run_suffix = os.environ.get("VARRO_RUN_DIR_SUFFIX", "").strip()
+        if run_suffix:
+            # Normalize suffix like "NEWRUN" → timestamped_storage_NEWRUN
+            alt_dir_name = f"{storage_dir}_{run_suffix}"
+            self.storage_dir = Path(alt_dir_name)
+        else:
+            self.storage_dir = Path(storage_dir)
+
         self.storage_dir.mkdir(exist_ok=True)
         
         # Data types we store
@@ -46,29 +63,40 @@ class TimestampedStorage:
         return str(filename)
     
     def load_data(self, data_type: str, date: str) -> Optional[Dict[str, Any]]:
-        """Load data for specific date and type."""
-        filename = self.storage_dir / f"{date}_{data_type}.json"
-        
-        if not filename.exists():
-            logger.warning(f"Data file not found: {filename}")
-            return None
-        
-        try:
-            with open(filename, 'r') as f:
-                data = json.load(f)
-            
-            logger.info(f"Loaded {data_type} data from {filename}")
-            return data
-            
-        except Exception as e:
-            logger.error(f"Error loading data from {filename}: {e}")
-            return None
+        """Load data for specific date and type.
+
+        Tries the active run directory first, then falls back to the base
+        storage directory. This lets us run alternate pipelines without
+        duplicating headlines while still isolating predictions/evaluations.
+        """
+        primary = self.storage_dir / f"{date}_{data_type}.json"
+        fallback = self.base_storage_dir / f"{date}_{data_type}.json"
+
+        for candidate in (primary, fallback):
+            if candidate.exists():
+                try:
+                    with open(candidate, 'r') as f:
+                        data = json.load(f)
+                    logger.info(f"Loaded {data_type} data from {candidate}")
+                    return data
+                except Exception as e:
+                    logger.error(f"Error loading data from {candidate}: {e}")
+                    return None
+
+        logger.warning(f"Data file not found in run or base storage: {primary} | {fallback}")
+        return None
     
     def list_available_dates(self, data_type: str = None) -> List[str]:
         """List all available dates for a data type."""
         dates = set()
         
-        for file_path in self.storage_dir.glob("*.json"):
+        # Combine dates from both active run dir and base dir
+        seen_files = set()
+        for file_path in list(self.storage_dir.glob("*.json")) + list(self.base_storage_dir.glob("*.json")):
+            # Avoid double counting if paths overlap
+            if str(file_path) in seen_files:
+                continue
+            seen_files.add(str(file_path))
             filename = file_path.stem
             parts = filename.split("_")
             
