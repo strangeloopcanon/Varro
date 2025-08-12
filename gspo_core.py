@@ -40,13 +40,20 @@ class GSPOTrainer:
     
     def __init__(self, model, tokenizer, tasks: List[Dict[str, Any]], reward_function,
                  learning_rate=5e-6, save_dir="training/checkpoints",
-                 temperature=0.8, top_p=0.95, top_k=50):
+                 temperature=0.8, top_p=0.95, top_k=50,
+                 response_only_loss: bool = True,
+                 ema_baseline: bool = False,
+                 ema_momentum: float = 0.9):
         self.model = model
         self.tokenizer = tokenizer
         self.tasks = tasks
         self.reward_function = reward_function
         self.learning_rate = learning_rate
         self.save_dir = save_dir
+        self.response_only_loss = response_only_loss
+        self.ema_baseline_enabled = ema_baseline
+        self.ema_momentum = ema_momentum
+        self._ema_value = 0.0
         
         # MLX sampler for non-deterministic generation (for evaluation only)
         self.sampler = make_sampler(temp=temperature, top_p=top_p, top_k=top_k)
@@ -114,9 +121,16 @@ class GSPOTrainer:
                             log_probs, labels_expanded, axis=-1
                         ).squeeze(-1)
                         
-                        # Policy gradient loss: -log_prob * reward
-                        # Sum over all tokens in the response
-                        response_loss = -mx.sum(gathered_log_probs) * reward
+                        # If configured, mask out prompt positions so loss only covers response tokens
+                        if self.response_only_loss:
+                            prompt_len = prompt_array.shape[0]
+                            # gathered_log_probs has length (len(full_sequence)-1)
+                            start_idx = max(0, int(prompt_len) - 1)
+                            masked_log_probs = gathered_log_probs[start_idx:]
+                            response_loss = -mx.sum(masked_log_probs) * reward
+                        else:
+                            # Policy gradient loss over entire sequence (prompt+response)
+                            response_loss = -mx.sum(gathered_log_probs) * reward
                         total_loss += response_loss
                 
                 return total_loss
@@ -155,13 +169,15 @@ class GSPOTrainer:
             for task in self.tasks:
                 prompt = task['prompt']
                 response = task['response']  # Pre-computed response
-                reward = self.reward_function.calculate_reward(task, response)  # Pre-computed reward
+                raw_reward = self.reward_function.calculate_reward(task, response)  # Pre-computed reward
+                # Apply EMA baseline as advantage if enabled (do not update EMA inside batch)
+                reward = raw_reward - (self._ema_value if self.ema_baseline_enabled else 0.0)
                 
                 group_prompts.append(prompt)
                 group_responses.append([response])  # Single pre-computed response
                 group_rewards.append([reward])  # Single pre-computed reward
                 
-                logger.debug(f"Task: {task.get('headline', 'unknown')[:30]}..., Reward: {reward:.4f}")
+                logger.debug(f"Task: {task.get('headline', 'unknown')[:30]}..., Reward: {raw_reward:.4f}, Advantage: {reward:.4f}")
             
             # Compute policy gradients
             gradients, loss = self.compute_policy_gradients(group_prompts, group_responses, group_rewards)
@@ -197,6 +213,11 @@ class GSPOTrainer:
             prompt = task['prompt']
             response = task['response']  # Pre-computed response
             reward = self.reward_function.calculate_reward(task, response)  # Pre-computed reward
+            # Advantage with EMA baseline if enabled
+            if self.ema_baseline_enabled:
+                advantage = reward - self._ema_value
+            else:
+                advantage = reward
             
             logger.debug(f"Step {self.step_count + 1}: Processing example {step_index + 1}/{len(self.tasks)}")
             logger.debug(f"Headline: {task.get('headline', 'unknown')[:50]}...")
@@ -206,7 +227,7 @@ class GSPOTrainer:
             logger.debug(f"Reward type: {type(reward)}, value: {reward}")
             
             # Compute policy gradients for single example
-            gradients, loss = self.compute_policy_gradients([prompt], [[response]], [[reward]])
+            gradients, loss = self.compute_policy_gradients([prompt], [[response]], [[advantage]])
             
             # Update model parameters
             self.update_model_parameters(gradients)
@@ -216,7 +237,13 @@ class GSPOTrainer:
             self.total_rewards.append(reward)
             self.kl_history.append(loss)  # Using loss as a proxy for KL divergence
             
-            logger.info(f"Step {self.step_count}: Reward = {reward:.4f}, Loss = {loss:.4f}")
+            # Update EMA baseline after step
+            if self.ema_baseline_enabled:
+                self._ema_value = (
+                    self.ema_momentum * self._ema_value + (1.0 - self.ema_momentum) * reward
+                )
+            
+            logger.info(f"Step {self.step_count}: Reward = {reward:.4f}, Advantage = {advantage:.4f}, Loss = {loss:.4f}")
             
             return reward
             

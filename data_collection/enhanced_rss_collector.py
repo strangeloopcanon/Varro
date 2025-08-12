@@ -14,31 +14,50 @@ from typing import List, Dict, Any
 from urllib.parse import urlparse
 import time
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class EnhancedRSSCollector:
     """Collects headlines from multiple RSS feeds with error handling."""
     
     def __init__(self):
-        self.rss_sources = {
-            "general_news": [
-                "https://feeds.bbci.co.uk/news/rss.xml",
-                "https://feeds.reuters.com/reuters/topNews"
-            ],
-            "financial_news": [
-                "https://feeds.marketwatch.com/marketwatch/topstories/",
-                "https://seekingalpha.com/feed.xml"
-            ],
-            "market_specific": [
-                "https://www.investing.com/rss/news_301.rss"
-            ]
-        }
-        
+        # Load sources from config with sensible defaults
+        self.rss_sources, self.source_name_map = self._load_sources_from_config()
+
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
         })
+
+    def _load_sources_from_config(self):
+        """Load RSS sources and optional source name mapping from config/rss_sources.json."""
+        default_sources = {
+            "general_news": [
+                "https://feeds.bbci.co.uk/news/rss.xml",
+                "https://feeds.reuters.com/reuters/topNews",
+            ],
+            "financial_news": [
+                "https://feeds.marketwatch.com/marketwatch/topstories/",
+                "https://seekingalpha.com/feed.xml",
+            ],
+            "market_specific": [
+                "https://www.investing.com/rss/news_301.rss",
+            ],
+        }
+        source_name_map = {}
+
+        try:
+            cfg_path = os.path.join("config", "rss_sources.json")
+            with open(cfg_path, "r") as f:
+                cfg = json.load(f)
+            rss_sources = {
+                k: v for k, v in cfg.items() if isinstance(v, list)
+            } or default_sources
+            source_name_map = cfg.get("source_names", {})
+            logger.info("Loaded RSS sources from config/rss_sources.json")
+            return rss_sources, source_name_map
+        except Exception as e:
+            logger.warning(f"Falling back to default RSS sources (error loading config): {e}")
+            return default_sources, source_name_map
     
     def collect_headlines(self) -> List[Dict[str, Any]]:
         """Collect headlines from all RSS sources."""
@@ -137,9 +156,12 @@ class EnhancedRSSCollector:
         return datetime.now(timezone.utc)
     
     def _extract_source_name(self, url: str) -> str:
-        """Extract source name from URL."""
-        domain = urlparse(url).netloc
-        return domain.replace('www.', '').replace('.com', '').replace('.co.uk', '')
+        """Extract source name from URL, using config mapping when available."""
+        domain = urlparse(url).netloc.replace('www.', '')
+        if self.source_name_map and domain in self.source_name_map:
+            return self.source_name_map[domain]
+        # Fallback: simple domain-based name
+        return domain.replace('.com', '').replace('.co.uk', '')
     
     def _is_financially_relevant(self, title: str) -> bool:
         """Check if headline is financially relevant."""

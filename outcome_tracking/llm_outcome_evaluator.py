@@ -13,7 +13,6 @@ import mlx.core as mx
 from mlx_lm import load, generate as mlx_generate
 from mlx_lm.sample_utils import make_sampler
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class LLMOutcomeEvaluator:
@@ -37,7 +36,7 @@ class LLMOutcomeEvaluator:
             logger.info(f"Loading model: {self.model_name}")
             self.model, self.tokenizer = load(self.model_name)
             
-            # Create sampler
+            # Create sampler (stochastic phase)
             self.sampler = make_sampler(temp=0.3, top_p=0.9, top_k=50)
             
             logger.info("Model loaded successfully")
@@ -92,20 +91,29 @@ Give your score and explanation."""
             # Run 8 rounds of "find the best"
             for round_num in range(8):
                 # Create available predictions list with sequential letters
-                available_predictions = []
+                # Now store original indices to avoid brittle string matching
+                available_predictions = []  # List[Tuple[str, int, str]] = (letter, idx, pred)
                 available_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
                 
                 for i, pred in enumerate(predictions):
                     if i not in used_predictions:
                         # Map to next available letter sequentially
                         letter = available_letters[len(available_predictions)]
-                        available_predictions.append((letter, pred))
+                        available_predictions.append((letter, i, pred))
                 
                 if not available_predictions:
                     break
+
+                # Deterministic early-exit: if only one option remains, select it without querying the LLM
+                if len(available_predictions) == 1:
+                    only_letter, only_idx, only_pred = available_predictions[0]
+                    rankings.append(only_idx)
+                    used_predictions.add(only_idx)
+                    logger.info(f"Round {round_num + 1}: Only one option left, selected {only_letter} (prediction {only_idx})")
+                    continue
                 
                 # Build prompt for this round (truncate predictions to first 200 chars)
-                predictions_text = "\n".join([f"({letter}) {pred[:200]}..." for letter, pred in available_predictions])
+                predictions_text = "\n".join([f"({letter}) {pred[:200]}..." for letter, _, pred in available_predictions])
                 
                 find_best_prompt = f"""You are an expert financial analyst. Your task is to find the SINGLE BEST prediction from the available options that most accurately matches the provided headlines.
 
@@ -134,7 +142,7 @@ Answer:"""
                         self.model,
                         self.tokenizer,
                         find_best_prompt,
-                        max_tokens=20,  # Short response
+                        max_tokens=4,  # Keep very short to bias toward a single letter
                         sampler=self.sampler
                     )
                     
@@ -142,21 +150,16 @@ Answer:"""
                     selected_letter = self._extract_single_letter(response)
                     
                     # Check if letter is in available predictions for this round
-                    available_letters = [letter for letter, pred in available_predictions]
+                    available_letters = [letter for letter, _, _ in available_predictions]
                     
                     if selected_letter and selected_letter in available_letters:
-                        # Find which prediction this letter maps to
+                        # Directly map letter to its original prediction index
                         selected_prediction_idx = None
-                        for letter, pred in available_predictions:
+                        for letter, idx, _ in available_predictions:
                             if letter == selected_letter:
-                                # Find the original prediction index
-                                for i, original_pred in enumerate(predictions):
-                                    if original_pred == pred and i not in used_predictions:
-                                        selected_prediction_idx = i
-                                        break
+                                selected_prediction_idx = idx
                                 break
-                        
-                        if selected_prediction_idx is not None:
+                        if selected_prediction_idx is not None and selected_prediction_idx not in used_predictions:
                             rankings.append(selected_prediction_idx)
                             used_predictions.add(selected_prediction_idx)
                             logger.info(f"Round {round_num + 1}: Selected {selected_letter} (prediction {selected_prediction_idx})")
@@ -169,34 +172,82 @@ Answer:"""
                         logger.info(f"Available letters: {available_letters}")
                 
                 if not selected_letter or selected_letter not in available_letters:
-                    logger.error(f"Failed to get valid selection in round {round_num + 1}")
-                    logger.error(f"Available predictions: {available_letters}")
+                    # Deterministic fallback: ask again with constrained instruction and greedy decoding
+                    constrained_prompt = (
+                        f"HEADLINES (context omitted)\n\n"
+                        f"Available options: {', '.join(available_letters)}\n"
+                        "Reply with exactly ONE letter from the options above.\n"
+                        "Answer:"
+                    )
+                    deterministic_resp = mlx_generate(
+                        self.model,
+                        self.tokenizer,
+                        constrained_prompt,
+                        max_tokens=2,
+                        sampler=None  # Greedy decoding
+                    )
+                    selected_letter = self._extract_single_letter(deterministic_resp)
+
+                if not selected_letter or selected_letter not in available_letters:
+                    # Final deterministic fallback: pick the first available option to ensure progress
+                    selected_letter = available_letters[0]
+                    logger.warning(f"Falling back to first available option: {selected_letter} in round {round_num + 1}")
+
+                # Map the (possibly fallback) selected_letter to original prediction index
+                selected_prediction_idx = None
+                for letter, idx, _ in available_predictions:
+                    if letter == selected_letter:
+                        selected_prediction_idx = idx
+                        break
+
+                if selected_prediction_idx is not None:
+                    rankings.append(selected_prediction_idx)
+                    used_predictions.add(selected_prediction_idx)
+                    logger.info(f"Round {round_num + 1}: Selected {selected_letter} (prediction {selected_prediction_idx})")
+                else:
+                    logger.error(f"Failed to map selected letter {selected_letter} to a prediction index in round {round_num + 1}")
                     break
             
-            # Convert rankings to final format
-            if len(rankings) == 8:
-                # Convert to 1-8 ranking format
-                final_ranking = [0] * 8
-                for rank, pred_idx in enumerate(rankings):
-                    final_ranking[pred_idx] = rank + 1
-                
-                logger.info(f"Successfully generated ranking: {final_ranking}")
-                return self._create_evaluation_results(predictions, final_ranking, next_day_headlines)
-            elif len(rankings) >= 4:  # If we got at least 4, fill in the rest
-                # Fill in missing rankings with remaining predictions - give them all rank 7
-                missing_indices = [i for i in range(8) if i not in used_predictions]
-                for pred_idx in missing_indices:
-                    rankings.append(pred_idx)
-                
-                # Convert to 1-8 ranking format
-                final_ranking = [0] * 8
-                for rank, pred_idx in enumerate(rankings):
-                    if pred_idx in missing_indices:
-                        final_ranking[pred_idx] = 7  # All unranked get rank 7
+            # Convert rankings to final format with strict validation (exactly 8, 1..8 ranks)
+            def build_final_ranking(selected_indices: list[int]) -> list[int]:
+                # Deduplicate while preserving order
+                unique = []
+                seen = set()
+                for idx in selected_indices:
+                    if 0 <= idx < 8 and idx not in seen:
+                        unique.append(idx)
+                        seen.add(idx)
+                # Fill missing with remaining indices
+                remaining = [i for i in range(8) if i not in seen]
+                # Truncate to at most 8
+                while len(unique) > 8:
+                    unique.pop()
+                # Compose final order: first picks + fillers
+                final_order = unique + remaining
+                final_order = final_order[:8]
+                # Assign ranks: picked ones get 1..len(unique); fillers get rank 7
+                final_ranking_local = [0] * 8
+                picked_set = set(unique)
+                for pos, pred_idx in enumerate(final_order):
+                    if pred_idx in picked_set:
+                        rank_val = pos + 1
                     else:
-                        final_ranking[pred_idx] = rank + 1
-                
-                logger.info(f"Generated ranking with fallback: {final_ranking}")
+                        rank_val = 7
+                    # Clamp rank to [1,8]
+                    if rank_val < 1:
+                        rank_val = 1
+                    if rank_val > 8:
+                        rank_val = 8
+                    final_ranking_local[pred_idx] = rank_val
+                # Final safety: replace any unset (0) with worst rank 8
+                for i in range(8):
+                    if final_ranking_local[i] == 0:
+                        final_ranking_local[i] = 8
+                return final_ranking_local
+
+            if len(rankings) >= 4:
+                final_ranking = build_final_ranking(rankings)
+                logger.info(f"Generated validated ranking: {final_ranking}")
                 return self._create_evaluation_results(predictions, final_ranking, next_day_headlines)
             else:
                 logger.error(f"Only got {len(rankings)} rankings, need at least 4")
@@ -287,6 +338,11 @@ Answer:"""
             last_letter = bracket_matches[-1]
             return last_letter
         
+        # Also handle formats like: "A." or "A -" at line start
+        start_match = re.search(r'^[\s\-\*\(\[]*([A-H])[\)\]\.:\-\s]', response_clean, re.IGNORECASE)
+        if start_match:
+            return start_match.group(1).upper()
+
         # Look for "The answer is X" pattern
         answer_match = re.search(r'answer is ([A-H])', response_clean, re.IGNORECASE)
         if answer_match:
@@ -552,17 +608,46 @@ Answer:"""
     
     def batch_evaluate(self, outcome_tracking: List[Dict[str, Any]], 
                       batch_size: int = 5) -> List[Dict[str, Any]]:
-        """Evaluate outcomes in batches to manage memory and processing."""
-        all_evaluations = []
-        
-        for i in range(0, len(outcome_tracking), batch_size):
-            batch = outcome_tracking[i:i + batch_size]
-            
-            logger.info(f"Evaluating batch {i//batch_size + 1} ({len(batch)} predictions)")
-            
-            batch_evaluations = self.evaluate_outcomes(batch)
+        """Evaluate outcomes with group-first batching.
+
+        Behavior change: We first group all outcomes by headline (ensuring each group
+        contains up to 8 rollouts), then batch by groups. This prevents fragmenting a
+        headline's rollouts across different batches, which previously caused partial
+        evaluations and failures.
+
+        Args:
+            outcome_tracking: Flat list of outcome rows for a date.
+            batch_size: Number of headline groups per batch (default: 5).
+
+        Returns:
+            A flat list of evaluation results.
+        """
+        if not outcome_tracking:
+            return []
+
+        # Group first across the entire dataset
+        headline_groups: Dict[str, List[Dict[str, Any]]] = {}
+        for outcome in outcome_tracking:
+            headline = outcome.get("headline")
+            if not headline:
+                # Skip malformed rows without headline key
+                continue
+            headline_groups.setdefault(headline, []).append(outcome)
+
+        grouped = list(headline_groups.values())
+        all_evaluations: List[Dict[str, Any]] = []
+
+        # Batch by groups (headlines)
+        for i in range(0, len(grouped), batch_size):
+            batch_groups = grouped[i:i + batch_size]
+            # Flatten outcomes for this batch so evaluate_outcomes can re-group and process
+            batch_flat = [row for group in batch_groups for row in group]
+            logger.info(
+                f"Evaluating batch {i//batch_size + 1} (groups: {len(batch_groups)}, predictions: {len(batch_flat)})"
+            )
+            batch_evaluations = self.evaluate_outcomes(batch_flat)
             all_evaluations.extend(batch_evaluations)
-        
+
         return all_evaluations
     
     def get_evaluation_summary(self, evaluations: List[Dict[str, Any]]) -> Dict[str, Any]:

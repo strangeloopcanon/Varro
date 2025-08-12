@@ -13,7 +13,7 @@ from typing import List, Dict, Any
 from mlx_lm import load
 from gspo_core import GSPOTrainer, EvaluationScoreReward
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG, format='[%(levelname)s] %(message)s')
 logger = logging.getLogger(__name__)
 
 class GSPOTrainingConfig:
@@ -34,6 +34,10 @@ class GSPOTrainingConfig:
         self.temperature = 0.8
         self.top_p = 0.95
         self.top_k = 50
+        # Training behavior toggles
+        self.response_only_loss = True
+        self.ema_baseline = False
+        self.ema_momentum = 0.9
         
         # Data paths
         self.training_data_path = training_data_path or "training/gspo_training_20250802.json"
@@ -151,7 +155,10 @@ def train(config: GSPOTrainingConfig):
             save_dir=config.checkpoint_dir,
             temperature=config.temperature,
             top_p=config.top_p,
-            top_k=config.top_k
+            top_k=config.top_k,
+            response_only_loss=config.response_only_loss,
+            ema_baseline=config.ema_baseline,
+            ema_momentum=config.ema_momentum
         )
         
         # Load from checkpoint if specified
@@ -219,6 +226,14 @@ def main():
                        help="Path to training data file")
     parser.add_argument("--save_every", type=int, default=10, help="Save model every N steps")
     parser.add_argument("--load_checkpoint", type=str, help="Path to checkpoint to load from")
+    parser.add_argument("--response_only_loss", type=int, default=1,
+                        help="1 to compute loss on response tokens only (default), 0 to include prompt+response")
+    parser.add_argument("--ema_baseline", type=int, default=0,
+                        help="1 to enable EMA baseline variance reduction, 0 to disable (default)")
+    parser.add_argument("--ema_momentum", type=float, default=0.9,
+                        help="EMA momentum for reward baseline when enabled")
+    parser.add_argument("--checkpoint_dir", type=str, default="training/checkpoints/gspo",
+                        help="Directory to save model checkpoints (default: training/checkpoints/gspo)")
     
     args = parser.parse_args()
     
@@ -230,6 +245,10 @@ def main():
     config.training_data_path = args.training_data
     config.save_every = args.save_every
     config.load_checkpoint = args.load_checkpoint
+    config.response_only_loss = bool(args.response_only_loss)
+    config.ema_baseline = bool(args.ema_baseline)
+    config.ema_momentum = args.ema_momentum
+    config.checkpoint_dir = args.checkpoint_dir
     
     # Run training
     train(config)

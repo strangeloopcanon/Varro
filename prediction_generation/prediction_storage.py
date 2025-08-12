@@ -13,7 +13,6 @@ from pathlib import Path
 
 from data_collection.timestamped_storage import TimestampedStorage
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class PredictionStorage:
