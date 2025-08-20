@@ -6,7 +6,8 @@ GSPO Trainer for Meta-Learning with Pre-computed Rollouts and Evaluation Scores
 import json
 import logging
 import os
-from collections import defaultdict
+import re
+from collections import defaultdict, Counter
 from typing import List, Dict, Any, Tuple
 
 import mlx.core as mx
@@ -17,23 +18,166 @@ import mlx.nn as nn
 logger = logging.getLogger(__name__)
 
 class EvaluationScoreReward:
-    """Reward function that uses pre-computed evaluation scores."""
-    
-    def __init__(self):
-        pass
-    
+    """Reward function that uses pre-computed evaluation scores with optional quality penalty.
+
+    The base reward is derived from pre-computed outcome scores (0–10 → 0–1).
+    Optionally, a composite penalty focused on instruction/meta leakage and
+    repetition/boilerplate is applied multiplicatively:
+    r_final = clamp01(r_eval * (1 - alpha * penalty^gamma)).
+    """
+
+    def __init__(self,
+                 enable_quality_penalty: bool | None = None,
+                 alpha: float | None = None,
+                 use_meta_classifier: bool | None = None):
+        # Feature toggles (env overridable)
+        env_enable = os.environ.get("VARRO_ENABLE_QUALITY_PENALTY", "1").strip()
+        self.enable_quality_penalty = (
+            enable_quality_penalty
+            if enable_quality_penalty is not None
+            else env_enable not in {"0", "false", "False"}
+        )
+
+        try:
+            self.alpha = float(os.environ.get("VARRO_PENALTY_ALPHA", "0.30")) if alpha is None else float(alpha)
+        except Exception:
+            self.alpha = 0.30
+
+        # Nonlinear penalty dampening exponent (gamma)
+        try:
+            self.gamma = float(os.environ.get("VARRO_PENALTY_GAMMA", "0.7"))
+        except Exception:
+            self.gamma = 0.7
+
+        env_cls = os.environ.get("VARRO_META_CLASSIFIER", "1").strip()
+        self.use_meta_classifier = (
+            use_meta_classifier
+            if use_meta_classifier is not None
+            else env_cls not in {"0", "false", "False"}
+        )
+
+        # Penalty component weights
+        self.w_meta = float(os.environ.get("VARRO_PENALTY_W_META", "0.3"))
+        self.w_repeat = float(os.environ.get("VARRO_PENALTY_W_REPEAT", "0.7"))
+
+        # Pre-compiled patterns for instruction/meta leakage
+        patterns = [
+            # Common meta/instruction phrases
+            r"\bthe answer must\b",
+            r"\bthe answer should\b",
+            r"\bfinal answer\b",
+            r"\banswer:\b",
+            r"\bas an ai\b",
+            r"\bi need to\b",
+            r"\blet me\b",
+            r"\bwe need to\b",
+            r"\bin this answer\b",
+            r"\byour answer\b",
+            r"\bbased on this news,\b",
+            r"\bassistant\b",
+            r"\bteacher\b",
+            r"\brubric\b",
+            r"\binstructions?\b",
+            r"\bdo not\s+.*\b",
+            # Code fences / raw blocks
+            r"```",
+            r"^\s*json\s*$",
+            # Note: do not flag section headers as meta; handle via repetition penalty instead
+        ]
+        self.meta_re = re.compile("|".join(patterns), flags=re.IGNORECASE | re.MULTILINE)
+
+    # ---------------------- Penalty components ----------------------
+    def _score_meta_leak_regex(self, text: str) -> float:
+        """Return 0/1 based on presence of obvious meta/instruction leakage markers."""
+        return 1.0 if self.meta_re.search(text or "") else 0.0
+
+    def _score_meta_leak_classifier(self, text: str) -> float:
+        """A tiny heuristic classifier that estimates meta-leak probability in [0,1].
+
+        Uses a few weak features (presence counts of cue phrases, fence tokens,
+        excessive headings). This is deliberately simple and dependency-free.
+        """
+        if not text:
+            return 0.0
+        t = text.lower()
+        cues = [
+            "the answer must", "final answer", "as an ai", "assistant", "teacher",
+            "rubric", "the answer should", "section must", "must include",
+        ]
+        score = 0.0
+        for cue in cues:
+            if cue in t:
+                score += 0.2
+        # Code-fence density
+        fence_count = t.count("```")
+        if fence_count >= 1:
+            score += 0.2
+        if fence_count >= 3:
+            score += 0.2
+        # Excessive numbered headers
+        header_like = len(re.findall(r"^\s*\d+\s*[\).-]", text, flags=re.MULTILINE))
+        if header_like >= 6:
+            score += 0.2
+        return max(0.0, min(1.0, score))
+
+    def _score_repetition(self, text: str) -> float:
+        """Combined 2-gram and 3-gram repetition ratio in [0,1]."""
+        if not text:
+            return 0.0
+        tokens = text.split()
+        def rep_ratio(n: int) -> float:
+            if len(tokens) < n:
+                return 0.0
+            ngrams = [tuple(tokens[i:i + n]) for i in range(len(tokens) - n + 1)]
+            counts = Counter(ngrams)
+            repeated = sum(c - 1 for c in counts.values() if c > 1)
+            return min(1.0, repeated / max(1, len(ngrams)))
+        rep2 = rep_ratio(2)
+        rep3 = rep_ratio(3)
+        # Use max to strongly penalize boilerplate repetitions at any scale
+        return max(rep2, rep3)
+
+    def _quality_penalty(self, text: str) -> float:
+        if not self.enable_quality_penalty:
+            return 0.0
+        v_meta_regex = self._score_meta_leak_regex(text)
+        v_meta_cls = self._score_meta_leak_classifier(text) if self.use_meta_classifier else 0.0
+        # Combine meta signals (take max to be conservative)
+        v_meta = max(v_meta_regex, v_meta_cls)
+        v_rep = self._score_repetition(text)
+
+        # Multiplicative combiner to keep penalty in [0,1]
+        keep = (1.0 - self.w_meta * v_meta) * (1.0 - self.w_repeat * v_rep)
+        penalty = 1.0 - max(0.0, min(1.0, keep))
+
+        logger.debug(
+            f"Quality penalty components: meta_regex={v_meta_regex:.3f}, meta_cls={v_meta_cls:.3f}, "
+            f"v_meta={v_meta:.3f}, v_rep={v_rep:.3f}, penalty={penalty:.3f}"
+        )
+        return penalty
+
+    # --------------------------- API ---------------------------
     def calculate_reward(self, task: Dict[str, Any], response: str) -> float:
-        """
-        Use the pre-computed outcome_score from the evaluation as reward.
-        The outcome_score is on a 0-10 scale, normalize to 0-1.
-        """
-        # Get the evaluation score from the task data
+        """Return final reward in [0,1] with optional quality penalty applied."""
         outcome_score = task.get("outcome_score", 0.0)
-        
-        # Normalize from 0-10 scale to 0-1 scale
-        normalized_reward = outcome_score / 10.0
-        
-        return normalized_reward
+        r_eval = max(0.0, min(1.0, float(outcome_score) / 10.0))
+
+        if not self.enable_quality_penalty:
+            return r_eval
+
+        penalty = self._quality_penalty(response)
+        # Nonlinear dampening to preserve signal, multiplicative application
+        try:
+            penalty_term = (penalty ** self.gamma)
+        except Exception:
+            penalty_term = penalty
+        r_final = r_eval * (1.0 - self.alpha * penalty_term)
+        r_final = max(0.0, min(1.0, r_final))
+
+        logger.debug(
+            f"Reward: r_eval={r_eval:.3f}, alpha={self.alpha:.3f}, gamma={self.gamma:.3f}, penalty={penalty:.3f}, r_final={r_final:.3f}"
+        )
+        return r_final
 
 class GSPOTrainer:
     """GSPO trainer using pre-computed rollouts and evaluation scores."""

@@ -71,9 +71,22 @@ Varro/
 ├── gspo_core.py                     # GSPO algorithm implementation
 ├── run_gspo_training.py             # Main training script
 ├── run_daily_pipeline.py            # Complete daily pipeline
-├── manage_models.py                 # Model version management
+├── scripts/                         # Helper utilities (moved from root)
+│   ├── manage_models.py             # Model version management
+│   ├── run_backfill_newrun.py       # Backfill driver
+│   ├── run_baseline_comparisons.py  # Baselines (MLE/KTO)
+│   ├── run_next_update.py           # Yesterday→today wrapper
+│   └── run_override_update.py       # Override eval + retrain + morning
 └── README.md
 ```
+
+## 🧰 Scripts Index
+
+- Backfill/continue a run over dates: `python scripts/run_backfill_newrun.py --start_date 20250804 --end_date 20250810 --run_suffix NEWCOMPOSITERUN --resume_from_last_model`
+- Next-day update (yesterday→today): `python scripts/run_next_update.py --run_suffix NEWCOMPOSITERUN --resume_from_last_model`
+- Override evaluation + retrain + morning: `python scripts/run_override_update.py --prediction_date 20250808 --headlines_date 20250810 --resume_from_last_model`
+- Manage models: `python scripts/manage_models.py --list | --info final_model_20250806 | --archive 7`
+- Baselines (MLE/KTO): `python scripts/run_baseline_comparisons.py`
 
 ## 🚀 Quick Start
 
@@ -125,13 +138,13 @@ python run_daily_pipeline.py --mode morning --seed 1234
 ### Manage Model Versions
 ```bash
 # List all model versions
-python manage_models.py --list
+python scripts/manage_models.py --list
 
 # Get info about specific model
-python manage_models.py --info final_model_20250806
+python scripts/manage_models.py --info final_model_20250806
 
 # Archive models older than 7 days
-python manage_models.py --archive 7
+python scripts/manage_models.py --archive 7
 ```
 
 ## 🎯 Key Features

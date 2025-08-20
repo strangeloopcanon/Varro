@@ -6,6 +6,7 @@ Evaluate predictions against next-day headlines using LLM-based evaluation.
 
 import json
 import logging
+import os
 import re
 from datetime import datetime
 from typing import List, Dict, Any
@@ -27,6 +28,8 @@ class LLMOutcomeEvaluator:
         self.model = None
         self.tokenizer = None
         self.sampler = None
+        # Feature flags
+        self.enable_trade_thinking = str(os.environ.get("VARRO_ENABLE_TRADE_THINKING", "0")).lower() in {"1", "true", "yes", "on"}
         
         # Load model and tokenizer
         self._load_model()
@@ -40,7 +43,7 @@ class LLMOutcomeEvaluator:
             logger.info(f"Loading model: {self.model_name}")
             self.model, self.tokenizer = load(self.model_name)
             
-            # Create sampler (stochastic phase)
+            # Create sampler (kept for potential use), but primary selection is greedy for determinism
             self.sampler = make_sampler(temp=0.3, top_p=0.9, top_k=50)
             
             logger.info("Model loaded successfully")
@@ -83,27 +86,59 @@ Consider:
 Give your score and explanation."""
     
     def evaluate_prediction_group(self, predictions: List[str], next_day_headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Evaluate a group of predictions using 'find the best' approach 8 times."""
+        """Evaluate a group of predictions.
+
+        Strategy (patched):
+        1) Use a constrained, single-letter prompt first to select the best in each round.
+        2) If any round cannot produce a valid letter, abort the LLM process and fall back to
+           deterministic non-LLM ranking based on semantic consistency vs headlines.
+        3) Never "pick first available" as a fallback to avoid ordering bias.
+        """
         try:
             # Format headlines for evaluation
             headlines_text = self._format_headlines_for_evaluation(next_day_headlines)
-            
+
             # Initialize tracking
             rankings = []
             used_predictions = set()
+            fallback_to_semantic = False
             
-            # Run 8 rounds of "find the best"
+            # Run up to 8 rounds of selection
             for round_num in range(8):
                 # Create available predictions list with sequential letters
                 # Now store original indices to avoid brittle string matching
                 available_predictions = []  # List[Tuple[str, int, str]] = (letter, idx, pred)
                 available_letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-                
+                # Build candidate (idx, pred) list first
+                candidates = []  # List[Tuple[int, str]]
                 for i, pred in enumerate(predictions):
                     if i not in used_predictions:
-                        # Map to next available letter sequentially
-                        letter = available_letters[len(available_predictions)]
-                        available_predictions.append((letter, i, pred))
+                        candidates.append((i, pred))
+
+                # Deterministic shuffle of candidates to remove positional letter bias
+                try:
+                    import hashlib, random as _random
+                    seed_material = (headlines_text + "\n" + "\n".join(f"{i}:{(p or '')[:200]}" for i, p in candidates) + f"|round={round_num}").encode("utf-8", errors="ignore")
+                    seed_int = int(hashlib.sha256(seed_material).hexdigest(), 16) % (2**32)
+                    rng = _random.Random(seed_int)
+                    rng.shuffle(candidates)
+                except Exception:
+                    # On any failure, keep original order (stable)
+                    pass
+
+                # Assign letters to shuffled candidates
+                for k, (i, pred) in enumerate(candidates):
+                    if k >= len(available_letters):
+                        break
+                    letter = available_letters[k]
+                    available_predictions.append((letter, i, pred))
+
+                # Log mapping for traceability
+                try:
+                    mapping = {letter: idx for letter, idx, _ in available_predictions}
+                    logger.info(f"Round {round_num + 1} mapping: {mapping}")
+                except Exception:
+                    pass
                 
                 if not available_predictions:
                     break
@@ -115,103 +150,57 @@ Give your score and explanation."""
                     used_predictions.add(only_idx)
                     logger.info(f"Round {round_num + 1}: Only one option left, selected {only_letter} (prediction {only_idx})")
                     continue
-                
-                # Build prompt for this round (truncate predictions to first 200 chars)
+
+                # Build constrained prompt for this round (HEADLINES + choices; strictly one letter)
                 predictions_text = "\n".join([f"({letter}) {pred[:200]}..." for letter, _, pred in available_predictions])
-                
-                find_best_prompt = f"""You are an expert financial analyst. Your task is to find the SINGLE BEST prediction from the available options that most accurately matches the provided headlines.
+                constrained_prompt = f"""You are an expert evaluator. Pick the SINGLE BEST option (one letter) that most accurately matches the headlines.
 
 HEADLINES:
 {headlines_text}
 
-AVAILABLE PREDICTIONS (choose from these only):
+OPTIONS (reply with exactly ONE letter from these):
 {predictions_text}
 
-Which prediction is MOST ACCURATE given these headlines?
+Reply with exactly ONE letter from ({{{', '.join([l for l,_,_ in available_predictions])}}}). No words, no punctuation, no reasoning."""
 
-Use this format:
-<think>
-[Your reasoning here]
-</think>
-[Single letter answer]
-
-Answer:"""
-                
-                # Generate response with retry logic
-                max_retries = 5
+                # Single greedy attempt; if invalid → trigger deterministic fallback for the whole group
                 selected_letter = None
-                
-                for attempt in range(max_retries):
-                    response = mlx_generate(
-                        self.model,
-                        self.tokenizer,
-                        find_best_prompt,
-                        max_tokens=4,  # Keep very short to bias toward a single letter
-                        sampler=self.sampler
-                    )
-                    
-                    # Extract letter from response
-                    selected_letter = self._extract_single_letter(response)
-                    
-                    # Check if letter is in available predictions for this round
-                    available_letters = [letter for letter, _, _ in available_predictions]
-                    
-                    if selected_letter and selected_letter in available_letters:
-                        # Directly map letter to its original prediction index
-                        selected_prediction_idx = None
-                        for letter, idx, _ in available_predictions:
-                            if letter == selected_letter:
-                                selected_prediction_idx = idx
-                                break
-                        if selected_prediction_idx is not None and selected_prediction_idx not in used_predictions:
-                            rankings.append(selected_prediction_idx)
-                            used_predictions.add(selected_prediction_idx)
-                            logger.info(f"Round {round_num + 1}: Selected {selected_letter} (prediction {selected_prediction_idx})")
-                            break
-                        else:
-                            logger.warning(f"Invalid selection {selected_letter} on attempt {attempt + 1}, retrying...")
-                    else:
-                        logger.warning(f"No valid letter found in response on attempt {attempt + 1}, retrying...")
-                        logger.info(f"Raw response: '{response}'")
-                        logger.info(f"Available letters: {available_letters}")
-                
-                if not selected_letter or selected_letter not in available_letters:
-                    # Deterministic fallback: ask again with constrained instruction and greedy decoding
-                    constrained_prompt = (
-                        f"HEADLINES (context omitted)\n\n"
-                        f"Available options: {', '.join(available_letters)}\n"
-                        "Reply with exactly ONE letter from the options above.\n"
-                        "Answer:"
-                    )
-                    deterministic_resp = mlx_generate(
-                        self.model,
-                        self.tokenizer,
-                        constrained_prompt,
-                        max_tokens=2,
-                        sampler=None  # Greedy decoding
-                    )
-                    selected_letter = self._extract_single_letter(deterministic_resp)
+                response = mlx_generate(
+                    self.model,
+                    self.tokenizer,
+                    constrained_prompt,
+                    max_tokens=2,
+                    sampler=None  # Greedy decoding for determinism
+                )
+                selected_letter = self._extract_single_letter(response)
+                avail_letters = [letter for letter, _, _ in available_predictions]
+                if not selected_letter or selected_letter not in avail_letters:
+                    logger.warning(f"Constrained selection failed in round {round_num + 1}; switching to deterministic semantic ranking for this group")
+                    fallback_to_semantic = True
+                    break
 
-                if not selected_letter or selected_letter not in available_letters:
-                    # Final deterministic fallback: pick the first available option to ensure progress
-                    selected_letter = available_letters[0]
-                    logger.warning(f"Falling back to first available option: {selected_letter} in round {round_num + 1}")
-
-                # Map the (possibly fallback) selected_letter to original prediction index
+                # Map selected_letter to original prediction index
                 selected_prediction_idx = None
                 for letter, idx, _ in available_predictions:
                     if letter == selected_letter:
                         selected_prediction_idx = idx
                         break
 
-                if selected_prediction_idx is not None:
-                    rankings.append(selected_prediction_idx)
-                    used_predictions.add(selected_prediction_idx)
-                    logger.info(f"Round {round_num + 1}: Selected {selected_letter} (prediction {selected_prediction_idx})")
-                else:
-                    logger.error(f"Failed to map selected letter {selected_letter} to a prediction index in round {round_num + 1}")
+                if selected_prediction_idx is None or selected_prediction_idx in used_predictions:
+                    logger.warning(f"Selected letter {selected_letter} invalid or duplicate; switching to deterministic semantic ranking for this group")
+                    fallback_to_semantic = True
                     break
+
+                rankings.append(selected_prediction_idx)
+                used_predictions.add(selected_prediction_idx)
+                logger.info(f"Round {round_num + 1}: Selected {selected_letter} (prediction {selected_prediction_idx})")
             
+            # If constrained selection failed at any point, use deterministic semantic-consistency ranking
+            if fallback_to_semantic:
+                final_ranking = self._deterministic_semantic_ranking(predictions, next_day_headlines)
+                logger.info(f"Deterministic semantic ranking applied: {final_ranking}")
+                return self._create_evaluation_results(predictions, final_ranking, next_day_headlines, llm_picks=len(rankings), ranking_source="semantic")
+
             # Convert rankings to final format with strict validation (exactly 8, 1..8 ranks)
             def build_final_ranking(selected_indices: list[int]) -> list[int]:
                 # Deduplicate while preserving order
@@ -252,14 +241,45 @@ Answer:"""
             if len(rankings) >= 4:
                 final_ranking = build_final_ranking(rankings)
                 logger.info(f"Generated validated ranking: {final_ranking}")
-                return self._create_evaluation_results(predictions, final_ranking, next_day_headlines)
+                return self._create_evaluation_results(predictions, final_ranking, next_day_headlines, llm_picks=len(rankings), ranking_source="llm")
             else:
-                logger.error(f"Only got {len(rankings)} rankings, need at least 4")
-                return []
+                logger.warning(f"Only got {len(rankings)} rankings; switching to deterministic semantic ranking for this group")
+                final_ranking = self._deterministic_semantic_ranking(predictions, next_day_headlines)
+                logger.info(f"Deterministic semantic ranking applied: {final_ranking}")
+                return self._create_evaluation_results(predictions, final_ranking, next_day_headlines, llm_picks=len(rankings), ranking_source="semantic")
                 
         except Exception as e:
             logger.error(f"Error in evaluate_prediction_group: {e}")
             return []
+
+    def _deterministic_semantic_ranking(self, predictions: List[str], next_day_headlines: List[Dict[str, Any]]) -> List[int]:
+        """Return per-index ranks [1..8] using semantic consistency vs headlines.
+
+        Higher semantic similarity → better rank (1 is best). Ties broken by shorter response length, then stable index.
+        """
+        try:
+            # Lazy import to avoid circulars at module import time
+            from outcome_tracking.evaluation_storage import EvaluationStorage
+            estore = EvaluationStorage()
+            sims = []
+            for i, pred in enumerate(predictions):
+                try:
+                    s = estore._semantic_consistency(pred, next_day_headlines)
+                except Exception:
+                    s = 0.0
+                sims.append((i, float(s), len(pred or "")))
+            # Sort by: similarity desc, length asc, index asc
+            ordered = sorted(sims, key=lambda t: (-t[1], t[2], t[0]))
+            # Map to ranks 1..N
+            rank_by_index = {idx: (pos + 1) for pos, (idx, _, __) in enumerate(ordered)}
+            final = [rank_by_index.get(i, 8) for i in range(8)]
+            # Clamp
+            final = [min(8, max(1, int(r))) for r in final]
+            return final
+        except Exception as e:
+            logger.error(f"Deterministic semantic ranking failed: {e}")
+            # Worst-case: assign all worst rank 8
+            return [8] * 8
     
     def _extract_single_letter(self, response: str) -> str:
         """Extract a single letter (A-H) from the response."""
@@ -396,8 +416,12 @@ Answer:"""
         
         return None
     
-    def _create_evaluation_results(self, predictions: List[str], ranking: List[int], next_day_headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Create evaluation results from ranking."""
+    def _create_evaluation_results(self, predictions: List[str], ranking: List[int], next_day_headlines: List[Dict[str, Any]], llm_picks: int = 0, ranking_source: str = "llm") -> List[Dict[str, Any]]:
+        """Create evaluation results from ranking.
+
+        Adds group metadata: llm_picks (count of valid LLM selections before any fallback)
+        and ranking_source ('llm' or 'semantic').
+        """
         results = []
         for i, prediction in enumerate(predictions):
             # Calculate reward for this individual ranking
@@ -405,25 +429,28 @@ Answer:"""
             N = 8  # Total number of predictions
             reward = 1.0 - (rank - 1) / (N - 1) if N > 1 else 1.0
 
-            # Optional: trade-thinking score from text
-            s = score_trade_thinking(prediction, horizon="next_day") if score_trade_thinking is not None else None
-            # Composite reward (soft AND) if trade-thinking available
+            # Optional: trade-thinking score from text (disabled by default)
+            s = None
             composite = None
-            if s is not None:
-                w = 0.7  # weight on LLM reward
-                # Guard rails
-                r = max(0.0, min(1.0, reward))
-                s = max(0.0, min(1.0, s))
-                composite = (r ** w) * (s ** (1.0 - w))
+            if self.enable_trade_thinking and score_trade_thinking is not None:
+                s = score_trade_thinking(prediction, horizon="next_day")
+                # Composite reward (soft AND)
+                if s is not None:
+                    w = 0.7  # weight on LLM reward
+                    r = max(0.0, min(1.0, reward))
+                    s = max(0.0, min(1.0, s))
+                    composite = (r ** w) * (s ** (1.0 - w))
             
             result = {
                 'prediction': prediction,
                 'ranking': ranking[i],
                 'reward': reward,
-                **({ 'trade_thinking_score': s } if s is not None else {}),
-                **({ 'composite_reward': composite } if composite is not None else {}),
+                **({ 'trade_thinking_score': s } if (self.enable_trade_thinking and s is not None) else {}),
+                **({ 'composite_reward': composite } if (self.enable_trade_thinking and composite is not None) else {}),
                 'headlines': next_day_headlines,
-                'evaluation_method': 'find_best_8_rounds'
+                'evaluation_method': 'find_best_8_rounds',
+                'llm_picks': int(llm_picks),
+                'ranking_source': ranking_source
             }
             results.append(result)
         return results

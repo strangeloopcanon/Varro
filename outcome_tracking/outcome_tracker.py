@@ -35,18 +35,22 @@ class OutcomeTracker:
             logger.warning(f"No predictions found for date: {prediction_date}")
             return []
         
-        # Get next day's headlines (or override)
-        next_date = next_headlines_date or self._get_next_date(prediction_date)
-        if next_headlines_date:
-            logger.info(f"Override: using headlines from {next_headlines_date} for outcomes of {prediction_date}")
-        next_day_headlines = self._get_next_day_headlines(next_date)
-        
-        if not next_day_headlines:
-            logger.warning(f"No headlines found for next day: {next_date}")
-            return []
-        
-        # Create outcome tracking data
-        outcomes = self._create_outcome_tracking(predictions_data, next_day_headlines, prediction_date)
+        # Create a memoized headlines getter for arbitrary target dates
+        headlines_cache: Dict[str, List[Dict[str, Any]]] = {}
+        def _get_headlines_for(target_date: str) -> List[Dict[str, Any]]:
+            if target_date in headlines_cache:
+                return headlines_cache[target_date]
+            if next_headlines_date is not None:
+                # If override is provided, use it for all targets
+                target = next_headlines_date
+            else:
+                target = target_date
+            heads = self._get_next_day_headlines(target)
+            headlines_cache[target] = heads or []
+            return headlines_cache[target]
+
+        # Create outcome tracking data (per-rollout maturity aware)
+        outcomes = self._create_outcome_tracking(predictions_data, prediction_date, _get_headlines_for)
         
         logger.info(f"Created {len(outcomes)} outcome tracking entries for {prediction_date}")
         return outcomes
@@ -76,9 +80,12 @@ class OutcomeTracker:
         return headlines
     
     def _create_outcome_tracking(self, predictions_data: Dict[str, Any], 
-                                next_day_headlines: List[Dict[str, Any]], 
-                                prediction_date: str) -> List[Dict[str, Any]]:
-        """Create outcome tracking data by matching predictions with headlines."""
+                                prediction_date: str,
+                                get_headlines_for) -> List[Dict[str, Any]]:
+        """Create outcome tracking data by matching predictions with appropriate headlines per rollout.
+
+        If a rollout has 'matures_on', use that date to fetch headlines; otherwise, default to prediction_date+1.
+        """
         outcomes = []
         
         # Extract all rollouts from predictions
@@ -87,22 +94,34 @@ class OutcomeTracker:
             headline = prediction["headline"]
             
             for rollout in prediction["rollouts"]:
+                # Determine maturity date for this rollout
+                target_date = rollout.get("matures_on")
+                if not target_date:
+                    target_date = self._get_next_date(prediction_date)
+
                 rollout_data = {
-                    "prediction_id": f"{prediction_date}_{headline[:20].replace(' ', '_')}_{rollout['rollout_id']}",
+                    "prediction_id": f"{prediction_date}_{(rollout.get('horizon') or 'next_day')}_{headline[:20].replace(' ', '_')}_{rollout['rollout_id']}",
                     "headline": headline,
-                    "original_prediction": rollout["prediction"],
+                    # Evaluator should rank the final, cleaned forecast paragraph
+                    "original_prediction": rollout.get("prediction"),
                     "rollout_id": rollout["rollout_id"],
                     "method": rollout["method"],
                     "immediate_reward": rollout["immediate_reward"],
                         # Optional: carry trade-thinking score for composite reward downstream
                         **({"trade_thinking_score": rollout.get("trade_thinking_score")} if "trade_thinking_score" in rollout else {}),
                     "timestamp": rollout["timestamp"],
-                    "date": prediction_date
+                    "date": prediction_date,
+                    "horizon": rollout.get("horizon"),
+                    "offset_days": rollout.get("offset_days"),
+                    "matures_on": target_date
                 }
                 
                 # Add perspective if available
                 if "perspective" in rollout:
                     rollout_data["perspective"] = rollout["perspective"]
+                # Mark whether this rollout used deliberate thinking
+                if "uses_think" in rollout:
+                    rollout_data["uses_think"] = rollout["uses_think"]
                 
                 all_rollouts.append(rollout_data)
         
@@ -110,8 +129,8 @@ class OutcomeTracker:
         for rollout in all_rollouts:
             outcome = {
                 **rollout,
-                "next_day_headlines": next_day_headlines,
-                "headlines_count": len(next_day_headlines),
+                "next_day_headlines": get_headlines_for(rollout.get("matures_on")),
+                "headlines_count": len(get_headlines_for(rollout.get("matures_on"))),
                 "tracking_created_at": datetime.now().isoformat(),
                 "status": "pending_evaluation"
             }
@@ -138,6 +157,66 @@ class OutcomeTracker:
     def load_outcome_tracking(self, prediction_date: str) -> Optional[Dict[str, Any]]:
         """Load outcome tracking data for a specific date."""
         return self.storage.load_data("outcome_tracking", prediction_date)
+
+    def track_outcomes_due_on(self, due_date: str, lookback_days: int = 7) -> List[Dict[str, Any]]:
+        """Collect and prepare outcomes for all rollouts that mature on a given date.
+
+        Scans predictions from the previous `lookback_days` calendar days and selects
+        rollouts whose `matures_on == due_date`. Useful for multi-horizon evaluation.
+        """
+        try:
+            from datetime import datetime, timedelta
+            end = datetime.strptime(due_date, "%Y%m%d")
+            start = end - timedelta(days=max(1, int(lookback_days)))
+            start_str = start.strftime("%Y%m%d")
+            preds_range = self.storage.get_date_range(start_str, due_date, "predictions")
+        except Exception as e:
+            logger.error(f"Failed to scan predictions for due date {due_date}: {e}")
+            return []
+
+        # Build a memoized headlines getter for the due date
+        cache: Dict[str, List[Dict[str, Any]]] = {}
+        def _get_heads(d: str) -> List[Dict[str, Any]]:
+            if d in cache:
+                return cache[d]
+            cache[d] = self._get_next_day_headlines(d) or []
+            return cache[d]
+
+        outcomes: List[Dict[str, Any]] = []
+        for pd in preds_range:
+            pdate = pd.get("date")
+            if not pdate or "predictions" not in pd:
+                continue
+            for prediction in pd["predictions"]:
+                headline = prediction.get("headline", "")
+                for r in prediction.get("rollouts", []):
+                    if r.get("matures_on") != due_date:
+                        continue
+                    record = {
+                        "prediction_id": f"{pdate}_{headline[:20].replace(' ', '_')}_{r.get('rollout_id')}",
+                        "headline": headline,
+                        "original_prediction": r.get("prediction"),
+                        "rollout_id": r.get("rollout_id"),
+                        "method": r.get("method"),
+                        "immediate_reward": r.get("immediate_reward", 0.0),
+                        "timestamp": r.get("timestamp"),
+                        "date": pdate,
+                        "horizon": r.get("horizon"),
+                        "offset_days": r.get("offset_days"),
+                        "matures_on": r.get("matures_on"),
+                        "next_day_headlines": _get_heads(due_date),
+                        "headlines_count": len(_get_heads(due_date)),
+                        "tracking_created_at": datetime.now().isoformat(),
+                        "status": "pending_evaluation"
+                    }
+                    if "trade_thinking_score" in r:
+                        record["trade_thinking_score"] = r["trade_thinking_score"]
+                    if "uses_think" in r:
+                        record["uses_think"] = r["uses_think"]
+                    outcomes.append(record)
+
+        logger.info(f"Prepared {len(outcomes)} outcomes due on {due_date}")
+        return outcomes
     
     def get_pending_evaluations(self, prediction_date: str) -> List[Dict[str, Any]]:
         """Get outcome tracking data that needs evaluation."""

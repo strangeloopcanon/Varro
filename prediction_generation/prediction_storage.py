@@ -184,10 +184,13 @@ Think like a trader - be specific about what to buy/sell and why.
         
         # Count methods used
         methods_used = {}
+        sampler_profiles = {}
         for prediction in predictions:
             for rollout in prediction["rollouts"]:
                 method = rollout["method"]
                 methods_used[method] = methods_used.get(method, 0) + 1
+            prof = prediction.get("sampler_profile", "unknown")
+            sampler_profiles[prof] = sampler_profiles.get(prof, 0) + 1
         
         # Calculate average rewards
         all_rewards = []
@@ -201,6 +204,7 @@ Think like a trader - be specific about what to buy/sell and why.
             "total_headlines": len(predictions),
             "total_rollouts": total_rollouts,
             "methods_used": methods_used,
+            "sampler_profiles": sampler_profiles,
             "avg_immediate_reward": avg_reward,
             "reward_range": {
                 "min": min(all_rewards) if all_rewards else 0.0,
