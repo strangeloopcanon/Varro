@@ -1,0 +1,265 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+"20250809_CXApp,_Inc._(CXAI)_Q_0","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_1","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_2","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_3","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_4","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_5","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_6","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_CXApp,_Inc._(CXAI)_Q_7","CXApp, Inc. (CXAI) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_0","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_1","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_2","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_3","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_4","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_5","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_6","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_Intellicheck,_Inc._(_7","Intellicheck, Inc. (IDN) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_0","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_1","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_2","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_3","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_4","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_5","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_6","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_NeuroPace,_Inc._2025_7","NeuroPace, Inc. 2025 Q2 - Results - Earnings Call Presentation",7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_0","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_1","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_2","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_3","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_4","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_5","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_6","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_NeuroPace,_Inc._(NPC_7","NeuroPace, Inc. (NPCE) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_ALX_Oncology_Holding_0,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_ALX_Oncology_Holding_1,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_ALX_Oncology_Holding_2,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_ALX_Oncology_Holding_3,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_ALX_Oncology_Holding_4,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_ALX_Oncology_Holding_5,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_ALX_Oncology_Holding_6,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_ALX_Oncology_Holding_7,ALX Oncology Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_ALX_Oncology_Holding_0,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_ALX_Oncology_Holding_1,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_ALX_Oncology_Holding_2,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_ALX_Oncology_Holding_3,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_ALX_Oncology_Holding_4,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_ALX_Oncology_Holding_5,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_ALX_Oncology_Holding_6,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_ALX_Oncology_Holding_7,ALX Oncology Holdings Inc. (ALXO) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_0,Nutanix: Growth Company With Broad Moat Potential,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_1,Nutanix: Growth Company With Broad Moat Potential,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_2,Nutanix: Growth Company With Broad Moat Potential,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_3,Nutanix: Growth Company With Broad Moat Potential,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_4,Nutanix: Growth Company With Broad Moat Potential,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_5,Nutanix: Growth Company With Broad Moat Potential,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_6,Nutanix: Growth Company With Broad Moat Potential,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Nutanix:_Growth_Comp_7,Nutanix: Growth Company With Broad Moat Potential,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Verrica_Pharmaceutic_0,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Verrica_Pharmaceutic_1,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Verrica_Pharmaceutic_2,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Verrica_Pharmaceutic_3,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Verrica_Pharmaceutic_4,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Verrica_Pharmaceutic_5,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Verrica_Pharmaceutic_6,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Verrica_Pharmaceutic_7,Verrica Pharmaceuticals Inc. (VRCA) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Lineage_Cell_Therape_0,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Lineage_Cell_Therape_1,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Lineage_Cell_Therape_2,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Lineage_Cell_Therape_3,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Lineage_Cell_Therape_4,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Lineage_Cell_Therape_5,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Lineage_Cell_Therape_6,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Lineage_Cell_Therape_7,"Lineage Cell Therapeutics, Inc. (LCTX) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_0,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_1,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_2,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_3,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_4,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_5,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_6,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Cisco:_Stagnant_Grow_7,"Cisco: Stagnant Growth, Fierce Competition, And High Valuation Make It A Sell",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_0,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_1,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_2,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_3,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_4,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_5,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_6,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Intrusion_Inc._(INTZ_7,Intrusion Inc. (INTZ) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_IRIDEX_Corporation_(_0,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_IRIDEX_Corporation_(_1,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_IRIDEX_Corporation_(_2,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_IRIDEX_Corporation_(_3,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_IRIDEX_Corporation_(_4,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_IRIDEX_Corporation_(_5,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_IRIDEX_Corporation_(_6,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_IRIDEX_Corporation_(_7,IRIDEX Corporation (IRIX) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_0","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_1","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_2","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_3","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_4","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_5","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_6","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_Pulse_Biosciences,_I_7","Pulse Biosciences, Inc. (PLSE) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_0","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_1","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_2","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_3","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_4","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_5","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_6","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_Playboy,_Inc._(PLBY)_7","Playboy, Inc. (PLBY) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_0,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_1,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_2,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_3,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_4,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_5,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_6,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Urgent.ly_Inc._(ULY)_7,Urgent.ly Inc. (ULY) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_0,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_1,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_2,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_3,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_4,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_5,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_6,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_PLDT_Inc._(PHI)_Q2_2_7,PLDT Inc. (PHI) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Ford_is_readying_a_‘_0,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Ford_is_readying_a_‘_1,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Ford_is_readying_a_‘_2,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Ford_is_readying_a_‘_3,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Ford_is_readying_a_‘_4,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Ford_is_readying_a_‘_5,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Ford_is_readying_a_‘_6,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Ford_is_readying_a_‘_7,Ford is readying a ‘compelling EV.’ Will that be enough for the stock?,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Luminar_Technologies_0,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Luminar_Technologies_1,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Luminar_Technologies_2,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Luminar_Technologies_3,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Luminar_Technologies_4,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Luminar_Technologies_5,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Luminar_Technologies_6,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Luminar_Technologies_7,"Luminar Technologies, Inc. 2025 Q2 - Results - Earnings Call Presentation",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Luminar_Technologies_0,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Luminar_Technologies_1,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Luminar_Technologies_2,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Luminar_Technologies_3,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Luminar_Technologies_4,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Luminar_Technologies_5,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Luminar_Technologies_6,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Luminar_Technologies_7,"Luminar Technologies, Inc. (LAZR) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_TriSalus_Life_Scienc_0,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_TriSalus_Life_Scienc_1,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_TriSalus_Life_Scienc_2,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_TriSalus_Life_Scienc_3,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_TriSalus_Life_Scienc_4,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_TriSalus_Life_Scienc_5,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_TriSalus_Life_Scienc_6,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_TriSalus_Life_Scienc_7,"TriSalus Life Sciences, Inc. (TLSI) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_SKYX_Platforms_Corp._0,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_SKYX_Platforms_Corp._1,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_SKYX_Platforms_Corp._2,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_SKYX_Platforms_Corp._3,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_SKYX_Platforms_Corp._4,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_SKYX_Platforms_Corp._5,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_SKYX_Platforms_Corp._6,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_SKYX_Platforms_Corp._7,SKYX Platforms Corp. (SKYX) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Vicarious_Surgical_I_0,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Vicarious_Surgical_I_1,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Vicarious_Surgical_I_2,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Vicarious_Surgical_I_3,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Vicarious_Surgical_I_4,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Vicarious_Surgical_I_5,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Vicarious_Surgical_I_6,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Vicarious_Surgical_I_7,Vicarious Surgical Inc. (RBOT) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__0","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__1","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__2","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__3","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__4","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__5","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__6","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_Rekor_Systems,_Inc.__7","Rekor Systems, Inc. (REKR) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+"20250809_Zevra_Therapeutics,__0","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+"20250809_Zevra_Therapeutics,__1","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+"20250809_Zevra_Therapeutics,__2","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",2,basic_stochastic,1,1.0,20250809,evaluated
+"20250809_Zevra_Therapeutics,__3","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+"20250809_Zevra_Therapeutics,__4","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+"20250809_Zevra_Therapeutics,__5","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+"20250809_Zevra_Therapeutics,__6","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+"20250809_Zevra_Therapeutics,__7","Zevra Therapeutics, Inc. (ZVRA) Q2 2025 Earnings Call Transcript",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_United_States_Antimo_0,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_United_States_Antimo_1,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_United_States_Antimo_2,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_United_States_Antimo_3,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_United_States_Antimo_4,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_United_States_Antimo_5,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_United_States_Antimo_6,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_United_States_Antimo_7,United States Antimony Corporation (UAMY) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_KinderCare_Learning__0,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_KinderCare_Learning__1,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_KinderCare_Learning__2,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_KinderCare_Learning__3,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_KinderCare_Learning__4,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_KinderCare_Learning__5,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_KinderCare_Learning__6,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_KinderCare_Learning__7,"KinderCare Learning Companies, Inc. 2025 Q2 - Results - Earnings Call Presentation",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_0,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_1,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_2,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_3,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_4,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_5,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_6,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_CoreWeave’s_mixed_ea_7,"CoreWeave’s mixed earnings fail to wow AI bulls, and the stock falls",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Cava_trims_sales_out_0,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Cava_trims_sales_out_1,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Cava_trims_sales_out_2,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Cava_trims_sales_out_3,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Cava_trims_sales_out_4,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Cava_trims_sales_out_5,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Cava_trims_sales_out_6,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Cava_trims_sales_out_7,"Cava trims sales outlook, stock tumbles as CEO says consumers are navigating a ‘fog’",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_0,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_1,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_2,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_3,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_4,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_5,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_6,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_ALT5_Sigma_closes_$1_7,ALT5 Sigma closes $1.5 billion offering led by World Liberty Financial,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_These_Eli_Lilly_exec_0,These Eli Lilly executives have been scooping up stock after its big drop,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_These_Eli_Lilly_exec_1,These Eli Lilly executives have been scooping up stock after its big drop,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_These_Eli_Lilly_exec_2,These Eli Lilly executives have been scooping up stock after its big drop,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_These_Eli_Lilly_exec_3,These Eli Lilly executives have been scooping up stock after its big drop,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_These_Eli_Lilly_exec_4,These Eli Lilly executives have been scooping up stock after its big drop,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_These_Eli_Lilly_exec_5,These Eli Lilly executives have been scooping up stock after its big drop,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_These_Eli_Lilly_exec_6,These Eli Lilly executives have been scooping up stock after its big drop,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_These_Eli_Lilly_exec_7,These Eli Lilly executives have been scooping up stock after its big drop,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Stocks_too_expensive_0,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Stocks_too_expensive_1,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Stocks_too_expensive_2,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Stocks_too_expensive_3,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Stocks_too_expensive_4,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Stocks_too_expensive_5,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Stocks_too_expensive_6,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Stocks_too_expensive_7,Stocks too expensive for your taste? This bargain-hunting strategy can yield big returns with less risk.,7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_0,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_1,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_2,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_3,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_4,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_5,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_6,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_‘I_am_a_senior_citiz_7,"‘I am a senior citizen’: My car needs $3,500 for repairs, but only has a trade-in value of $6,000. Do I bother fixing it?",7,basic_stochastic,8,0.0,20250809,evaluated
+20250809_Cosmos_Health_makes__0,Cosmos Health makes $1M ethereum purchase for treasury strategy,0,basic_stochastic,2,0.8571428571428572,20250809,evaluated
+20250809_Cosmos_Health_makes__1,Cosmos Health makes $1M ethereum purchase for treasury strategy,1,basic_stochastic,3,0.7142857142857143,20250809,evaluated
+20250809_Cosmos_Health_makes__2,Cosmos Health makes $1M ethereum purchase for treasury strategy,2,basic_stochastic,1,1.0,20250809,evaluated
+20250809_Cosmos_Health_makes__3,Cosmos Health makes $1M ethereum purchase for treasury strategy,3,basic_stochastic,4,0.5714285714285714,20250809,evaluated
+20250809_Cosmos_Health_makes__4,Cosmos Health makes $1M ethereum purchase for treasury strategy,4,basic_stochastic,5,0.4285714285714286,20250809,evaluated
+20250809_Cosmos_Health_makes__5,Cosmos Health makes $1M ethereum purchase for treasury strategy,5,basic_stochastic,6,0.2857142857142857,20250809,evaluated
+20250809_Cosmos_Health_makes__6,Cosmos Health makes $1M ethereum purchase for treasury strategy,6,basic_stochastic,7,0.1428571428571429,20250809,evaluated
+20250809_Cosmos_Health_makes__7,Cosmos Health makes $1M ethereum purchase for treasury strategy,7,basic_stochastic,8,0.0,20250809,evaluated

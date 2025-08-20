@@ -1,0 +1,249 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250811_C3.ai’s_stock_plunge_0,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",0,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_1,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_2,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",2,basic_stochastic,1,1.0,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_3,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_4,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_5,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_6,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",6,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_C3.ai’s_stock_plunge_7,"C3.ai’s stock plunges, and some analysts worry business trends could get worse",7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Nebius_Delivers_Exce_0,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",0,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Nebius_Delivers_Exce_1,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Nebius_Delivers_Exce_2,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",2,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Nebius_Delivers_Exce_3,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",3,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Nebius_Delivers_Exce_4,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",4,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Nebius_Delivers_Exce_5,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Nebius_Delivers_Exce_6,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",6,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Nebius_Delivers_Exce_7,"Nebius Delivers Excellent Revenue Growth, But Can It Sustain The Momentum? (Rating Upgrade)",7,basic_stochastic,8,0.0,20250811,evaluated
+"20250811_WW_International,_In_0","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+"20250811_WW_International,_In_1","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",1,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+"20250811_WW_International,_In_2","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+"20250811_WW_International,_In_3","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",3,basic_stochastic,1,1.0,20250811,evaluated
+"20250811_WW_International,_In_4","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",4,basic_stochastic,8,0.0,20250811,evaluated
+"20250811_WW_International,_In_5","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",5,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+"20250811_WW_International,_In_6","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",6,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+"20250811_WW_International,_In_7","WW International, Inc. (WW) Q2 2025 Earnings Call Transcript",7,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Customers_have_been__0,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Customers_have_been__1,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",1,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Customers_have_been__2,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",2,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Customers_have_been__3,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",3,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Customers_have_been__4,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",4,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Customers_have_been__5,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",5,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Customers_have_been__6,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Customers_have_been__7,"Customers have been spared most of the tariff costs so far, Goldman Sachs finds",7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_0,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,0,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_1,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,1,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_2,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_3,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,3,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_4,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,4,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_5,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,5,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_6,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,6,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Morgan_Stanley’s_bol_7,Morgan Stanley’s bold bet: Lower-quality stocks are about to take over,7,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_0,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,0,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_1,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,1,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_2,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_3,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_4,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,4,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_5,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,5,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_6,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Why_The_Impact_Of_Ta_7,Why The Impact Of Tariffs Is Not Yet Reflected In The CPI,7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_L.B._Foster_Company__0,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,8,0.0,20250811,evaluated
+20250811_L.B._Foster_Company__1,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_L.B._Foster_Company__2,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_L.B._Foster_Company__3,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_L.B._Foster_Company__4,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_L.B._Foster_Company__5,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_L.B._Foster_Company__6,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_L.B._Foster_Company__7,L.B. Foster Company 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_L.B._Foster_Company__0,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_L.B._Foster_Company__1,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_L.B._Foster_Company__2,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250811,evaluated
+20250811_L.B._Foster_Company__3,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_L.B._Foster_Company__4,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,4,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_L.B._Foster_Company__5,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_L.B._Foster_Company__6,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_L.B._Foster_Company__7,L.B. Foster Company (FSTR) Q2 2025 Earnings Call Transcript,7,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Lument_Finance_Trust_0,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",0,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Lument_Finance_Trust_1,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Lument_Finance_Trust_2,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",2,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Lument_Finance_Trust_3,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Lument_Finance_Trust_4,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Lument_Finance_Trust_5,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Lument_Finance_Trust_6,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Lument_Finance_Trust_7,"Lument Finance Trust, Inc. 2025 Q2 - Results - Earnings Call Presentation",7,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Lument_Finance_Trust_0,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",0,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Lument_Finance_Trust_1,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",1,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Lument_Finance_Trust_2,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",2,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Lument_Finance_Trust_3,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",3,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Lument_Finance_Trust_4,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",4,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Lument_Finance_Trust_5,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",5,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Lument_Finance_Trust_6,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",6,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Lument_Finance_Trust_7,"Lument Finance Trust, Inc. (LFT) Q2 2025 Earnings Call Transcript",7,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Volkswagen:_Financia_0,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,0,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Volkswagen:_Financia_1,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,1,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Volkswagen:_Financia_2,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Volkswagen:_Financia_3,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,3,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Volkswagen:_Financia_4,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Volkswagen:_Financia_5,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Volkswagen:_Financia_6,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,6,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Volkswagen:_Financia_7,Volkswagen: Financial Prospects Improving As CEO Fights To Minimize Tariff Impact,7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_What_is_the_worst_fi_0,What is the worst financial decision you’ve ever made?,0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_What_is_the_worst_fi_1,What is the worst financial decision you’ve ever made?,1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_What_is_the_worst_fi_2,What is the worst financial decision you’ve ever made?,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_What_is_the_worst_fi_3,What is the worst financial decision you’ve ever made?,3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_What_is_the_worst_fi_4,What is the worst financial decision you’ve ever made?,4,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_What_is_the_worst_fi_5,What is the worst financial decision you’ve ever made?,5,basic_stochastic,1,1.0,20250811,evaluated
+20250811_What_is_the_worst_fi_6,What is the worst financial decision you’ve ever made?,6,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_What_is_the_worst_fi_7,What is the worst financial decision you’ve ever made?,7,basic_stochastic,8,0.0,20250811,evaluated
+20250811_August_2025_Macro_Ou_0,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",0,basic_stochastic,1,1.0,20250811,evaluated
+20250811_August_2025_Macro_Ou_1,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",1,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_August_2025_Macro_Ou_2,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_August_2025_Macro_Ou_3,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_August_2025_Macro_Ou_4,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",4,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_August_2025_Macro_Ou_5,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",5,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_August_2025_Macro_Ou_6,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_August_2025_Macro_Ou_7,"August 2025 Macro Outlook: Fiscal Flows, Bank Credit, And Fed Policy Implications",7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Tariff_Confusion_Sen_0,Tariff Confusion Sends Gold On Round Trip,0,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Tariff_Confusion_Sen_1,Tariff Confusion Sends Gold On Round Trip,1,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Tariff_Confusion_Sen_2,Tariff Confusion Sends Gold On Round Trip,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Tariff_Confusion_Sen_3,Tariff Confusion Sends Gold On Round Trip,3,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Tariff_Confusion_Sen_4,Tariff Confusion Sends Gold On Round Trip,4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Tariff_Confusion_Sen_5,Tariff Confusion Sends Gold On Round Trip,5,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Tariff_Confusion_Sen_6,Tariff Confusion Sends Gold On Round Trip,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Tariff_Confusion_Sen_7,Tariff Confusion Sends Gold On Round Trip,7,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_0,Dole plc 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_1,Dole plc 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_2,Dole plc 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_3,Dole plc 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_4,Dole plc 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_5,Dole plc 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_6,Dole plc 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Dole_plc_2025_Q2_-_R_7,Dole plc 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_0,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,0,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_1,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_2,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,2,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_3,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,3,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_4,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,4,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_5,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,5,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_6,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Dole_plc_(DOLE)_Q2_2_7,Dole plc (DOLE) Q2 2025 Earnings Call Transcript,7,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_0,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_1,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_2,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,2,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_3,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_4,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_5,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,5,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_6,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_ICICI_Bank:_Buy_Amid_7,ICICI Bank: Buy Amidst India's Economic Expansion And Privatization Efforts,7,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__0,e.l.f. Beauty: Take The Market Gift On This Successful Company,0,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__1,e.l.f. Beauty: Take The Market Gift On This Successful Company,1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__2,e.l.f. Beauty: Take The Market Gift On This Successful Company,2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__3,e.l.f. Beauty: Take The Market Gift On This Successful Company,3,basic_stochastic,8,0.0,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__4,e.l.f. Beauty: Take The Market Gift On This Successful Company,4,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__5,e.l.f. Beauty: Take The Market Gift On This Successful Company,5,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__6,e.l.f. Beauty: Take The Market Gift On This Successful Company,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_e.l.f._Beauty:_Take__7,e.l.f. Beauty: Take The Market Gift On This Successful Company,7,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_0,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_1,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,1,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_2,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_3,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,3,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_4,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_5,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_6,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,6,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_TBIL:_It_May_Be_Time_7,TBIL: It May Be Time To Rotate Into Longer Dated Bonds,7,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Petrobras:_Financial_0,Petrobras: Financial Strength Intact Despite No Extra Dividends,0,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Petrobras:_Financial_1,Petrobras: Financial Strength Intact Despite No Extra Dividends,1,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Petrobras:_Financial_2,Petrobras: Financial Strength Intact Despite No Extra Dividends,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Petrobras:_Financial_3,Petrobras: Financial Strength Intact Despite No Extra Dividends,3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Petrobras:_Financial_4,Petrobras: Financial Strength Intact Despite No Extra Dividends,4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Petrobras:_Financial_5,Petrobras: Financial Strength Intact Despite No Extra Dividends,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Petrobras:_Financial_6,Petrobras: Financial Strength Intact Despite No Extra Dividends,6,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Petrobras:_Financial_7,Petrobras: Financial Strength Intact Despite No Extra Dividends,7,basic_stochastic,1,1.0,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_0,EOS: Reasonable Monthly Income Plus Price Growth,0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_1,EOS: Reasonable Monthly Income Plus Price Growth,1,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_2,EOS: Reasonable Monthly Income Plus Price Growth,2,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_3,EOS: Reasonable Monthly Income Plus Price Growth,3,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_4,EOS: Reasonable Monthly Income Plus Price Growth,4,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_5,EOS: Reasonable Monthly Income Plus Price Growth,5,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_6,EOS: Reasonable Monthly Income Plus Price Growth,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_EOS:_Reasonable_Mont_7,EOS: Reasonable Monthly Income Plus Price Growth,7,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Micron’s_stock_climb_0,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Micron’s_stock_climb_1,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,1,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Micron’s_stock_climb_2,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Micron’s_stock_climb_3,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,3,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Micron’s_stock_climb_4,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,4,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Micron’s_stock_climb_5,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,5,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Micron’s_stock_climb_6,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Micron’s_stock_climb_7,Micron’s stock climbs after upbeat guidance. Here’s what’s driving the momentum.,7,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Dot-com_parallel_lea_0,Dot-com parallel leads to fear of what’s next for this record-busting stock market,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Dot-com_parallel_lea_1,Dot-com parallel leads to fear of what’s next for this record-busting stock market,1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Dot-com_parallel_lea_2,Dot-com parallel leads to fear of what’s next for this record-busting stock market,2,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Dot-com_parallel_lea_3,Dot-com parallel leads to fear of what’s next for this record-busting stock market,3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Dot-com_parallel_lea_4,Dot-com parallel leads to fear of what’s next for this record-busting stock market,4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Dot-com_parallel_lea_5,Dot-com parallel leads to fear of what’s next for this record-busting stock market,5,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Dot-com_parallel_lea_6,Dot-com parallel leads to fear of what’s next for this record-busting stock market,6,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Dot-com_parallel_lea_7,Dot-com parallel leads to fear of what’s next for this record-busting stock market,7,basic_stochastic,1,1.0,20250811,evaluated
+20250811_WeightWatchers’_stoc_0,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_WeightWatchers’_stoc_1,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,1,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_WeightWatchers’_stoc_2,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,2,basic_stochastic,1,1.0,20250811,evaluated
+20250811_WeightWatchers’_stoc_3,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,3,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_WeightWatchers’_stoc_4,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,4,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_WeightWatchers’_stoc_5,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_WeightWatchers’_stoc_6,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_WeightWatchers’_stoc_7,WeightWatchers’ stock leaps as weight-loss-drug subscriptions boost revenue,7,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_BNC_purchases_$160M__0,BNC purchases $160M worth of BNB tokens for corporate treasury,0,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_BNC_purchases_$160M__1,BNC purchases $160M worth of BNB tokens for corporate treasury,1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_BNC_purchases_$160M__2,BNC purchases $160M worth of BNB tokens for corporate treasury,2,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_BNC_purchases_$160M__3,BNC purchases $160M worth of BNB tokens for corporate treasury,3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_BNC_purchases_$160M__4,BNC purchases $160M worth of BNB tokens for corporate treasury,4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_BNC_purchases_$160M__5,BNC purchases $160M worth of BNB tokens for corporate treasury,5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_BNC_purchases_$160M__6,BNC purchases $160M worth of BNB tokens for corporate treasury,6,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_BNC_purchases_$160M__7,BNC purchases $160M worth of BNB tokens for corporate treasury,7,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Heritage_Distilling__0,Heritage Distilling raises $220M to build $IP token treasury strategy,0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Heritage_Distilling__1,Heritage Distilling raises $220M to build $IP token treasury strategy,1,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Heritage_Distilling__2,Heritage Distilling raises $220M to build $IP token treasury strategy,2,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Heritage_Distilling__3,Heritage Distilling raises $220M to build $IP token treasury strategy,3,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Heritage_Distilling__4,Heritage Distilling raises $220M to build $IP token treasury strategy,4,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Heritage_Distilling__5,Heritage Distilling raises $220M to build $IP token treasury strategy,5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Heritage_Distilling__6,Heritage Distilling raises $220M to build $IP token treasury strategy,6,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Heritage_Distilling__7,Heritage Distilling raises $220M to build $IP token treasury strategy,7,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Aditxt_signs_custody_0,Aditxt signs custody agreement with Crypto.com for digital asset treasury,0,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Aditxt_signs_custody_1,Aditxt signs custody agreement with Crypto.com for digital asset treasury,1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Aditxt_signs_custody_2,Aditxt signs custody agreement with Crypto.com for digital asset treasury,2,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Aditxt_signs_custody_3,Aditxt signs custody agreement with Crypto.com for digital asset treasury,3,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Aditxt_signs_custody_4,Aditxt signs custody agreement with Crypto.com for digital asset treasury,4,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Aditxt_signs_custody_5,Aditxt signs custody agreement with Crypto.com for digital asset treasury,5,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Aditxt_signs_custody_6,Aditxt signs custody agreement with Crypto.com for digital asset treasury,6,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Aditxt_signs_custody_7,Aditxt signs custody agreement with Crypto.com for digital asset treasury,7,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_0,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",0,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_1,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",1,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_2,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",2,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_3,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",3,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_4,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",4,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_5,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",5,basic_stochastic,8,0.0,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_6,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",6,basic_stochastic,1,1.0,20250811,evaluated
+20250811_ALT5_Sigma_raises_$1_7,"ALT5 Sigma raises $1.5 billion through stock offerings, adds Trump associates",7,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_0,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,0,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_1,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,1,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_2,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,2,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_3,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_4,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,4,basic_stochastic,1,1.0,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_5,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,5,basic_stochastic,8,0.0,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_6,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,6,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_FA_Cup_winners_Cryst_7,FA Cup winners Crystal Palace lose appeal against demotion from Europa League,7,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Palace_lose_appeal_a_0,Palace lose appeal against demotion from Europa League,0,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Palace_lose_appeal_a_1,Palace lose appeal against demotion from Europa League,1,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Palace_lose_appeal_a_2,Palace lose appeal against demotion from Europa League,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Palace_lose_appeal_a_3,Palace lose appeal against demotion from Europa League,3,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Palace_lose_appeal_a_4,Palace lose appeal against demotion from Europa League,4,basic_stochastic,7,0.1428571428571429,20250811,evaluated
+20250811_Palace_lose_appeal_a_5,Palace lose appeal against demotion from Europa League,5,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Palace_lose_appeal_a_6,Palace lose appeal against demotion from Europa League,6,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Palace_lose_appeal_a_7,Palace lose appeal against demotion from Europa League,7,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Bowen:_Israeli_settl_0,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,0,basic_stochastic,1,1.0,20250811,evaluated
+20250811_Bowen:_Israeli_settl_1,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,1,basic_stochastic,2,0.8571428571428572,20250811,evaluated
+20250811_Bowen:_Israeli_settl_2,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,2,basic_stochastic,5,0.4285714285714286,20250811,evaluated
+20250811_Bowen:_Israeli_settl_3,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,3,basic_stochastic,4,0.5714285714285714,20250811,evaluated
+20250811_Bowen:_Israeli_settl_4,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,4,basic_stochastic,8,0.0,20250811,evaluated
+20250811_Bowen:_Israeli_settl_5,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,5,basic_stochastic,6,0.2857142857142857,20250811,evaluated
+20250811_Bowen:_Israeli_settl_6,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,6,basic_stochastic,3,0.7142857142857143,20250811,evaluated
+20250811_Bowen:_Israeli_settl_7,Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians,7,basic_stochastic,7,0.1428571428571429,20250811,evaluated

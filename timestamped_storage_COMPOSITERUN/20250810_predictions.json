@@ -1,0 +1,1535 @@
+{
+  "date": "20250810",
+  "data_type": "predictions",
+  "saved_at": "2025-08-17T04:52:44.222648",
+  "total_headlines": 18,
+  "predictions": [
+    {
+      "headline": "CEF For Both Gold And Silver",
+      "headline_data": {
+        "text": "CEF For Both Gold And Silver",
+        "link": "https://seekingalpha.com/article/4812010-cef-fund-both-gold-silver?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T06:44:07+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "First, I need to make sure the line starts with the headline. Then, the domain is \"Domain\", proxy is \"instrument\", horizon is \"1w\", probability is \"0\u2013100%\", claim is \"falsifiable statement\", rationale is \"\u226418 words\", risk is \"\u22646 words\", and confidence is \"0\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:32:53.966838"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<instrument>; Proxy=<metric",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:33:02.521370"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:33:11.332768"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:33:19.894710"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<instrument|metric|event>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:33:28.231929"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Gold; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:33:36.611301"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Here is the data:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:33:44.937793"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break between the headline and the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:33:53.443963"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:33:53.444029"
+    },
+    {
+      "headline": "Singapore Exchange Ltd. (SPXCF) Q4 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "Singapore Exchange Ltd. (SPXCF) Q4 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4811271-singapore-exchange-ltd-spxcf-q4-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T06:43:21+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "for the headline.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:34:01.781967"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<instrument>; Proxy=<instrument>; Horizon=<1w>; Prob=0\u2013100%; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:34:10.109667"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": ".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:34:18.450891"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with a line break, then the transcript, then a line break, then the headline again. The transcript is as follows:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:34:26.780337"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:34:35.094232"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:34:43.411850"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<Singapore Exchange Ltd. (SPXCF)>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<Singapore Exchange Ltd. (SPXCF) Q4 2025 Earnings Call Transcript>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T04:34:51.726725"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:35:00.037395"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:35:00.037464"
+    },
+    {
+      "headline": "MultiBank Group Delivers Record H1 Results with $209M Revenue and MBG Token Driving 7X Returns Since Launch.",
+      "headline_data": {
+        "text": "MultiBank Group Delivers Record H1 Results with $209M Revenue and MBG Token Driving 7X Returns Since Launch.",
+        "link": "https://www.investing.com/news/cryptocurrency-news/multibank-group-delivers-record-h1-results-with-209m-revenue-and-mbg-token-driving-7x-returns-since-launch-4181832",
+        "source": "Investing.com",
+        "category": "market_specific",
+        "timestamp": "2025-08-11T06:30:31+00:00",
+        "url": "https://www.investing.com/rss/news_301.rss"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain: MultiBank Group; Proxy: instrument; Horizon: 1w; Prob: 0\u2013100%; Claim: \"MultiBank Group Delivers Record H1 Results with $209M Revenue and MBG Token Driving 7X Returns Since Launch.\"; Rationale: \"MultiBank Group delivers record H1 results with $209M revenue and MBG token driving 7x returns since its launch.\" Risk: \"The MBG token has a low probability of being a fake.\" Confidence: 0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:35:08.362175"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:35:16.685212"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Let me know if I can help further with this query.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:35:25.016004"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=MultiBank Group; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:35:33.349707"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<Instrument|Metric|Event>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:35:41.673183"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=MultiBank; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:35:49.996005"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Here is the input: Domain=<MultiBank Group>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<this is a falsifiable statement>; Risk=<\u22646>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:35:58.326091"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<MultiBank Group>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<MultiBank Group Delivers Record H1 Results with $209M Revenue and MBG Token Driving 7X Returns Since Launch.>; Rationale=<MultiBank Group delivered a record H1 performance with $209 million in revenue and the MBG token driving 7x returns since its launch>; Risk=<\u22646>; Confidence=<0>. Headline: \"MultiBank Group Delivers Record H1 Results with $209M Revenue and MBG Token Driving 7X Returns Since Launch.\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T04:36:06.757808"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:36:06.757875"
+    },
+    {
+      "headline": "Fortinet Shot Its Cyber Growth Story In The Foot",
+      "headline_data": {
+        "text": "Fortinet Shot Its Cyber Growth Story In The Foot",
+        "link": "https://seekingalpha.com/article/4812005-fortinet-shot-its-cyber-growth-story-in-the-foot?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T06:19:31+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "(with a line break)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:36:15.069296"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<instrument|metric|event>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:36:23.373988"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": ".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:36:31.679672"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:36:39.988983"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "(1 line)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:36:48.292789"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<domain>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:36:56.608405"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<domain>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"Fortinet Shot Its Cyber Growth Story In The Foot\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:37:04.914280"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break. Then, the line with the statement. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again. Then, the line with the statement again. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again. Then, the line with the statement again. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again. Then, the line with the statement again. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again. Then, the line with the statement again. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again. Then, the line with the statement again. Then, the line with the rationale. Then, the line with the risk. Then, the line with the confidence. Then, the line with the headline again.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:37:13.220310"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:37:13.220383"
+    },
+    {
+      "headline": "Bank of America: A Mispriced Capital Return Engine",
+      "headline_data": {
+        "text": "Bank of America: A Mispriced Capital Return Engine",
+        "link": "https://seekingalpha.com/article/4812003-bank-of-america-mispriced-capital-return-engine?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T06:08:41+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "First, I need to make sure each part is correctly placed. The domain is \"Bank of America\", then the proxy is \"instrument\", horizon is \"1w\", probability is \"0\u2013100%\", claim is \"falsifiable statement\", rationale is up to 18 words, risk up to 6 words, and confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:37:21.527721"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with 3 lines.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:37:29.836069"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "and then add the following lines with exactly one line each:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:37:38.217771"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:37:46.523603"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "(headline)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:37:54.894696"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Wait, the user's example output is just the headline line. The instruction says to output exactly one line using that template and nothing else. So the line should be the headline followed by the fields separated by semicolons. But the user's example output shows only the headline. Maybe there's confusion here. Let me check again. The user wrote: \"Output exactly ONE line using this template and nothing else: Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u201310",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.4,
+          "timestamp": "2025-08-17T04:38:03.196102"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "with the following line:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:38:11.500154"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<Bank of America>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<The Bank of America has a mispriced capital return engine that results in higher returns for investors who invest in the bank's instruments.>; Rationale=<The Bank of America's capital return engine is designed to generate returns based on the performance of its instruments, which may not reflect the actual market performance.>; Risk=<The risk associated with the capital return engine is high, as it can lead to higher returns without considering other factors.>; Confidence=<3>; Headline: \"Bank of America: A Mispriced Capital Return Engine\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:38:19.805993"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:38:19.806062"
+    },
+    {
+      "headline": "Ameren's Power Play: Solid Growth, But Valuation Caps Upside",
+      "headline_data": {
+        "text": "Ameren's Power Play: Solid Growth, But Valuation Caps Upside",
+        "link": "https://seekingalpha.com/article/4811999-ameren-stock-power-play-solid-growth-but-valuation-caps-upside?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T05:50:07+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:38:28.144967"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Here is the example output:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:38:36.459585"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:38:44.770991"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:38:53.087857"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=Power Play; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:39:01.398210"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:39:09.710238"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "(The headline is required)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:39:18.020966"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:39:26.327415"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:39:26.327490"
+    },
+    {
+      "headline": "StoneCo: Focused And Disciplined, Trading At A Discount, With EPS Growing Fast",
+      "headline_data": {
+        "text": "StoneCo: Focused And Disciplined, Trading At A Discount, With EPS Growing Fast",
+        "link": "https://seekingalpha.com/article/4811998-stoneco-focused-disciplined-trading-at-discount-eps-growing-fast?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T05:44:53+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "and then the rest of the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:39:34.642242"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:39:42.953980"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "1. StoneCo: Focused And Disciplined, Trading At A Discount, With EPS Growing Fast",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:39:51.267050"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:39:59.601062"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=StoneCo; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0. Headline: \"StoneCo",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:40:08.018477"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=StoneCo; Proxy=instrument; Horizon=1w; Prob=",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:40:16.330798"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "(10 words)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:40:24.644200"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain: StoneCo; Proxy: instrument; Horizon: 1w; Prob: 0\u2013100%; Claim: \"StoneCo is a company that is focused and disciplined, trading at a discount, with EPS growing fast\"; Rationale: \"StoneCo is a company that is focused and disciplined, trading at a discount, with EPS growing fast\"; Risk: \"StoneCo is a company that is focused and disciplined, trading at a discount, with EPS growing fast\"; Confidence: 0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:40:32.960497"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:40:32.960575"
+    },
+    {
+      "headline": "Health In Tech: Validating Its Growth With Solid Results",
+      "headline_data": {
+        "text": "Health In Tech: Validating Its Growth With Solid Results",
+        "link": "https://seekingalpha.com/article/4811996-health-in-tech-inc-validating-its-growth-with-solid-results?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T05:39:33+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:40:41.264969"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<instrument|metric|event>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:40:49.573160"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "and then the rest of the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:40:57.877836"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with the following line: \"The domain of health technology is defined by the field of health, and the focus is on the development, application, and dissemination of health technologies that improve the quality of life for patients.\" The domain is Health Technology, and the proxy is metric. The horizon is 1 week. The probability is 0\u2013100%. The claim is that the growth of health technology is increasing. The rationale is that the metric data supports this claim. The risk is that the data may not be reliable. The confidence is 0. The domain is Health Technology, the proxy is metric, the horizon is 1 week, the probability is 0\u2013100%, the claim is that the growth of health technology is increasing. The rationale is that the metric data supports this claim. The risk is that the data may not be reliable. The confidence is 0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:41:06.183850"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "The template is Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. Each of these fields is a separate value. The headline is \"Health In Tech: Validating Its Growth With Solid Results\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:41:14.494810"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<health>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<The growth of health tech is supported by solid results>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:41:22.797919"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "I need to replace the domain, proxy, horizon, prob, claim, rationale, risk, and confidence with appropriate values. Let me know if you need help with that.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:41:31.100991"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<Instrument>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:41:39.449552"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:41:39.449631"
+    },
+    {
+      "headline": "Lithia Motors: Now A Growth Stock And A Value Stock",
+      "headline_data": {
+        "text": "Lithia Motors: Now A Growth Stock And A Value Stock",
+        "link": "https://seekingalpha.com/article/4811994-lithia-motors-now-a-growth-stock-and-a-value-stock?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T04:58:45+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain: Lithia Motors; Proxy: instrument; Horizon: 1w; Prob: 0\u2013100%; Claim: \"Lithia Motors is a growth stock and a value stock\". Rationale: \"Lithia Motors is a growth stock and a value stock. It has a high growth rate of 12% annually, which indicates a strong potential for future growth. The company's revenue is growing at a rate of 15% per year, which also supports its value proposition. Lithia Motors is a publicly traded company with a market capitalization of $2.5 billion, making it a strong value stock.\" Risk: \"Lithia Motors is a growth stock and a value stock. It has a high growth rate of 12% annually, which indicates a strong potential for future growth. The company's revenue is growing at a rate of 15% per year, which also supports its value proposition. Lithia Motors is a publicly traded company with a market capitalization of $2.5 billion, making it a strong value stock.\" Confidence: 0",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:41:47.749199"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain: Lithia Motors",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:41:56.070951"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=Lithia Motors; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Headline: \"Lithia Motors: Now A Growth Stock And A Value Stock\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:42:04.537791"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with 100% accuracy.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:42:12.976089"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "and then the rest of the text.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:42:21.280851"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Okay, let's see. The user wants exactly one line, following a specific template. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. They need to be in that order, separated by commas, and no other text. The headline is \"Lithia Motors: Now A Growth Stock And A Value Stock\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:42:29.587758"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:42:37.896921"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<instrument>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:42:46.205695"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:42:46.205764"
+    },
+    {
+      "headline": "B2Gold Beating On Production, Adding Tier-One Assets, And Trading At Steep Discount",
+      "headline_data": {
+        "text": "B2Gold Beating On Production, Adding Tier-One Assets, And Trading At Steep Discount",
+        "link": "https://seekingalpha.com/article/4811992-b2gold-beating-production-adding-tier-one-assets-trading-steep-discount?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T04:55:44+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:42:54.517572"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:02.832665"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:11.144658"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "with 100% accuracy.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:19.465644"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "with a line break. Then, the content as described.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:27.780641"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Here's my first attempt:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:36.089953"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:43:44.386711"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:43:52.687534"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:43:52.687600"
+    },
+    {
+      "headline": "Politics And The Markets 08/11/25",
+      "headline_data": {
+        "text": "Politics And The Markets 08/11/25",
+        "link": "https://seekingalpha.com/article/4802949-politics-and-the-markets-081125?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T04:00:00+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:44:01.087606"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with a line break. Then, the next line is your response. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then, a line break. Then,",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:44:09.380921"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:44:17.669081"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:44:25.957813"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "with a line break between the headline and the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:44:34.245413"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<politics>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:44:42.536071"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "The headline is \"Politics And The Markets 08/11/25\" and the following content is the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:44:50.823340"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break, then the next line with the headline.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:44:59.113595"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:44:59.113661"
+    },
+    {
+      "headline": "BrasilAgro: Tariffs Winner With Market-Leading Margins And Dividend Yields",
+      "headline_data": {
+        "text": "BrasilAgro: Tariffs Winner With Market-Leading Margins And Dividend Yields",
+        "link": "https://seekingalpha.com/article/4811982-brasilagro-tariffs-winner-with-market-leading-margins-and-dividend-yields?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T03:53:39+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"BrasilAgro: Tariffs Winner With Market-Leading Margins And Dividend Yields\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:45:07.409276"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<country>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:45:15.703524"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "with a line break and a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:45:23.995381"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=BrasilAgro; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:45:32.287092"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"BrasilAgro: Tariffs Winner With Market-Leading Margins And Dividend Yields\"Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"BrasilAgro: Tariffs Winner With Market-Leading Margins And Dividend Yields\"Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"BrasilAgro: Tariffs Winner With Market-Leading Margins And",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:45:40.578500"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:45:48.869138"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Wait, the user says \"the new item should",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:45:57.305842"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Let me know if I need to change anything. I'll do my best to understand what you're asking for.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:46:05.597649"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:46:05.597718"
+    },
+    {
+      "headline": "Choice Hotels: Staying Awhile Longer With This Stock, As Global Travel Growth Sizzles",
+      "headline_data": {
+        "text": "Choice Hotels: Staying Awhile Longer With This Stock, As Global Travel Growth Sizzles",
+        "link": "https://seekingalpha.com/article/4811978-choice-hotels-staying-awhile-longer-with-this-stock-as-global-travel-growth-sizzles?source=feed_all_articles",
+        "source": "Seeking Alpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T03:33:19+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template with certain fields. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. The headline is \"Choice Hotels: Staying Awhile Longer With This Stock, As Global Travel Growth Sizzles\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:46:13.890663"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "(This is the headline)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:46:22.189816"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "I need to make sure that the output is exactly one line. The output must not contain any extra text, just the specified line. The output must be exactly one line, using the specified template. The output must not contain any extra text, just the specified line.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:46:30.483563"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:46:38.778341"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "I need to make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the output. Please make sure that the text is included in the",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:46:47.109764"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "This is a sample text. Please help me to replace the text in the sample text with the correct text. Please make sure the output is exactly one line with the template, and nothing else.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:46:55.481908"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Okay, the user wants exactly one line, using the specified template. The line must have the headline, and the elements: Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. Each of these fields is filled in with the correct values. The headline is \"Choice Hotels: Staying Awhile Longer With This Stock, As Global Travel Growth Sizzles\". The line should not have any other text besides the elements. Let me make sure I",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:47:03.772361"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:47:12.066079"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:47:12.066150"
+    },
+    {
+      "headline": "U.S. stock futures inch higher ahead of inflation reports this week",
+      "headline_data": {
+        "text": "U.S. stock futures inch higher ahead of inflation reports this week",
+        "link": "https://www.marketwatch.com/story/u-s-stock-futures-inch-higher-ahead-of-inflation-reports-this-week-6b24ec5d?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-11T03:00:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "and then add the following text:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:47:20.354302"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:47:28.644425"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:47:36.930255"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=U.S. stock futures; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=futures prices are expected to rise due to inflation; Rationale\u226418 words; Risk\u22646 words; Confidence=0. The headline is \"U.S. stock futures inch higher ahead of inflation reports this week\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:47:45.220028"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:47:53.524421"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:48:01.938817"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<U.S. stock futures>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<U.S. stock futures inch higher ahead of inflation reports this week>; Rationale=<U.S. stock futures have shown a positive trend in recent weeks, with the market showing increased demand and investor confidence, which is expected to continue to drive higher prices>; Risk=<U.S. stock futures are expected to remain at a higher level>; Confidence=<0",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:48:10.238365"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with the heading and the rest of the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:48:18.527872"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:48:18.527939"
+    },
+    {
+      "headline": "More jobs for newly-qualified nurses and midwives, under NHS plans",
+      "headline_data": {
+        "text": "More jobs for newly-qualified nurses and midwives, under NHS plans",
+        "link": "https://www.bbc.com/news/articles/c39ddjv09vvo?at_medium=RSS&at_campaign=rss",
+        "source": "feeds.bbci",
+        "category": "general_news",
+        "timestamp": "2025-08-10T23:42:02+00:00",
+        "url": "https://feeds.bbci.co.uk/news/rss.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<instrument>; Proxy=<metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:48:26.818265"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:48:35.105533"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:48:43.393948"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<NHS>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<The NHS aims to provide better healthcare services and support newly-qualified nurses and midwives to meet the needs of the population.>; Risk=<The NHS is not able to provide the required support for newly-qualified nurses and midwives.>; Confidence=<0|1|2|3>.Headline: \"More jobs for newly-qualified nurses and midwives, under NHS plans\" and then the rest of the content",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T04:48:51.684345"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "I need to make sure that the text is in line with the example. The example output is: Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:48:59.970345"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "and then add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of text you provided. Then, add a line with the line of",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:49:08.258752"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<nursing>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:49:16.545012"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "and then the next line is the output.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:49:24.831571"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:49:24.831645"
+    },
+    {
+      "headline": "Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians",
+      "headline_data": {
+        "text": "Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians",
+        "link": "https://www.bbc.com/news/articles/cj4wwxz12jko?at_medium=RSS&at_campaign=rss",
+        "source": "feeds.bbci",
+        "category": "general_news",
+        "timestamp": "2025-08-10T21:03:27+00:00",
+        "url": "https://feeds.bbci.co.uk/news/rss.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:49:33.120499"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "and the following line: \"The claim is based on [insert a sentence here].\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:49:41.411110"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=Israeli settlers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:49:49.703709"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=Israel; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:49:58.101836"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=West Bank; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:50:06.387526"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians\". The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians\". The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians\". The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians\". The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:50:14.677021"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "First, I need to make sure the line starts with the headline. Then, each of the other fields should be filled in in order. Let me check the order again: Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. Each field is separated by a space. The headline is \"Bowen: Israeli settlers intensify campaign to drive out West Bank Palestinians.\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:50:22.960795"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:50:31.246339"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:50:31.246409"
+    },
+    {
+      "headline": "Everyone\u2019s worried about the economy, but executives have been talking less about a recession",
+      "headline_data": {
+        "text": "Everyone\u2019s worried about the economy, but executives have been talking less about a recession",
+        "link": "https://www.marketwatch.com/story/everyones-worried-about-the-economy-but-executives-have-been-talking-less-about-a-recession-70cfae57?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-10T19:33:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>. Headline: \"Everyone\u2019s worried about the economy, but executives have been talking less about a recession\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:50:39.537430"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Okay, let's see. The user wants exactly one line following a specific template. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence, each in order. The headline is \"Everyone\u2019s worried about the economy, but executives have been talking less about a recession.\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:50:47.821623"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:50:56.113066"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template with some variables filled in. The headline is \"Everyone\u2019s worried about the economy, but executives have been talking less about a recession.\" The variables are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The output needs to be exactly one line, with each field in order, and the fields have specific values.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:51:04.407186"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<instrument>; Proxy",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:51:12.708653"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<economy>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:51:20.997762"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "(2024-03-10)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:51:29.440253"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Finance; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Everyone\u2019s worried about the economy, but executives have been talking less about a recession\"; Rationale=\"The statement is not falsifiable; it is a generalization about a population that may not be representative of the entire economy\"; Risk=\"Lower; moderate\"; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:51:37.736614"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:51:37.736681"
+    },
+    {
+      "headline": "Stock-market rebound to be tested by inflation reports as stagflation threat emerges",
+      "headline_data": {
+        "text": "Stock-market rebound to be tested by inflation reports as stagflation threat emerges",
+        "link": "https://www.marketwatch.com/story/stock-market-rebound-to-be-tested-by-inflation-reports-as-stagflation-threat-emerges-8309ee55?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-10T19:28:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<instrument>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T04:51:46.032170"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with 80 characters or less.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:51:54.455766"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "with a line break between the headline and the main content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:52:02.752605"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "\u2013 this is the headline of the article.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:52:11.050341"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T04:52:19.353708"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Stock-market; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0. The headline is \"Stock-market rebound to be tested by inflation reports as stagflation threat emerges\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:52:27.645190"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=Stock-market; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Domain=Stock-market; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Headline: \"Stock-market rebound to be tested by inflation reports as stagflation threat emerges\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T04:52:35.932936"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with the following elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. Please make sure that the headline is exactly as specified and that the elements are included in the headline. The headline must have the elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. The headline must have the elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. Please make sure that the headline is exactly as specified and that the elements are included in the headline. The headline must have the elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. Please make sure that the headline is exactly as specified and that the elements are included in the headline. The headline must have the elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. Please make sure that the headline is exactly as specified and that the elements are included in the headline. The headline must have the elements: [inflation data, stagflation, inflation rate, stock market rebound, economic data, and market data]. Please make sure that",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T04:52:44.222516"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T04:52:44.222589"
+    }
+  ],
+  "summary": {
+    "total_headlines": 18,
+    "total_rollouts": 144,
+    "methods_used": {
+      "basic_stochastic": 144
+    },
+    "sampler_profiles": {
+      "tight": 18
+    },
+    "avg_immediate_reward": 0.0,
+    "reward_range": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  }
+}

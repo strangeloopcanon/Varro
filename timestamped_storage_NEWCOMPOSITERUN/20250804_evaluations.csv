@@ -1,0 +1,257 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250804_next_day_Six_Flags_Entertainm_0,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,0,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_1,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,1,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_2,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_3,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_4,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_5,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,5,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_6,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,6,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Six_Flags_Entertainm_7,Six Flags Entertainment Corporation (FUN) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__0,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__1,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__2,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,2,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__3,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__4,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__5,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__6,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Unity_Software_Inc.__7,Unity Software Inc. (U) Q2 2025 Earnings Call Transcript,7,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__0","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",0,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__1","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__2","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",2,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__3","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",3,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__4","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__5","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__6","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_MFA_Financial,_Inc.__7","MFA Financial, Inc. (MFA) Q2 2025 Earnings Call Transcript",7,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_0,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,0,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_1,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,1,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_2,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_3,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,3,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_4,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_5,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,5,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_6,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,6,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Brookfield_Asset_Man_7,Brookfield Asset Management Ltd. (BAM) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__0,The Fed Put And The Trump Call: Goldilocks Zone For Investors,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__1,The Fed Put And The Trump Call: Goldilocks Zone For Investors,1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__2,The Fed Put And The Trump Call: Goldilocks Zone For Investors,2,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__3,The Fed Put And The Trump Call: Goldilocks Zone For Investors,3,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__4,The Fed Put And The Trump Call: Goldilocks Zone For Investors,4,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__5,The Fed Put And The Trump Call: Goldilocks Zone For Investors,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__6,The Fed Put And The Trump Call: Goldilocks Zone For Investors,6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_The_Fed_Put_And_The__7,The Fed Put And The Trump Call: Goldilocks Zone For Investors,7,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_0,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_1,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_2,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,2,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_3,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_4,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_5,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_6,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_GeoPark_Limited_(GPR_7,GeoPark Limited (GPRK) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__0,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",0,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__1,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__2,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",2,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__3,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",3,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__4,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__5,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",5,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__6,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Nomad_Foods'_Margin__7,"Nomad Foods' Margin Cycle Turns Negative, And The Stock Is More Fairly Valued",7,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_0","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",0,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_1","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",1,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_2","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",2,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_3","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",3,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_4","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_5","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",5,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_6","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",6,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+"20250804_next_day_Novavax,_Inc._(NVAX)_7","Novavax, Inc. (NVAX) Q2 2025 Earnings Call Transcript",7,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_0,U.S. Oil Rallies But Shows Indecision Within Established Range,0,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_1,U.S. Oil Rallies But Shows Indecision Within Established Range,1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_2,U.S. Oil Rallies But Shows Indecision Within Established Range,2,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_3,U.S. Oil Rallies But Shows Indecision Within Established Range,3,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_4,U.S. Oil Rallies But Shows Indecision Within Established Range,4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_5,U.S. Oil Rallies But Shows Indecision Within Established Range,5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_6,U.S. Oil Rallies But Shows Indecision Within Established Range,6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_U.S._Oil_Rallies_But_7,U.S. Oil Rallies But Shows Indecision Within Established Range,7,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._0","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",0,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._1","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",1,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._2","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",2,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._3","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._4","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",4,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._5","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._6","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_Douglas_Emmett,_Inc._7","Douglas Emmett, Inc. (DEI) Q2 2025 Earnings Call Transcript",7,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_0,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_1,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_2,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_3,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_4,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_5,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_6,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_2_7,Royalty Pharma plc 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_0,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_1,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,1,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_2,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_3,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_4,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,4,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_5,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_6,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Royalty_Pharma_plc_(_7,Royalty Pharma plc (RPRX) Q2 2025 Earnings Call Transcript,7,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__0","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",0,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__1","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__2","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",2,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__3","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",3,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__4","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__5","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",5,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__6","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._2025__7","Assurant, Inc. 2025 Q2 - Results - Earnings Call Presentation",7,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_0","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",0,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_1","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",1,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_2","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_3","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_4","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",4,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_5","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",5,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_6","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",6,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Assurant,_Inc._(AIZ)_7","Assurant, Inc. (AIZ) Q2 2025 Earnings Call Transcript",7,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._0,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,0,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._1,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,1,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._2,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,2,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._3,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,3,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._4,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._5,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._6,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Global_Payments_Inc._7,Global Payments Inc. (GPN) Q2 2025 Earnings Call Transcript,7,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._0,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._1,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._2,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._3,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._4,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._5,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._6,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._7,Trinity Capital Inc. 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_0,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_1,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_2,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_3,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_4,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_5,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_6,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trimble_Inc._2025_Q2_7,Trimble Inc. 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__0,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,0,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__1,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,1,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__2,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__3,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,3,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__4,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__5,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__6,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,6,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trimble_Inc._(TRMB)__7,Trimble Inc. (TRMB) Q2 2025 Earnings Call Transcript,7,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._0,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,0,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._1,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,1,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._2,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,2,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._3,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._4,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,4,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._5,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._6,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,6,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trinity_Capital_Inc._7,Trinity Capital Inc. (TRIN) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_0,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_1,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,1,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_2,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_3,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,3,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_4,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_5,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,5,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_6,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,6,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Louisiana-Pacific_Co_7,Louisiana-Pacific Corporation (LPX) Q2 2025 Earnings Call Transcript,7,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_0","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",0,basic_stochastic,1,1.0,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_1","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",1,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_2","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",2,basic_stochastic,8,0.0,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_3","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",3,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_4","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_5","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",5,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_6","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+"20250804_next_day_Powell_Industries,_I_7","Powell Industries, Inc. (POWL) Q3 2025 Earnings Call Transcript",7,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__0,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,0,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__1,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__2,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,2,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__3,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__4,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,4,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__5,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,5,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__6,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,6,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Tesla:_Why_I_See_It__7,Tesla: Why I See It As An Undervalued Hyper-Growth Startup,7,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_International_Flavor_0,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,0,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_International_Flavor_1,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,1,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_International_Flavor_2,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_International_Flavor_3,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_International_Flavor_4,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,4,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_International_Flavor_5,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,5,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_International_Flavor_6,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,6,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_International_Flavor_7,International Flavors & Fragrances Inc. (IFF) Q2 2025 Earnings Call Transcript,7,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_0,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,0,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_1,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,1,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_2,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,2,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_3,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,3,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_4,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,4,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_5,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,5,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_6,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,6,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Upstart’s_stock_take_7,Upstart’s stock takes a mysterious dive after earnings. What’s behind the move.,7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__0,Trump threatens 50% tariffs on India for buying Russian oil,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__1,Trump threatens 50% tariffs on India for buying Russian oil,1,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__2,Trump threatens 50% tariffs on India for buying Russian oil,2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__3,Trump threatens 50% tariffs on India for buying Russian oil,3,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__4,Trump threatens 50% tariffs on India for buying Russian oil,4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__5,Trump threatens 50% tariffs on India for buying Russian oil,5,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__6,Trump threatens 50% tariffs on India for buying Russian oil,6,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trump_threatens_50%__7,Trump threatens 50% tariffs on India for buying Russian oil,7,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_0,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,0,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_1,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_2,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,2,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_3,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_4,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_5,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_6,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Moderna’s_stock_take_7,Moderna’s stock takes a hit as RFK Jr. backs out of some mRNA vaccine deals,7,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_McDonald’s_customers_0,"McDonald’s customers are spending more money per visit, and the stock rises",0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_McDonald’s_customers_1,"McDonald’s customers are spending more money per visit, and the stock rises",1,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_McDonald’s_customers_2,"McDonald’s customers are spending more money per visit, and the stock rises",2,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_McDonald’s_customers_3,"McDonald’s customers are spending more money per visit, and the stock rises",3,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_McDonald’s_customers_4,"McDonald’s customers are spending more money per visit, and the stock rises",4,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_McDonald’s_customers_5,"McDonald’s customers are spending more money per visit, and the stock rises",5,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_McDonald’s_customers_6,"McDonald’s customers are spending more money per visit, and the stock rises",6,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_McDonald’s_customers_7,"McDonald’s customers are spending more money per visit, and the stock rises",7,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__0,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",0,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__1,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",1,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__2,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",2,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__3,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",3,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__4,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",4,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__5,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",5,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__6,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",6,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trump’s_new_tariffs__7,"Trump’s new tariffs start tomorrow. Here’s who’s getting hit, and by how much.",7,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__0,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__1,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,1,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__2,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,2,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__3,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,3,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__4,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,4,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__5,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__6,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,6,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Trump-Modi_ties_hit__7,Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil,7,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_0,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",0,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_1,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",1,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_2,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",2,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_3,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",3,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_4,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",4,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_5,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",5,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_6,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",6,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Bitcoin_price_today:_7,"Bitcoin price today: flat at $114k as trade, economic uncertainty persists",7,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_0,Actelis Networks board approves cryptocurrency treasury strategy,0,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_1,Actelis Networks board approves cryptocurrency treasury strategy,1,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_2,Actelis Networks board approves cryptocurrency treasury strategy,2,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_3,Actelis Networks board approves cryptocurrency treasury strategy,3,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_4,Actelis Networks board approves cryptocurrency treasury strategy,4,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_5,Actelis Networks board approves cryptocurrency treasury strategy,5,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_6,Actelis Networks board approves cryptocurrency treasury strategy,6,basic_stochastic,8,0.0,20250804,evaluated
+20250804_next_day_Actelis_Networks_boa_7,Actelis Networks board approves cryptocurrency treasury strategy,7,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_0,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,0,basic_stochastic,5,0.4285714285714286,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_1,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,1,basic_stochastic,2,0.8571428571428572,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_2,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,2,basic_stochastic,7,0.1428571428571429,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_3,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,3,basic_stochastic,4,0.5714285714285714,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_4,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,4,basic_stochastic,1,1.0,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_5,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,5,basic_stochastic,6,0.2857142857142857,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_6,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,6,basic_stochastic,3,0.7142857142857143,20250804,evaluated
+20250804_next_day_Unitronix_adds_Ether_7,Unitronix adds Ethereum to treasury alongside Bitcoin holdings,7,basic_stochastic,8,0.0,20250804,evaluated

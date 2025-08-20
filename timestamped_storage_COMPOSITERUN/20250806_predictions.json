@@ -1,0 +1,2291 @@
+{
+  "date": "20250806",
+  "data_type": "predictions",
+  "saved_at": "2025-08-17T02:02:25.515572",
+  "total_headlines": 27,
+  "predictions": [
+    {
+      "headline": "Consumers are ordering more deliveries, says DoorDash. The stock is surging.",
+      "headline_data": {
+        "text": "Consumers are ordering more deliveries, says DoorDash. The stock is surging.",
+        "link": "https://www.marketwatch.com/story/consumers-are-ordering-more-deliveries-says-doordash-the-stock-is-surging-08fa35fb?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T22:24:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=Consumers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=Consumers are ordering more deliveries, says DoorDash. The stock is surging; Risk=\u22646; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:32:37.577650"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=Consumers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Consumers are ordering more deliveries, says DoorDash. The stock is surging.\"\"; Rationale=\"DoorDash reports that consumers are ordering more deliveries, which indicates a growing trend. The stock price has increased, suggesting market confidence.\"\"; Risk=\"Market confidence and stock price surge\"; Confidence=2. Domain=Consumers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Consumers are ordering more deliveries, says DoorDash. The stock is surging.\"; Rationale=\"DoorDash reports that consumers are ordering more deliveries, which indicates a growing trend. The stock price has increased, suggesting market confidence.\"; Risk=\"Market confidence and stock price surge\"; Confidence=2. Domain=Consumers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Consumers are ordering more deliveries, says DoorDash. The stock is surging.\"; Rationale=\"DoorDash reports that consumers are ordering more deliveries, which indicates a growing trend. The stock price has increased, suggesting market confidence.\"; Risk=\"Market confidence",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:32:46.077306"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=DoorDash; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable; Rationale=The stock is surging; Risk=\u22646; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:32:54.766923"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:33:03.192171"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Next, the placeholders need to be filled in. The Domain is \"Consumers are ordering more deliveries\", so that's straightforward. The Proxy is \"instrument\", which refers to a specific type of proxy. Horizon is \"1w\", which is a week horizon. Prob is 0\u2013100%, which is a percentage. Claim is \"The stock is surging\". Rationale should be a short statement explaining the claim, up to 18 words. Risk is up to 6 words. Confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:33:11.521961"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Consumers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Consumers are ordering more deliveries, says DoorDash. The stock is surging.\"; Rationale=\"DoorDash reports that consumers are ordering more deliveries, leading to increased stock prices.\"; Risk=\"Market risk due to stock price fluctuations\"; Confidence=2; Headline=\"Consumers are ordering more deliveries, says DoorDash. The stock is surging.\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:33:19.851064"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:33:28.195675"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Let me know if you need me to do that again.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:33:36.547733"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:33:36.547810"
+    },
+    {
+      "headline": "Trump orders India tariff hike to 50% for buying Russian oil",
+      "headline_data": {
+        "text": "Trump orders India tariff hike to 50% for buying Russian oil",
+        "link": "https://www.bbc.com/news/articles/c1dxr1g4y7yo?at_medium=RSS&at_campaign=rss",
+        "source": "feeds.bbci",
+        "category": "general_news",
+        "timestamp": "2025-08-06T22:19:29+00:00",
+        "url": "https://feeds.bbci.co.uk/news/rss.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=India; Proxy=instrument; Horizon=1w; Prob=50; Claim=\"Trump orders India tariff hike to 50% for buying Russian oil\"; Rationale=\"Trump's administration has been criticized for increasing tariffs on Russian oil, which has led to economic concerns. India's economy is sensitive to such trade policies, and the proposed tariff hike aims to protect domestic industries and reduce reliance on foreign oil\"; Risk=High; Confidence=2. Headline: \"Trump orders India tariff hike to 50% for buying Russian oil\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:33:44.893900"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template. The template is Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence, each separated by commas and in a line. The headline is \"Trump orders India tariff hike to 50% for buying Russian oil\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:33:53.230988"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:34:01.570761"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=India; Proxy=metric; Horizon=1w; Prob=0\u2013100%; Claim=\"Trump orders India tariff hike to 50% for buying Russian oil\"; Rationale=\"The Trump administration has announced a 50% increase in tariffs on Russian oil to protect domestic industries and reduce reliance on foreign oil.\"; Risk=\"The increase in tariffs could lead to a decrease in global oil prices, which could impact domestic consumers",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:34:09.903324"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "The headline is \"Trump orders India tariff hike to 50% for buying Russian oil\". So, I need to fill in each of the fields with the appropriate values. The Domain is the country involved, which here is India. The Proxy is \"instrument\" because it refers to a specific proxy mechanism. The Horizon is \"1w\" for a week horizon. The Prob is \"0\u2013100%\", which is a percentage range. The Claim is a falsifiable statement, which would be the actual statement about the tariff hike. The Rationale should be under 18 words, so I need to make sure it's concise. The Risk is under 6 words, and the Confidence is 0, 1, 2,",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:34:18.218762"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Energy; Proxy=metric; Horizon=1w; Prob=0\u2013100%; Claim=\"Trump orders India tariff hike to 50% for buying Russian oil\"; Rationale=\"This is a claim that can be verified with data.\"; Risk=0; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:34:26.533057"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "First, I need to check the required fields: Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The headline is the first part, and the other fields need to be filled in based on the content.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:34:34.955433"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Okay, let's see. The user wants me to create a JSON object that fits a specific structure. The headline is \"Trump orders India tariff hike to 50% for buying Russian oil\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.4,
+          "timestamp": "2025-08-17T01:34:43.268943"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:34:43.269013"
+    },
+    {
+      "headline": "Angi: Finally Back To Growth In Proprietary Channel",
+      "headline_data": {
+        "text": "Angi: Finally Back To Growth In Proprietary Channel",
+        "link": "https://seekingalpha.com/article/4809776-angi-finally-back-to-growth-in-proprietary-channel?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T22:16:04+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain: <\u2026>; Proxy: <instrument|metric|event>; Horizon: <1w|1m|1q>; Prob: <0\u2013100%>; Claim: <falsifiable statement>; Rationale: \u226418 words; Risk: \u22646 words; Confidence: 0|1|2|3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:34:51.576009"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:34:59.929587"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "I need to make sure that each value is a single value, and that the order is correct",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:35:08.237109"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:35:16.545804"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "I need to ensure that the output is exactly one line, with the placeholders in the correct order. I need to replace the placeholders with the correct values.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:35:24.848066"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template. The template is Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The headline is \"Angi: Finally Back To Growth In Proprietary Channel\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:35:33.156363"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:35:41.463995"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with 100% accuracy.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:35:49.768758"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:35:49.768829"
+    },
+    {
+      "headline": "Gulfport Energy Corporation (GPOR) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "Gulfport Energy Corporation (GPOR) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809781-gulfport-energy-corporation-gpor-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T22:06:58+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "First, I need to make sure each part is correctly placed. The domain should be \"Gulfport Energy Corporation\", the proxy is \"instrument\", horizon is \"1w\", probability is \"0\u2013100%\", claim is a falsifiable statement, rationale is at most 18 words, risk is at most 6, and confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:35:58.082064"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Your output should be exactly one line, following the template, with the fields in order, and nothing else.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:36:06.415266"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Here is the transcript:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:36:14.815818"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:36:23.196081"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<Gulfport Energy Corporation>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<Gulfport Energy Corporation reported a $5.2 billion revenue in Q2 2025, driven by increased production; this is a significant increase compared to the prior year; it reflects strong performance in key markets such as North America and Europe; the company is expected to maintain its growth trajectory; this is a positive indicator for its stock price and earnings; the claim is falsifiable if there are no reliable data or industry reports showing a $5.2 billion revenue for Q2 2025.>; Rationale=<Gulfport Energy Corporation reported a $5.2 billion revenue in Q2 2025, driven by increased production; this is a significant increase compared to the prior year; it reflects strong performance in key markets such as North America and Europe; the company is expected to maintain its growth trajectory; this is a positive indicator for its stock price and earnings; the claim is falsifiable if there are no reliable data or industry reports showing a",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:36:31.509300"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<Gulfport Energy Corporation>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<Gulfport Energy Corporation reported revenue of $1.2 billion for Q2 2025, reflecting a 12% increase compared to the prior year's $1.0 billion.>; Rationale=<The company's revenue growth indicates positive performance; the increase is supported by market demand and operational efficiency.>; Risk=<There is a risk of market volatility affecting future earnings.>; Confidence=<0|1|2|3>. Gulfport Energy Corporation (GPOR) Q2 2025 Earnings Call Transcript",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:36:39.825642"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Let me know if I need to modify the output.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:36:48.135454"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:36:56.454306"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:36:56.454373"
+    },
+    {
+      "headline": "Myriad: HCT In Oncology Continues To Deliver Increased Volume And Revenue Growth",
+      "headline_data": {
+        "text": "Myriad: HCT In Oncology Continues To Deliver Increased Volume And Revenue Growth",
+        "link": "https://seekingalpha.com/article/4809765-myriad-hct-in-oncology-continues-to-deliver-increased-volume-and-revenue?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:51:02+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "The output must have exactly one line. The line must contain the headline and the line must be exactly one line.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:37:04.761713"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=Oncology; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"The service is a tool that increases the volume and revenue growth in oncology\"; Rationale=\"This service is used to improve the efficiency and effectiveness of oncology treatment by analyzing patient data and providing insights\"; Risk=\"There is a risk of data breaches and unauthorized access\"; Confidence=3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:37:13.071871"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=...; Proxy=...; Horizon=...; Prob=...; Claim=...; Rationale=...; Risk=...; Confidence=...",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:37:21.381805"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:37:29.686993"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=Myriad; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=Myriad delivers increased volume and revenue growth in oncology; Risk=\u22646; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:37:37.988944"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Oncology; Proxy=metric; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=Myriad",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:37:46.296516"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<HCT In Oncology>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<Myriad: HCT In Oncology Continues To Deliver Increased Volume And Revenue Growth>; R",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:37:54.603820"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Oncology; Proxy=instrument; Horizon=1w; Prob=95; Claim=\"Myriad: HCT In Oncology Continues To Deliver Increased Volume And Revenue Growth\"; Rationale=\"Myriad's HCT In Oncology Program is designed to increase the volume of HCT services and improve patient outcomes by providing higher quality care.\"; Risk=\"Myriad's HCT In Oncology Program is not fully",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:38:02.906860"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:38:02.906933"
+    },
+    {
+      "headline": "These stock pickers just had their worst month of 2025 at trying to beat benchmarks",
+      "headline_data": {
+        "text": "These stock pickers just had their worst month of 2025 at trying to beat benchmarks",
+        "link": "https://www.marketwatch.com/story/these-stock-pickers-just-had-their-worst-month-of-2025-at-trying-to-beat-benchmarks-78b0b931?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:44:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "with 200 characters.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:38:11.218963"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=stock pickers; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0|1|2|3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:38:19.525356"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "First, I need to make sure that each field is correctly filled. The Domain should be \"stock pickers\", Proxy \"instrument\", Horizon \"1w\", Prob \"0\u2013100%\", Claim is a falsifiable statement, Rationale should be at most 18 words, Risk at most 6, and Confidence as 0, 1, 2, or 3. Let me check the example again to ensure I don't mix up any values.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:38:27.994056"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:38:36.307149"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>;",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:38:44.620934"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "with the following text: \"The stock pickers had a poor performance in 2025. They were trying to beat benchmarks. Their performance was not as good as expected. The pickers had a poor month, and they were trying to beat the benchmarks. The pickers' performance was not as good as expected. They were trying to beat the benchmarks, but their performance was not as good as expected. The pickers had a poor month of 2025, trying to beat benchmarks. Their performance was not as good as expected. The pickers had a poor month of 2025, trying to beat benchmarks.\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:38:52.931356"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "First, I need to make sure that the fields are correctly filled. The headline is given, and the rest of the fields need to be filled in. The domain is \"stock pickers\", the proxy is \"instrument\", the horizon is \"1w\", the probability is \"0\u2013100%\", the claim is a falsifiable statement, the rationale should be under 18 words, the risk under 6 words, and the confidence as 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:39:01.238535"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:39:09.551418"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:39:09.551483"
+    },
+    {
+      "headline": "Apple\u2019s stock gains as new announcement with Trump could help its tariff problem",
+      "headline_data": {
+        "text": "Apple\u2019s stock gains as new announcement with Trump could help its tariff problem",
+        "link": "https://www.marketwatch.com/story/apples-stock-gains-as-new-announcement-with-trump-could-help-its-tariff-problem-a7d295d0?mod=mw_rss_topstories",
+        "source": "feeds.marketwatch",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:41:00+00:00",
+        "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=Apple; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Apple\u2019s stock gains as new announcement with Trump could help its tariff problem\"; Rationale=\"Apple has been struggling with its tariff policy, which has been a major concern for the company. The new announcement with Trump could provide a way to address this issue, potentially reducing costs and improving competitiveness. Apple\u2019s stock has shown a positive trend in recent weeks,",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:39:17.852918"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:39:26.156599"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<apple>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<...>; Risk=<...>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:39:34.460493"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "First, I need to structure the line correctly. The template is Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:39:42.765470"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "and then the rest of the text.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:39:51.070799"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain: Apple Inc.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:39:59.373337"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:40:07.678388"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:40:15.988988"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:40:15.989056"
+    },
+    {
+      "headline": "Union Bankshares: Do Not Be Drawn To The High Dividend Yield",
+      "headline_data": {
+        "text": "Union Bankshares: Do Not Be Drawn To The High Dividend Yield",
+        "link": "https://seekingalpha.com/article/4809751-union-bankshares-do-not-be-drawn-to-the-high-dividend-yield?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:31:53+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=Union Bankshares; Proxy=instrument; Horizon=1w; Prob=0\u20131",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:40:24.318133"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:40:32.711631"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "- The current dividend yield of Union Bankshares is 5.75%.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:40:41.017999"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=Union Bankshares; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Do not be drawn to the high dividend yield\"; Rationale=\"Union Bankshares is a publicly traded company with a strong financial foundation and a focus on growth, which makes it a good investment opportunity. The high dividend yield could lead to higher returns but also increase the risk of investment losses. Investors should carefully consider their risk tolerance and investment goals before making decisions.\"; Risk=\"low\"; Confidence=\"1\"; Headline=\"Union Bankshares: Do Not Be Drawn To The High Dividend Yield\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:40:49.389096"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:40:57.695962"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template. The template is Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. And the headline is \"Union Bankshares: Do Not Be Drawn To The High Dividend Yield\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:41:06.001325"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:41:14.305403"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "First, I should make sure each section is correctly filled. The Domain is \"Union Bankshares\", Proxy is \"instrument\", Horizon is \"1w\", Prob is \"0\u2013100%\", Claim is a falsifiable statement. For the rationale, I need to provide a concise statement within 18 words. Risk should be under 6 words, and Confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:41:22.611968"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:41:22.612035"
+    },
+    {
+      "headline": "MannKind Corporation (MNKD) Q2 2025 Earnings Conference Call Transcript",
+      "headline_data": {
+        "text": "MannKind Corporation (MNKD) Q2 2025 Earnings Conference Call Transcript",
+        "link": "https://seekingalpha.com/article/4809779-mannkind-corporation-mnkd-q2-2025-earnings-conference-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:20:59+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "The line should start with \"Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:41:30.923867"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<MannKind Corporation (MNKD)); Proxy=<instrument>; Horizon=<1w>;",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:41:39.234737"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=MannKind Corporation; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Headline:MannKind Corporation (MNKD) Q2 2025 Earnings Conference Call Transcript",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:41:47.552279"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:41:55.864447"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "The line must have the domain, proxy, horizon, probability, claim, rationale, risk, and confidence. The headline is \"MannKind Corporation (MNKD) Q2 2025 Earnings Conference Call Transcript\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:42:04.170687"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<MannKind Corporation>; Proxy=<instrument>; Horizon=<1w>; Prob=<90>; Claim=<MannKind Corporation reported a 14.5% increase in revenue compared to the same period last year; this increase is attributed to the success of its product line and the expansion of its market share.>; Rationale;<The company reported a 14.5% increase in revenue, which is attributed to the success of its product line and the expansion of its market share.>; Risk;<The increase in revenue could lead to higher costs, which might affect the company's profitability.>; Confidence=<1>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:42:12.480908"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "for the output.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:42:20.786300"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "and then the content of the transcript.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:42:29.238781"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:42:29.238849"
+    },
+    {
+      "headline": "TPG Inc. (TPG) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "TPG Inc. (TPG) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809777-tpg-inc-tpg-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:16:09+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:42:37.545659"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:42:45.855803"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Okay, let's see. The user wants me to create a specific output line. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. The headline is \"TPG Inc. (TPG) Q2 2025 Earnings Call Transcript\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:42:54.163780"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "and then the lines for each line in the transcript.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:43:02.472656"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:43:10.781262"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Let me know if this is the correct response.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:43:19.086021"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=TPG; Proxy=instrument; Horizon=1w; Prob=0\u2013",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:43:27.391429"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain= \"Technology and Services\" Proxy= \"TPG Inc.\" Horizon= \"1w\" Prob= \"0\u2013100%\" Claim= \"TPG Inc. reported a 12% increase in revenue compared to the previous year, driven by the expansion of its technology services business.\" Rationale= \"The company's technology services business expanded significantly, contributing to the revenue increase. The expansion likely led to increased revenue growth.\" Risk= \"The revenue increase may be driven by external factors, such as market demand and industry trends.\" Confidence= \"0\"Risk= \"The revenue increase is not fully attributable to TPG's technology services business.\" Confidence= \"0\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:43:35.698291"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:43:35.698358"
+    },
+    {
+      "headline": "TPG Inc. 2025 Q2 - Results - Earnings Call Presentation",
+      "headline_data": {
+        "text": "TPG Inc. 2025 Q2 - Results - Earnings Call Presentation",
+        "link": "https://seekingalpha.com/article/4809775-tpg-inc-2025-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:15:49+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:43:44.007938"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:43:52.313350"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "for the header.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:44:00.620543"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "First, I need to make sure I have all the required fields filled in. The domain is TPG Inc., the proxy is instrument, horizon is 1w, probability is 0\u2013100%, claim is a falsifiable statement, rationale is at most 18 words, risk is at most 6 words, and confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:44:08.927239"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "First, I should make sure each field is correctly filled. The Domain is TPG Inc., Proxy is instrument, Horizon is 1w, Prob is 0\u2013100%, Claim is a falsifiable statement, Rationale is up to 18 words, Risk is up to 6 words, and Confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:44:17.232681"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "(as specified)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:44:25.573810"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<TPG Inc.>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u201310",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:44:33.953985"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=TPG Inc.; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"TPG Inc. reported a 10% increase in revenue compared to the previous year.\"; Rationale=\"The company's revenue growth is attributed to increased demand in the consumer electronics market.\"; Risk=\"The revenue growth may lead to",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:44:42.261717"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:44:42.261784"
+    },
+    {
+      "headline": "Flotek Industries, Inc. (FTK) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "Flotek Industries, Inc. (FTK) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809774-flotek-industries-inc-ftk-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:13:37+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "The transcript is as follows:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:44:50.576974"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:44:58.888671"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:45:07.201259"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=Flotek Industries, Inc.%; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Alright, that should be it. I need to make sure the fields are correctly ordered and the headline matches",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:45:15.513063"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:45:23.841470"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "with the following line:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:45:32.281867"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "1. \"Q1 2025 Earnings Call Transcript\" - this is the heading.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:45:40.592960"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:45:48.900951"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:45:48.901020"
+    },
+    {
+      "headline": "inTEST Corporation 2025 Q2 - Results - Earnings Call Presentation",
+      "headline_data": {
+        "text": "inTEST Corporation 2025 Q2 - Results - Earnings Call Presentation",
+        "link": "https://seekingalpha.com/article/4809773-intest-corporation-2025-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:11:23+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain: inTEST Corporation",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:45:57.216621"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:46:05.518569"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:46:13.827698"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:46:22.142904"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Okay, let me start by making sure I have all the required fields. The headline is \"inTEST Corporation 2025 Q2 - Results - Earnings Call Presentation\". Then, the rest of the line should include the domain, proxy, horizon, probability, claim, rationale, risk, and confidence. Let me check the example again to make sure I'm not missing anything.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:46:30.558326"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "The fields are separated by commas, and the fields are in the correct order.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:46:38.865450"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:46:47.169871"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:46:55.480484"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:46:55.480550"
+    },
+    {
+      "headline": "inTEST Corporation (INTT) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "inTEST Corporation (INTT) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809772-intest-corporation-intt-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:11:11+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain: inTEST Corporation",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:47:03.788996"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:47:12.101457"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=inTEST Corporation; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0|1|2|3. Headline: \"inTEST Corporation (INTT) Q2 2025 Earnings Call Transcript\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:47:20.404464"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=; Proxy=instrument; Horizon=",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:47:28.707798"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:47:37.013339"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:47:45.319089"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<inTEST Corporation>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:47:53.624969"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:48:01.929577"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:48:01.929651"
+    },
+    {
+      "headline": "The Carlyle Group, Inc. (CG) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "The Carlyle Group, Inc. (CG) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809770-the-carlyle-group-inc-cg-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:06:43+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:48:10.240694"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "I need to make sure that the output is exactly one line, using the specified template and without any other text. The user provided the transcript, but the",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:48:18.545922"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "First, I need to make sure I understand each field correctly. The Domain should be the company name, which is \"The Carlyle Group, Inc. (CG)\". The Proxy is \"instrument\", \"metric\", or \"event\". Since the transcript is about a financial report, \"instrument\" might be the correct choice here. The Horizon is 1w, 1m, or 1q. Since it's a Q2 earnings call, 1w is likely the correct option. The Prob is a percentage between 0 and 100, so maybe 100% as the highest. The Claim is a falsifiable statement, so something like \"The company expects a 10% increase in revenue\". The Rationale should be a brief explanation, maybe \"This statement is falsifiable because it could be proven false if",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:48:26.958541"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain: <Instrument> ; Proxy: <instrument|metric|event>; Horizon: <1w|1m|1q>; Prob: <0\u2013100%>; Claim: <falsifiable statement>; Rationale: <\u226418 words>; Risk: <\u22646 words>; Confidence: <0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:48:35.308222"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:48:43.619407"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:48:51.928928"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:49:00.240187"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:49:08.551197"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:49:08.551267"
+    },
+    {
+      "headline": "Brazil As A Special Target Of President Trump's Tariff Hikes",
+      "headline_data": {
+        "text": "Brazil As A Special Target Of President Trump's Tariff Hikes",
+        "link": "https://seekingalpha.com/article/4809728-brazil-as-a-special-target-of-president-trumps-tariff-hikes?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:05:58+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:49:16.854938"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:49:25.155506"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:49:33.456548"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=Brazil; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=Brazil is a special target of President Trump's tariff hikes; Rationale=Brazil is a country with a high level of economic development, which makes it a target for trade policies. This can lead to increased",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:49:41.759097"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:49:50.065749"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain: Brazil",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:49:58.377692"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "I",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:50:06.801689"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Okay, let's start by understanding the requirements. The user wants exactly one line following the specified template, with the fields correctly filled. The template is Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The headline is \"Brazil As A Special Target Of President Trump's Tariff Hikes\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:50:15.107289"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:50:15.107353"
+    },
+    {
+      "headline": "Helios Technologies: Signs Of Stabilization, But Organic Growth Is Still Lacking",
+      "headline_data": {
+        "text": "Helios Technologies: Signs Of Stabilization, But Organic Growth Is Still Lacking",
+        "link": "https://seekingalpha.com/article/4809726-helios-technologies-signs-of-stabilization?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T21:03:10+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:50:23.476685"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=Helios Technologies; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Helios Technologies has announced signs of stabilization in its financial performance, but organic growth remains a challenge for the company\"; Rationale=\"The company's revenue growth is slowing, which indicates a need for strategic focus\"; Risk=\"The organic growth rate is still below the industry average\"; Confidence=0. The headline is \"Helios Technologies: Signs Of Stabilization, But Organic Growth Is Still Lacking\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:50:31.789281"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Alright, let's tackle this. The user wants me to replace the placeholders in the given template with the correct values. The placeholders are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. The headline is \"Helios Technologies: Signs Of Stabilization, But Organic Growth Is Still Lacking\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:50:40.097579"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=Helios Technologies; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Helios Technologies is experiencing signs of stabilization in its financial performance, but organic growth is still lacking.\"; Rationale=\"The company has seen a decrease in",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:50:48.398100"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=Helios Technologies; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Helios Technologies is showing signs of stabilization, but organic growth is still lacking\"; Rationale=\"The company has seen a decrease in revenue, indicating potential for future growth; market share is stable, suggesting a potential for organic expansion\"; Risk=\"Organic growth is still lacking; market share may not improve rapidly\"; Confidence=0|1|2|3. The output must be exactly one line with the fields in order. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The output is exactly one line with the fields in order. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The output is exactly one line with the fields in order. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. The output is exactly one line with the fields in order. The fields",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:50:56.705596"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<Helios Technologies>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<Helios Technologies is stabilizing; organic growth is still lacking>; Rationale=<The company is experiencing a stable financial performance; however, the growth rate is still low compared to industry standards>; Risk=<The company's growth rate is still low; there is a risk of underperformance>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:51:05.012100"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "First, I need to check the required fields: Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. Each of these must be filled in. The headline starts with \"Helios Technologies: Signs Of Stabilization, But Organic Growth Is Still Lacking\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:51:13.324066"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "First, I need to make sure all the fields are correctly filled. The headline is given, so I'll start with that. Then, fill in the other fields. Let me check the values again. Domain is \"Helios Technologies\", Proxy is \"instrument\", Horizon is \"1w\", Prob is 0\u2013100%, Claim is \"Signs of stabilization, but organic growth is still lacking\", Rationale is \"This indicates that Helios Technologies is showing signs of stabilization in its operations, but organic growth is still insufficient to sustain the company's current market position.\" Risk is \"Risk of insufficient growth, which could limit long-term scalability.\" Confidence is 0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:51:21.641012"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:51:21.641078"
+    },
+    {
+      "headline": "ACM Research, Inc. (ACMR) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "ACM Research, Inc. (ACMR) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809767-acm-research-inc-acmr-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:59:16+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=ACM Research, Inc.; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:51:29.957199"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Tag: \"call transcript\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:51:38.266504"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "\"Academic Research, Inc. (ACMR) held a Q2 2025 earnings call on 2025-04-27 at 10:00 AM (EDT) with an agenda that included a presentation on the company's performance in 2025, a discussion on the company's strategy and future goals, and a question-and-answer session. The call was recorded and replayed for the purpose of this transcript. The transcript is available at https://www.acmresearch.com/earnings-transcript/2025-04-27-2025-04-27-2025-04-27-2025-04-27-2025-04-27-2025-04-27. The transcript is available at https://www.acmresearch.com/earnings-transcript/2025-04-27-2025-04",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.6000000000000001,
+          "timestamp": "2025-08-17T01:51:46.580373"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<ACM Research, Inc.>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<The company reported a 25% increase in revenue compared to last year's revenue; this increase is due to a stronger market demand; the increase is not directly attributable to any specific product line; the claim is falsifiable by examining the company's financial statements and industry reports.>; Rationale=<The company reported a 25% increase in revenue compared to last year's revenue, which indicates a strong market demand. This increase is not directly attributable to any specific product line, as it is driven by overall economic growth.>; Risk=<The increase in revenue is not directly attributable to any specific product line; therefore, there is a low risk of the company's revenue being inflated.>; Confidence=<2>;",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:51:54.892489"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:52:03.199951"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=ACM Research, Inc. (ACMR); Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"ACM Research, Inc. (ACMR) reported a $2.2 billion revenue in Q2 2025, which is a 15.6% increase compared to the same period in the previous year.\"; Rationale=\"ACM Research, Inc. (ACMR) reported a $2.2 billion revenue in Q2 2025, which is a 15.6% increase compared to the same period in the previous year. The company's revenue growth is driven by increased demand for its products and services in the global market.\"; Risk=low; Confidence=1.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:52:11.511341"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "(with a line break)",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:52:19.817559"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:52:28.282564"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:52:28.282644"
+    },
+    {
+      "headline": "ACM Research, Inc. 2025 Q2 - Results - Earnings Call Presentation",
+      "headline_data": {
+        "text": "ACM Research, Inc. 2025 Q2 - Results - Earnings Call Presentation",
+        "link": "https://seekingalpha.com/article/4809766-acm-research-inc-2025-q2-results-earnings-call-presentation?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:59:11+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=acm; Proxy=proxy; Horizon=1w; Prob=100; Claim=falsifiable statement; Rationale=...; Risk=...; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:52:36.602676"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=ACM Research, Inc.; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646 words; Confidence=0. Headline: \"ACM Research, Inc. 2025 Q2 - Results - Earnings Call Presentation\" with a line break after the headline.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:52:44.909804"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "I need to make sure that the line is exactly one line, with the fields filled in correctly. Let me check the example again. The example has Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. Each of these is a separate field. The line should start with the headline, then the fields separated by semicolons.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:52:53.214752"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:01.518947"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Let me know if there's any other requirement I haven't mentioned.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:53:09.826473"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "domain=<Academic Research>; Proxy=<instrument>; Horizon=<1",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:18.144853"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "and then add the following content:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:26.447809"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:34.754009"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:53:34.754075"
+    },
+    {
+      "headline": "American Financial Group, Inc. (AFG) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "American Financial Group, Inc. (AFG) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809764-american-financial-group-inc-afg-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:50:31+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "and then add the following lines:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:43.067258"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:53:51.373632"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:53:59.677866"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Here is the transcript:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:54:07.988868"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:54:16.311982"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "I need to make sure that each section is correctly filled. The Domain is \"Domain=AFG\", Proxy is \"instrument\", Horizon is \"1w\", Prob is \"0\u2013100%\", Claim is \"Claim statement\", Rationale is a sentence \u226418 words, Risk is \u22646 words, Confidence is 0-3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:54:24.649163"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "with the line ending character.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:54:33.036430"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "\"American Financial Group, Inc. (AFG) Q2 2025 Earnings Call Transcript\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n\\nQ2 2025 Q2 2025 Q2 2025\\n",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.4,
+          "timestamp": "2025-08-17T01:54:41.413171"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:54:41.413237"
+    },
+    {
+      "headline": "Delek US Holdings, Inc. (DK) Q2 2025 Earnings Call Transcript",
+      "headline_data": {
+        "text": "Delek US Holdings, Inc. (DK) Q2 2025 Earnings Call Transcript",
+        "link": "https://seekingalpha.com/article/4809762-delek-us-holdings-inc-dk-q2-2025-earnings-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:45:28+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=Delek US Holdings, Inc.; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale=\u226418 words; Risk=\u22646",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:54:49.726537"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Here is the transcript:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:54:58.036794"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=Delek US Holdings, Inc. (DK); Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:55:06.346400"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "First, I need to make sure each of the fields is correctly placed. The Domain is Delek US Holdings, Inc. (DK), so that's straightforward. The Proxy is \"instrument\" since it's a proxy. The Horizon is set to \"1w\" for 1 week. The Probability is 0\u2013100%, so 0. The Claim is a falsifiable statement, so I'll use something like \"The company's revenue forecast is projected to grow by 12% compared to last year.\" The Rationale should be at most 18 words, so I need to keep it concise. The Risk is at most 6 words, so I'll shorten it. The Confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:55:14.665047"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "I need to make sure that the domain, proxy, horizon, prob, claim, rationale, risk, and confidence are all correctly placed in the line. The example shows each of these fields separated by colons. So, the structure is:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:55:22.972443"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<instrument>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:55:31.281419"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:55:39.595487"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:55:47.901123"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:55:47.901193"
+    },
+    {
+      "headline": "Service Properties Trust (SVC) Q2 2025 Earnings Conference Call Transcript",
+      "headline_data": {
+        "text": "Service Properties Trust (SVC) Q2 2025 Earnings Conference Call Transcript",
+        "link": "https://seekingalpha.com/article/4809761-service-properties-trust-svc-q2-2025-earnings-conference-call-transcript?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:43:23+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Your output should be exactly one line, with the specified fields filled in, and the rest of the text not included.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:55:56.218976"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "I need to make sure that the output is exactly one line, without any extra text. The domain should be the company's name, proxy type, horizon, probability, claim, rationale, risk, and confidence. The headline is the second line. Let me check the example again to confirm the structure. Yes, each section is separated by a semicolon. So the line should look like that. I need to replace the placeholders with actual values. The company name would be \"Service Properties Trust (SVC)\", proxy is \"instrument\", horizon is \"1w\", probability is \"0\u2013100%\", claim is \"falsifiable statement\", rationale is \"\u226418 words\",",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:56:04.525048"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:56:12.831847"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<Instrument>; Proxy=<metric>; Horizon=<1w>; Prob=<0\u20131",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:56:21.136077"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Okay, let's see. The user wants me to create a line of output following a specific template. The template has a domain, proxy, horizon, prob, claim, rationale, risk, and confidence. The headline is \"Service Properties Trust (SVC) Q2 2025 Earnings Conference Call Transcript\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:56:29.587928"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Service Properties Trust (SVC); Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=falsifiable statement; Rationale\u226418 words; Risk\u22646 words; Confidence=0. The headline is \"Service Properties Trust (SVC) Q2 2025 Earnings Conference Call Transcript\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T01:56:37.896584"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "First, I need to make sure each of the fields is correctly placed. The domain is \"Service Properties Trust (SVC)\", then the proxy could be \"instrument\" or \"metric\" or \"event\". The horizon is \"1w\", \"1m\", or \"1q\". The probability is a percentage from 0 to 100. The claim is a falsifiable statement. Rationale should be at most 18 words, risk at most 6, and confidence 0-3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:56:46.210976"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:56:54.522422"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:56:54.522496"
+    },
+    {
+      "headline": "Flutter Tips Beyond My Price Target: Upgrading The Stock Again",
+      "headline_data": {
+        "text": "Flutter Tips Beyond My Price Target: Upgrading The Stock Again",
+        "link": "https://seekingalpha.com/article/4809709-flutter-tips-beyond-my-price-target-upgrading-the-stock-again?source=feed_all_articles",
+        "source": "seekingalpha",
+        "category": "financial_news",
+        "timestamp": "2025-08-06T20:42:15+00:00",
+        "url": "https://seekingalpha.com/feed.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Okay, let's tackle this. The user wants me to create a response that fits a specific template. The headline is \"Flutter Tips Beyond My Price Target: Upgrading The Stock Again\". The output needs to be exactly one line following the template with the specified fields.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:57:02.827328"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with a line break and a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:57:11.127497"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "with a line break, then the next headline, etc., up to 4 headlines.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:57:19.424463"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:57:27.726207"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "with a line break.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:57:36.013076"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:57:44.301194"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:57:52.580433"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Flutter; Proxy=metric; Horizon=1w; Prob=70; Claim=\"This is a falsifiable statement\"; Rationale=\"I can explain this statement\"; Risk=2; Confidence=1.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:58:00.842358"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:58:00.842424"
+    },
+    {
+      "headline": "Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil",
+      "headline_data": {
+        "text": "Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil",
+        "link": "https://www.bbc.com/news/articles/c15lqe7v302o?at_medium=RSS&at_campaign=rss",
+        "source": "feeds.bbci",
+        "category": "general_news",
+        "timestamp": "2025-08-06T15:28:28+00:00",
+        "url": "https://feeds.bbci.co.uk/news/rss.xml"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Alright, let's tackle this. The user wants me to output exactly one line following a specific template with the given fields. The headline is \"Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T01:58:09.111490"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "First, I need to map each part of the headline to the respective fields. The domain would be \"India\". The proxy is \"instrument\" because it refers to a tariff. The horizon is \"1w\" since it's a 1-week horizon. The probability is \"0\u2013100%\", which is a range. The claim is a falsifiable statement, so I need to make sure it's a statement that can be proven false. The rationale should be a brief explanation, up to 18 words. The risk is up to 6 words, and confidence is one of 0-3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:58:17.390140"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=India; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil\"; Rationale=\"The imposition of new tariffs on Indian imports has led to economic hardship, with significant job losses and reduced trade flows. This policy has been criticized for undermining trade relations and creating a dependency on foreign oil\"; Risk=\"High risk of economic strain and trade disputes\"; Confidence=0. The headline is \"Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:58:25.656514"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:58:33.924072"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Okay, let's see. The user wants me to create a structure where each line has specific fields with the correct values. The example given is a headline, then the fields. The fields are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:58:42.198765"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=India; Proxy=instrument; Horizon=1w; Prob=100; Claim=\"Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil\"; Rationale=\"The Trump administration's new tariffs on India have been a significant factor in the country's economic decline, including the impact on its industries and employment\"; Risk=\"High\"; Confidence=2. Headline: \"Trump-Modi ties hit rock bottom with new tariffs on India over Russian oil\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:58:50.468164"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "The example output has exactly one line, so I",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:58:58.732184"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Trump-Modi ties; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=f",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T01:59:07.006062"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T01:59:07.006131"
+    },
+    {
+      "headline": "Bitcoin price today: flat at $114k as trade, economic uncertainty persists",
+      "headline_data": {
+        "text": "Bitcoin price today: flat at $114k as trade, economic uncertainty persists",
+        "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-down-at-113k-as-trade-economic-uncertainty-persists-4171875",
+        "source": "investing",
+        "category": "market_specific",
+        "timestamp": "2025-08-06T13:54:45+00:00",
+        "url": "https://www.investing.com/rss/news_301.rss"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "First, I need to make sure each field is correctly filled. The Domain is \"Bitcoin price today\", the Proxy is \"instrument\", Horizon is \"1w\", Prob is \"0\u2013100%\", Claim is a falsifiable statement, Rationale is a statement within 18 words, Risk is within 6 words, and Confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:59:15.277575"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:59:23.656092"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Okay, let's see. The user wants me to output exactly one line following a specific template. The template includes the domain, proxy, horizon, probability, claim, rationale, risk, and confidence. The headline is about Bitcoin's price.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:59:31.924067"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:59:40.194072"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "First, I need to make sure all the fields are correctly filled. The headline is the main part. The domain, proxy, horizon, probability, claim, rationale, risk, and confidence are each a separate field. The confidence should be 0 because the claim is falsifiable.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T01:59:48.465154"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=Bitcoin; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Bitcoin price today: flat at $114k as trade, economic uncertainty persists\"; Rationale=\"\u226418 words\"; Risk=\"\u22646 words\"; Confidence=\"0|1|2|3\".",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T01:59:56.737288"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "I need to replace the placeholders with the actual values. Let me know if you need any further assistance.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:00:05.014665"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "I need to make sure that each field is correctly placed and that the line is exactly one line. Let me check the order again: Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, Confidence. Then the headline. The values are all correctly set. The headline is \"Bitcoin price today:",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T02:00:13.291536"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T02:00:13.291606"
+    },
+    {
+      "headline": "Actelis Networks board approves cryptocurrency treasury strategy",
+      "headline_data": {
+        "text": "Actelis Networks board approves cryptocurrency treasury strategy",
+        "link": "https://www.investing.com/news/cryptocurrency-news/actelis-networks-board-approves-cryptocurrency-treasury-strategy-432SI-4173276",
+        "source": "investing",
+        "category": "market_specific",
+        "timestamp": "2025-08-06T12:31:38+00:00",
+        "url": "https://www.investing.com/rss/news_301.rss"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Domain=Actelis Networks; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Actelis Networks board approves cryptocurrency treasury strategy\"; Rationale=\"Actelis Networks board approves cryptocurrency treasury strategy is a strategic move to enhance its position in the cryptocurrency market. This decision aims to strengthen its financial position and support its long-term goals in the sector.\"; Risk=0; Confidence=0|1|2|3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T02:00:21.552033"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "with a line break after each headline.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T02:00:29.816425"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain: Actelis Networks",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.0,
+          "timestamp": "2025-08-17T02:00:38.075790"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Domain=<Actelis Networks>; Proxy=<instrument>; Horizon=<1w>; Prob=<0\u2013100%>; Claim=<Actelis Networks board approves cryptocurrency treasury strategy>; Rationale=<The Actelis Networks board has approved a cryptocurrency treasury strategy that aligns with the company's financial goals and market needs.>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:00:46.343872"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Okay, let's see. The user wants me to fill in the fields for the output. The headline is \"Actelis Networks board approves cryptocurrency treasury strategy\". The rest of the fields need to be filled with the values. The domain is \"Actelis Networks\", the proxy is \"instrument\", the horizon is \"1w\", the prob is \"0\u2013100%\", the claim is \"falsifiable statement\", the rationale is up to 18 words, the risk is up to 6 words, and the confidence is 0, 1, 2, or 3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T02:00:54.605641"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "as the headline.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.2,
+          "timestamp": "2025-08-17T02:01:02.869024"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "I need to replace the placeholders with actual values. Let me know if there's any other thing I need to do.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:01:11.135876"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Actelis Networks; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=firms and financial institutions are increasingly adopting cryptocurrency as a means of storing and transferring value; Rationale\u226418 words; Risk\u22646 words; Confidence=0. The headline: \"Actelis Networks board approves cryptocurrency treasury strategy\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T02:01:19.397376"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T02:01:19.397437"
+    },
+    {
+      "headline": "Unitronix adds Ethereum to treasury alongside Bitcoin holdings",
+      "headline_data": {
+        "text": "Unitronix adds Ethereum to treasury alongside Bitcoin holdings",
+        "link": "https://www.investing.com/news/cryptocurrency-news/unitronix-adds-ethereum-to-treasury-alongside-bitcoin-holdings-432SI-4173267",
+        "source": "investing",
+        "category": "market_specific",
+        "timestamp": "2025-08-06T12:31:03+00:00",
+        "url": "https://www.investing.com/rss/news_301.rss"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "The headline is \"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\". The task is to replace the placeholders with the appropriate values. The placeholders are Domain, Proxy, Horizon, Prob, Claim, Rationale, Risk, and Confidence. The values to fill in are Domain: \"Unitronix\", Proxy: \"instrument\", Horizon: \"1w\", Prob: \"0\u2013100%\", Claim: \"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\", Rationale: \"Unitronix adds Ethereum to its treasury alongside Bitcoin holdings, which is a significant move in the cryptocurrency space\", Risk: \"Risk assessment indicates that this is a positive move, but there are concerns about market volatility\", Confidence: \"Conf",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.30000000000000004,
+          "timestamp": "2025-08-17T02:01:27.661629"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:01:35.927417"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "Domain=Unitronix; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\"; Rationale=\"Unitronix adds Ethereum to its treasury and maintains its Bitcoin holdings, which are a significant portion of its assets. This indicates that the company is actively managing its financial position and is not in a state of financial distress.\"; Risk=\"Risk of increased market volatility due to the addition of Ethereum and Bitcoin to its portfolio.\"; Confidence=2",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:01:44.191933"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "- \"Domain:Unitronix; Proxy:instrument; Horizon:1w; Prob:0\u2013100%; Claim: 'Unitronix adds Ethereum to treasury alongside Bitcoin holdings'; Rationale: 'Unitronix adds Ethereum to treasury alongside Bitcoin holdings'; Risk: 'Unitronix adds Ethereum to treasury alongside Bitcoin holdings'; Confidence: 0\"",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:01:52.465902"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "Domain=Unitronix; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\"; Rationale=\"Unitronix is a company that operates in the financial sector, and it has a significant amount of assets. The addition of Ethereum and Bitcoin to its treasury aligns with its strategy to diversify its holdings and reduce exposure to volatile markets.\"; Risk=\"Increased exposure to high-risk assets.\"; Confidence=3.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:02:00.728731"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Domain=<\u2026>; Proxy=<instrument|metric|event>; Horizon=<1w|1m|1q>; Prob=<0\u2013100%>; Claim=<falsifiable statement>; Rationale=<\u226418 words>; Risk=<\u22646 words>; Confidence=<0|1|2|3>.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:02:08.991678"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Domain=Unitronix; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\"; Rationale=\"Unitronix is a major player in the cryptocurrency market, with a strong presence in both Bitcoin and Ethereum. This addition to the treasury reflects their commitment to supporting the growth of the cryptocurrency market and their long-term financial goals.\"; Risk=\"There is a potential for increased market volatility due to the addition of Ethereum to the treasury.\"; Confidence=0. Headline: \"Unitronix adds",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.5,
+          "timestamp": "2025-08-17T02:02:17.253382"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "Domain=Unitronix; Proxy=instrument; Horizon=1w; Prob=0\u2013100%; Claim=\"Unitronix adds Ethereum to treasury alongside Bitcoin holdings\"; Rationale=\"Unitronix adds Ethereum to its treasury alongside its Bitcoin holdings; this aligns with its financial strategy to diversify its asset base.\"; Risk=\"Unitronix's addition of Ethereum to its treasury is a positive move, potentially increasing liquidity and reducing exposure to volatile markets.\"; Confidence=0.",
+          "method": "basic_stochastic",
+          "immediate_reward": 0.0,
+          "trade_thinking_score": 0.1,
+          "timestamp": "2025-08-17T02:02:25.515429"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "basic_stochastic"
+      ],
+      "avg_immediate_reward": 0.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-08-17T02:02:25.515496"
+    }
+  ],
+  "summary": {
+    "total_headlines": 27,
+    "total_rollouts": 216,
+    "methods_used": {
+      "basic_stochastic": 216
+    },
+    "sampler_profiles": {
+      "tight": 27
+    },
+    "avg_immediate_reward": 0.0,
+    "reward_range": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  }
+}
