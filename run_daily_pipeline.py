@@ -127,6 +127,21 @@ class DailyPipeline:
                 self.rss_collector.save_headlines(headlines, date)
                 logger.info(f"Collected and saved {len(headlines)} headlines")
 
+            # Step 1b: Scrape and save article info (non-breaking separate file)
+            try:
+                existing_articles = self.storage.load_data("articles", date)
+                if existing_articles and isinstance(existing_articles, dict) and existing_articles.get("articles"):
+                    logger.info(f"Using existing articles for {date} ({len(existing_articles['articles'])})")
+                else:
+                    arts = self.rss_collector.collect_article_info(headlines)
+                    if arts:
+                        self.rss_collector.save_articles(arts, date)
+                        logger.info(f"Collected and saved {len(arts)} articles")
+                    else:
+                        logger.info("No articles scraped (scraper unavailable or zero results)")
+            except Exception as e:
+                logger.warning(f"Article scraping step failed; continuing without articles: {e}")
+
             # Step 2: Generate predictions (support multi-horizon)
             logger.info("Step 2: Generating predictions...")
             horizons = getattr(self, 'horizons', None)

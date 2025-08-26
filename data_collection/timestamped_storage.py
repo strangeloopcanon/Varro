@@ -39,7 +39,9 @@ class TimestampedStorage:
         self.storage_dir.mkdir(exist_ok=True)
         
         # Data types we store
-        self.data_types = ["headlines", "predictions", "evaluations", "accuracy"]
+        # Note: adding "articles" does not affect existing consumers; it enables
+        # listing/stats and consistent save/load behavior for scraped article data.
+        self.data_types = ["headlines", "articles", "predictions", "evaluations", "accuracy"]
     
     def save_data(self, data: Dict[str, Any], data_type: str, date: str = None):
         """Save data with timestamp."""

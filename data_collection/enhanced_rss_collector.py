@@ -7,6 +7,7 @@ Collects headlines from multiple RSS feeds with error handling and timestamped s
 import json
 import logging
 import os
+import sys
 import requests
 import feedparser
 from datetime import datetime, timezone
@@ -15,6 +16,15 @@ from urllib.parse import urlparse
 import time
 
 logger = logging.getLogger(__name__)
+
+# Ensure project root is on sys.path when running this file directly
+try:
+    _this_dir = os.path.dirname(os.path.abspath(__file__))
+    _project_root = os.path.dirname(_this_dir)
+    if _project_root not in sys.path:
+        sys.path.append(_project_root)
+except Exception:
+    pass
 
 class EnhancedRSSCollector:
     """Collects headlines from multiple RSS feeds with error handling."""
@@ -27,6 +37,12 @@ class EnhancedRSSCollector:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
         })
+        # Lazy imports to avoid hard deps at import time
+        try:
+            from data_collection.article_scraper import ArticleScraper  # type: ignore
+            self.article_scraper = ArticleScraper(self.session)
+        except Exception:
+            self.article_scraper = None
 
     def _load_sources_from_config(self):
         """Load RSS sources and optional source name mapping from config/rss_sources.json."""
@@ -213,6 +229,57 @@ class EnhancedRSSCollector:
         logger.info(f"Saved {len(headlines)} headlines to {filename}")
         return filename
 
+    # --- Articles: new optional functionality ---
+    def collect_article_info(self, headlines: List[Dict[str, Any]], max_workers: int = 6) -> List[Dict[str, Any]]:
+        """Scrape article information for provided headlines.
+
+        Returns list of article records. If scraper is unavailable, returns empty list.
+        """
+        # Allow disabling via env var for quick testing/diagnostics
+        try:
+            if os.getenv("VARRO_SKIP_ARTICLES", "").lower() in {"1", "true", "yes"}:
+                logger.info("VARRO_SKIP_ARTICLES set; skipping article scraping")
+                return []
+        except Exception:
+            pass
+        if not headlines:
+            return []
+        if not getattr(self, 'article_scraper', None):
+            logger.warning("ArticleScraper not available; skipping article scraping")
+            return []
+        try:
+            articles = self.article_scraper.scrape_many(headlines, max_workers=max_workers)
+            logger.info(f"Scraped articles for {len(articles)} unique links")
+            return articles
+        except Exception as e:
+            logger.warning(f"Article scraping failed: {e}")
+            return []
+
+    def save_articles(self, articles: List[Dict[str, Any]], date: str = None):
+        """Save scraped articles to timestamped storage using TimestampedStorage.
+
+        This does not modify the headlines file and is safe for downstream consumers.
+        """
+        if not articles:
+            return None
+        if date is None:
+            date = datetime.now().strftime("%Y%m%d")
+        try:
+            # Use TimestampedStorage to respect run-suffix behavior
+            from data_collection.timestamped_storage import TimestampedStorage
+            storage = TimestampedStorage()
+            data = {
+                "articles": articles,
+                "total_articles": len(articles),
+                "collected_at": datetime.now().isoformat(),
+            }
+            filename = storage.save_data(data, "articles", date)
+            logger.info(f"Saved {len(articles)} articles to {filename}")
+            return filename
+        except Exception as e:
+            logger.error(f"Failed to save articles: {e}")
+            return None
+
 def main():
     """Main function for testing."""
     collector = EnhancedRSSCollector()
@@ -225,6 +292,18 @@ def main():
     
     print(f"Collected {len(headlines)} headlines")
     print(f"Saved to: {filename}")
+    
+    # Collect and save articles by default (non-breaking separate file)
+    try:
+        articles = collector.collect_article_info(headlines)
+        if articles:
+            afile = collector.save_articles(articles)
+            if afile:
+                print(f"Saved articles to: {afile}")
+        else:
+            print("No articles scraped or scraper unavailable.")
+    except Exception as e:
+        print(f"Article scraping skipped due to error: {e}")
     
     # Show sample headlines
     print("\nSample headlines:")
