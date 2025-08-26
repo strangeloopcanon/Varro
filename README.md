@@ -1,5 +1,8 @@
 # Varro: Financial Prediction GSPO System
 
+## 🔗 Quick Links
+- Final Report (So‑What + Story): `reports/FINAL_REPORT.md`
+
 A daily financial prediction system using Group Sequence Policy Optimization (GSPO) with MLX, collecting news headlines, generating 8 rollouts per headline, tracking outcomes, and continuously training the model.
 
 ## 🎯 System Overview
@@ -244,3 +247,16 @@ Copy or link the `data/sample` folder into your working timestamped storage, and
 ## 📄 License
 
 This project is licensed under the MIT License.
+
+## 🗂️ Reports Index
+
+- Final report: `reports/FINAL_REPORT.md` — canonical summary of experiments, conclusions, defaults, risks, and next steps (easy to find).
+- Synthesis (latest alias): `reports/ALL_RUNS_SYNTHESIS_SO_WHAT.md` — rolling latest synthesis; dated snapshot: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_YYYYMMDD.md`.
+- Cross-run comparison: `reports/CROSS_RUN_COMPARISON_20250819.md` — links to `reports/CROSS_RUN_DAILY_METRICS_20250819.csv` and plots (`reports/cross_run_daily_*.png`).
+- Defaults & rationale: `reports/DEFAULTS_AND_RATIONALE_20250819.md` — recommended configs and why.
+- Run-specific reports: `reports/*_YYYYMMDD_REPORT.md` — per-run details (e.g., `SEMANTICRUN_TIGHT_Q25_20250819_REPORT.md`, `NEWCOMPOSITERUN_20250818_REPORT.md`).
+- Incidents/status: e.g., `reports/Evaluation_Fallback_Incident_20250802_20250811.md`, `reports/TEMP_STATUS_NEWCOMPOSITERUN.md`.
+- Data inventory: `paper/DATA_INVENTORY.md` — where artifacts live and how to navigate them.
+
+Notes
+- We keep both dated reports (immutable snapshots for provenance) and a stable “latest” alias for quick reference. The final report above is the go‑to document.
