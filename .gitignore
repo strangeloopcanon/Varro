@@ -134,7 +134,6 @@ training/
 data/
 !data/sample/
 !data/sample/**
-timestamped_storage/
 OLD_ARCHIVE/
 archive/
 __pycache__/
