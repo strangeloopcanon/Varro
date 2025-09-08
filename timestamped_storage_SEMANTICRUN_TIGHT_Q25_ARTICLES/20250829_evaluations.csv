@@ -1,0 +1,201 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250829_next_day_Alibaba's_9%_Earning_0,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_1,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_2,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,2,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_3,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,3,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_4,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_5,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,5,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_6,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,6,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Alibaba's_9%_Earning_7,Alibaba's 9% Earnings Rally: The AI Bet Is Paying Off,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__0,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,0,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__1,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__2,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__3,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,3,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__4,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__5,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__6,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,6,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Frontline_plc_(FRO)__7,Frontline plc (FRO) Q2 2025 Earnings Call Transcript,7,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_0,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_1,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_2,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_3,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_4,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_5,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_6,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Frontline_plc_2025_Q_7,Frontline plc 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_0,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,0,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_1,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_2,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,2,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_3,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_4,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,4,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_5,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_6,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_IAI:_Exceptional_Ret_7,IAI: Exceptional Returns Make It An Attractive Alternative To High Beta Tech And Growth ETFs,7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_0,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",0,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_1,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",1,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_2,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",2,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_3,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",3,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_4,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",4,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_5,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_6,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Alibaba’s_cloud-comp_7,"Alibaba’s cloud-computing business is thriving, and it has a new AI chip in the works. The stock is rising.",7,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Investors_are_turnin_0,Investors are turning to this neglected part of the stock market. And it’s still cheap.,0,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Investors_are_turnin_1,Investors are turning to this neglected part of the stock market. And it’s still cheap.,1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Investors_are_turnin_2,Investors are turning to this neglected part of the stock market. And it’s still cheap.,2,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Investors_are_turnin_3,Investors are turning to this neglected part of the stock market. And it’s still cheap.,3,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Investors_are_turnin_4,Investors are turning to this neglected part of the stock market. And it’s still cheap.,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Investors_are_turnin_5,Investors are turning to this neglected part of the stock market. And it’s still cheap.,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Investors_are_turnin_6,Investors are turning to this neglected part of the stock market. And it’s still cheap.,6,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Investors_are_turnin_7,Investors are turning to this neglected part of the stock market. And it’s still cheap.,7,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_0,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",0,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_1,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_2,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",2,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_3,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",3,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_4,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",4,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_5,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",5,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_6,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",6,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_NVDY:_Nvidia_Implied_7,"NVDY: Nvidia Implied Volatility Drops Hard Post Earnings, Weak Calendar Stretch",7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_0,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_1,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,1,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_2,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,2,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_3,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,3,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_4,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_5,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,5,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_6,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Agricultural_Bank_of_7,Agricultural Bank of China Limited (ACGBY) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_0,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,0,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_1,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,1,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_2,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,2,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_3,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,3,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_4,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,4,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_5,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_6,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Legacy_Education's_D_7,Legacy Education's Double-Digit Growth Story: A Premium Worth Paying,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_0,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",0,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_1,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_2,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",2,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_3,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",3,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_4,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",4,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_5,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",5,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_6,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",6,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Victoria's_Secret_Is_7,"Victoria's Secret Is Challenged In The U.S., Stock Price Is More Reasonable",7,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__0,AI Earnings Lead To Record Gains,0,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__1,AI Earnings Lead To Record Gains,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__2,AI Earnings Lead To Record Gains,2,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__3,AI Earnings Lead To Record Gains,3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__4,AI Earnings Lead To Record Gains,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__5,AI Earnings Lead To Record Gains,5,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__6,AI Earnings Lead To Record Gains,6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_AI_Earnings_Lead_To__7,AI Earnings Lead To Record Gains,7,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__0,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,0,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__1,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__2,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,2,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__3,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__4,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,4,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__5,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,5,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__6,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,6,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Bulls_and_bears_are__7,Bulls and bears are in a tug-of-war for stock-market control. Here’s the side you want to be on now.,7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_0,Who's In Charge Of The U.S. Economy (If Not The Fed)?,0,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_1,Who's In Charge Of The U.S. Economy (If Not The Fed)?,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_2,Who's In Charge Of The U.S. Economy (If Not The Fed)?,2,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_3,Who's In Charge Of The U.S. Economy (If Not The Fed)?,3,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_4,Who's In Charge Of The U.S. Economy (If Not The Fed)?,4,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_5,Who's In Charge Of The U.S. Economy (If Not The Fed)?,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_6,Who's In Charge Of The U.S. Economy (If Not The Fed)?,6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Who's_In_Charge_Of_T_7,Who's In Charge Of The U.S. Economy (If Not The Fed)?,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__0,The Liquidity Drain Could Be About To Hit Markets,0,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__1,The Liquidity Drain Could Be About To Hit Markets,1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__2,The Liquidity Drain Could Be About To Hit Markets,2,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__3,The Liquidity Drain Could Be About To Hit Markets,3,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__4,The Liquidity Drain Could Be About To Hit Markets,4,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__5,The Liquidity Drain Could Be About To Hit Markets,5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__6,The Liquidity Drain Could Be About To Hit Markets,6,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_The_Liquidity_Drain__7,The Liquidity Drain Could Be About To Hit Markets,7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_0,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_1,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",1,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_2,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",2,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_3,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",3,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_4,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",4,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_5,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_6,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Key_U.S._inflation_g_7,"Key U.S. inflation gauge creeps higher, but not high enough to stave off Fed interest-rate cut",7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_0,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_1,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,1,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_2,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,2,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_3,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_4,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_5,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,5,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_6,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_U.S._trade_deficit_i_7,U.S. trade deficit in goods widened sharply in July as firms raced to avoid tariffs,7,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_0,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,0,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_1,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,1,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_2,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,2,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_3,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,3,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_4,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,4,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_5,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,5,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_6,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,6,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Bitcoin_price_today:_7,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_0,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_1,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",1,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_2,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",2,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_3,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_4,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",4,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_5,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",5,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_6,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",6,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Americans_spent_a_lo_7,"Americans spent a lot more on cars in July, but not much else. Tariffs are keeping consumers cautious.",7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_0,UK blocks Israeli government delegation from arms trade fair,0,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_1,UK blocks Israeli government delegation from arms trade fair,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_2,UK blocks Israeli government delegation from arms trade fair,2,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_3,UK blocks Israeli government delegation from arms trade fair,3,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_4,UK blocks Israeli government delegation from arms trade fair,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_5,UK blocks Israeli government delegation from arms trade fair,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_6,UK blocks Israeli government delegation from arms trade fair,6,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_UK_blocks_Israeli_go_7,UK blocks Israeli government delegation from arms trade fair,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_0,MSP denies hiding camera in Scottish Parliament toilet,0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_1,MSP denies hiding camera in Scottish Parliament toilet,1,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_2,MSP denies hiding camera in Scottish Parliament toilet,2,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_3,MSP denies hiding camera in Scottish Parliament toilet,3,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_4,MSP denies hiding camera in Scottish Parliament toilet,4,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_5,MSP denies hiding camera in Scottish Parliament toilet,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_6,MSP denies hiding camera in Scottish Parliament toilet,6,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_MSP_denies_hiding_ca_7,MSP denies hiding camera in Scottish Parliament toilet,7,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_0,Bank share prices tumble after calls for tax on profits,0,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_1,Bank share prices tumble after calls for tax on profits,1,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_2,Bank share prices tumble after calls for tax on profits,2,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_3,Bank share prices tumble after calls for tax on profits,3,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_4,Bank share prices tumble after calls for tax on profits,4,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_5,Bank share prices tumble after calls for tax on profits,5,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_6,Bank share prices tumble after calls for tax on profits,6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Bank_share_prices_tu_7,Bank share prices tumble after calls for tax on profits,7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_0,DeFi Development launches Solana treasury vehicle in UK market,0,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_1,DeFi Development launches Solana treasury vehicle in UK market,1,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_2,DeFi Development launches Solana treasury vehicle in UK market,2,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_3,DeFi Development launches Solana treasury vehicle in UK market,3,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_4,DeFi Development launches Solana treasury vehicle in UK market,4,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_5,DeFi Development launches Solana treasury vehicle in UK market,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_6,DeFi Development launches Solana treasury vehicle in UK market,6,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_DeFi_Development_lau_7,DeFi Development launches Solana treasury vehicle in UK market,7,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_0,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,0,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_1,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,1,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_2,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,2,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_3,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,3,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_4,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,4,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_5,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,5,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_6,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,6,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Bybit_Adds_Tokenized_7,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,7,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__0,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__1,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,1,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__2,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,2,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__3,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,3,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__4,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,4,basic_stochastic,5,0.4285714285714286,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__5,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,5,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__6,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,6,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Gate_Launches_GUSD:__7,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,7,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_0,Why the long-ETH/short-BTC trade matters,0,basic_stochastic,1,1.0,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_1,Why the long-ETH/short-BTC trade matters,1,basic_stochastic,4,0.5714285714285714,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_2,Why the long-ETH/short-BTC trade matters,2,basic_stochastic,2,0.8571428571428572,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_3,Why the long-ETH/short-BTC trade matters,3,basic_stochastic,6,0.2857142857142857,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_4,Why the long-ETH/short-BTC trade matters,4,basic_stochastic,7,0.1428571428571429,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_5,Why the long-ETH/short-BTC trade matters,5,basic_stochastic,8,0.0,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_6,Why the long-ETH/short-BTC trade matters,6,basic_stochastic,3,0.7142857142857143,20250829,evaluated
+20250829_next_day_Why_the_long-ETH/sho_7,Why the long-ETH/short-BTC trade matters,7,basic_stochastic,5,0.4285714285714286,20250829,evaluated

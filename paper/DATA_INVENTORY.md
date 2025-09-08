@@ -17,6 +17,8 @@
 ### B. Predictions and evaluations
 - Daily storage (authoritative, post-fix): `timestamped_storage_<SUFFIX>/` (e.g., `timestamped_storage_NEWCOMPOSITERUN/`)
   - `YYYYMMDD_headlines.json`
+  - `YYYYMMDD_articles.json` (raw scrape; optional)
+  - `YYYYMMDD_articles_clean.json` (cleaned excerpts; optional)
   - `YYYYMMDD_predictions.json`
   - `YYYYMMDD_outcome_tracking.json`
   - `YYYYMMDD_evaluations.json`
@@ -64,3 +66,4 @@
 ### Notes
 - Run isolation: set `VARRO_RUN_DIR_SUFFIX` (e.g., `NEWCOMPOSITERUN`, `AB_LATEST_DAY`) or pass `--run_suffix <SUFFIX>` to route reads/writes to `timestamped_storage_<SUFFIX>/` and `training/checkpoints/gspo_<SUFFIX>/`, with fallback to base headlines.
 - The two training dataset families (`gspo_training_*.json` vs `gspo_training_data_*.json`) differ on some days. Keep both until reconciled; prefer the `gspo_training_*.json` schema when possible.
+ - Article‑aware run (validation): `SEMANTICRUN_TIGHT_Q25_ARTICLES` — see `timestamped_storage_SEMANTICRUN_TIGHT_Q25_ARTICLES/` and `training/checkpoints/gspo_SEMANTICRUN_TIGHT_Q25_ARTICLES/`.

@@ -1,0 +1,153 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250907_next_day_Wall_Street_sees_Sep_0,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,0,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_1,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,1,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_2,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,2,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_3,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,3,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_4,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,4,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_5,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,5,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_6,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,6,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Wall_Street_sees_Sep_7,Wall Street sees September rate cut as sure thing — CPI inflation data may have a lot to say about what comes next,7,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_0,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,0,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_1,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,1,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_2,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,2,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_3,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,3,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_4,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,4,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_5,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,5,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_6,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,6,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_AMG_GW&K_Municipal_B_7,AMG GW&K Municipal Bond Fund Q2 2025 Commentary,7,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__0,"The 1-Minute Market Report September 7, 2025",0,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__1,"The 1-Minute Market Report September 7, 2025",1,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__2,"The 1-Minute Market Report September 7, 2025",2,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__3,"The 1-Minute Market Report September 7, 2025",3,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__4,"The 1-Minute Market Report September 7, 2025",4,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__5,"The 1-Minute Market Report September 7, 2025",5,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__6,"The 1-Minute Market Report September 7, 2025",6,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_The_1-Minute_Market__7,"The 1-Minute Market Report September 7, 2025",7,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_0,AMG GW&K ESG Bond Fund Q2 2025 Commentary,0,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_1,AMG GW&K ESG Bond Fund Q2 2025 Commentary,1,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_2,AMG GW&K ESG Bond Fund Q2 2025 Commentary,2,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_3,AMG GW&K ESG Bond Fund Q2 2025 Commentary,3,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_4,AMG GW&K ESG Bond Fund Q2 2025 Commentary,4,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_5,AMG GW&K ESG Bond Fund Q2 2025 Commentary,5,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_6,AMG GW&K ESG Bond Fund Q2 2025 Commentary,6,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_AMG_GW&K_ESG_Bond_Fu_7,AMG GW&K ESG Bond Fund Q2 2025 Commentary,7,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_0,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,0,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_1,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,1,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_2,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,2,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_3,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,3,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_4,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,4,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_5,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,5,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_6,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,6,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Mercedes-Benz:_Tarif_7,Mercedes-Benz: Tariffs And Weak Demand Drive Earnings Collapse,7,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_0,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,0,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_1,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,1,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_2,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,2,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_3,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,3,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_4,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,4,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_5,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,5,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_6,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,6,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_5_money_moves_to_mak_7,5 money moves to make if you won the Powerball jackpot — or get any kind of financial windfall,7,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_0,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),0,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_1,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),1,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_2,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),2,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_3,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),3,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_4,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),4,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_5,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),5,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_6,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),6,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_NACCO_Industries:_Tr_7,NACCO Industries: Trade War And Macroeconomic Uncertainty Threaten Profit Growth (Rating Downgrade),7,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_0,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,0,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_1,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,1,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_2,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,2,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_3,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,3,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_4,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,4,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_5,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,5,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_6,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,6,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Chemtrade_Logistics:_7,Chemtrade Logistics: Another Guidance Hike Means The Stock Is Still Cheap,7,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_0,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,0,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_1,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,1,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_2,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,2,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_3,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,3,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_4,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,4,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_5,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,5,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_6,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,6,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Total_Return_Breakou_7,Total Return Breakouts: Biotechs Accelerating To Overtake Gold Rush,7,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_0,This Week Could Bring The Fed's Worst Nightmare: Stagflation,0,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_1,This Week Could Bring The Fed's Worst Nightmare: Stagflation,1,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_2,This Week Could Bring The Fed's Worst Nightmare: Stagflation,2,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_3,This Week Could Bring The Fed's Worst Nightmare: Stagflation,3,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_4,This Week Could Bring The Fed's Worst Nightmare: Stagflation,4,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_5,This Week Could Bring The Fed's Worst Nightmare: Stagflation,5,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_6,This Week Could Bring The Fed's Worst Nightmare: Stagflation,6,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_This_Week_Could_Brin_7,This Week Could Bring The Fed's Worst Nightmare: Stagflation,7,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_0,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",0,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_1,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",1,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_2,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",2,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_3,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",3,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_4,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",4,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_5,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",5,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_6,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",6,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Bristol-Myers_Squibb_7,"Bristol-Myers Squibb: Growth Portfolio Surpasses Legacy, Driving Oncology And Immunology Leadership",7,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_0,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,0,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_1,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,1,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_2,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,2,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_3,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,3,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_4,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,4,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_5,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,5,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_6,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,6,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Equinor: _Europe_Ent_7,Equinor:  Europe Enters Heating Season With Lowest Natural Gas Storage Levels Since 2021,7,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_0,Synaptics: IoT Finally Driving Another Episode Of Growth,0,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_1,Synaptics: IoT Finally Driving Another Episode Of Growth,1,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_2,Synaptics: IoT Finally Driving Another Episode Of Growth,2,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_3,Synaptics: IoT Finally Driving Another Episode Of Growth,3,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_4,Synaptics: IoT Finally Driving Another Episode Of Growth,4,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_5,Synaptics: IoT Finally Driving Another Episode Of Growth,5,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_6,Synaptics: IoT Finally Driving Another Episode Of Growth,6,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_Synaptics:_IoT_Final_7,Synaptics: IoT Finally Driving Another Episode Of Growth,7,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_0,The Nihilist Defense Of The Efficient Market Hypothesis,0,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_1,The Nihilist Defense Of The Efficient Market Hypothesis,1,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_2,The Nihilist Defense Of The Efficient Market Hypothesis,2,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_3,The Nihilist Defense Of The Efficient Market Hypothesis,3,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_4,The Nihilist Defense Of The Efficient Market Hypothesis,4,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_5,The Nihilist Defense Of The Efficient Market Hypothesis,5,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_6,The Nihilist Defense Of The Efficient Market Hypothesis,6,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_The_Nihilist_Defense_7,The Nihilist Defense Of The Efficient Market Hypothesis,7,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_0,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,0,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_1,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,1,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_2,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,2,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_3,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,3,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_4,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,4,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_5,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,5,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_6,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,6,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_CLM:_This_Fund_Shoul_7,CLM: This Fund Should Continue To Trade At A Significant Premium To The NAV Next Year,7,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__0,August CPI Preview: Muted Inflation Consistent With Recession,0,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__1,August CPI Preview: Muted Inflation Consistent With Recession,1,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__2,August CPI Preview: Muted Inflation Consistent With Recession,2,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__3,August CPI Preview: Muted Inflation Consistent With Recession,3,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__4,August CPI Preview: Muted Inflation Consistent With Recession,4,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__5,August CPI Preview: Muted Inflation Consistent With Recession,5,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__6,August CPI Preview: Muted Inflation Consistent With Recession,6,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_August_CPI_Preview:__7,August CPI Preview: Muted Inflation Consistent With Recession,7,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_0,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",0,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_1,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",1,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_2,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",2,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_3,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",3,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_4,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",4,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_5,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",5,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_6,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",6,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_‘I_am_my_mother’s_ca_7,"‘I am my mother’s caregiver’: My mom, 93, added my name to her bank and retirement accounts. Will she qualify for Medicaid?",7,basic_stochastic,8,0.0,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_0","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",0,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_1","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",1,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_2","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",2,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_3","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",3,basic_stochastic,1,1.0,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_4","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",4,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_5","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",5,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_6","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",6,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+"20250907_next_day_My_mother,_81,_disco_7","My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",7,basic_stochastic,8,0.0,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_0,iSpecimen receives crypto treasury proposals amid $200M digital plan,0,basic_stochastic,6,0.2857142857142857,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_1,iSpecimen receives crypto treasury proposals amid $200M digital plan,1,basic_stochastic,5,0.4285714285714286,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_2,iSpecimen receives crypto treasury proposals amid $200M digital plan,2,basic_stochastic,2,0.8571428571428572,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_3,iSpecimen receives crypto treasury proposals amid $200M digital plan,3,basic_stochastic,1,1.0,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_4,iSpecimen receives crypto treasury proposals amid $200M digital plan,4,basic_stochastic,4,0.5714285714285714,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_5,iSpecimen receives crypto treasury proposals amid $200M digital plan,5,basic_stochastic,7,0.1428571428571429,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_6,iSpecimen receives crypto treasury proposals amid $200M digital plan,6,basic_stochastic,3,0.7142857142857143,20250907,evaluated
+20250907_next_day_iSpecimen_receives_c_7,iSpecimen receives crypto treasury proposals amid $200M digital plan,7,basic_stochastic,8,0.0,20250907,evaluated

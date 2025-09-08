@@ -1,0 +1,137 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250831_next_day_Tories_pledge_to_get_0,Tories pledge to get all oil and gas out of North Sea,0,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_1,Tories pledge to get all oil and gas out of North Sea,1,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_2,Tories pledge to get all oil and gas out of North Sea,2,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_3,Tories pledge to get all oil and gas out of North Sea,3,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_4,Tories pledge to get all oil and gas out of North Sea,4,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_5,Tories pledge to get all oil and gas out of North Sea,5,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_6,Tories pledge to get all oil and gas out of North Sea,6,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Tories_pledge_to_get_7,Tories pledge to get all oil and gas out of North Sea,7,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__0,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,0,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__1,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,1,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__2,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,2,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__3,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,3,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__4,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,4,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__5,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,5,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__6,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,6,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_BlackRock_Strategic__7,BlackRock Strategic Global Bond Fund Q2 2025 Commentary,7,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_0,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",0,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_1,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",1,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_2,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",2,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_3,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",3,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_4,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",4,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_5,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",5,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_6,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",6,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Analyst_Connect_Augu_7,"Analyst Connect August 2025: Earnings Coverage Reminders, Top 15 Revealed, And 'Old School' Investment Wisdom",7,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_0,Flawed Jobs Data Threatens Fed's September Rate Cut,0,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_1,Flawed Jobs Data Threatens Fed's September Rate Cut,1,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_2,Flawed Jobs Data Threatens Fed's September Rate Cut,2,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_3,Flawed Jobs Data Threatens Fed's September Rate Cut,3,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_4,Flawed Jobs Data Threatens Fed's September Rate Cut,4,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_5,Flawed Jobs Data Threatens Fed's September Rate Cut,5,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_6,Flawed Jobs Data Threatens Fed's September Rate Cut,6,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Flawed_Jobs_Data_Thr_7,Flawed Jobs Data Threatens Fed's September Rate Cut,7,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_0,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",0,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_1,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",1,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_2,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",2,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_3,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",3,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_4,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",4,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_5,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",5,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_6,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",6,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Broadcom_Earnings_Pr_7,"Broadcom Earnings Preview: Premium Valuation, Premium Risks (Rating Upgrade)",7,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_0,Inflation: Stable Now,0,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_1,Inflation: Stable Now,1,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_2,Inflation: Stable Now,2,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_3,Inflation: Stable Now,3,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_4,Inflation: Stable Now,4,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_5,Inflation: Stable Now,5,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_6,Inflation: Stable Now,6,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Inflation:_Stable_No_7,Inflation: Stable Now,7,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_0,August Job Report Preview: Weak Report To Cement The September Fed Cut,0,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_1,August Job Report Preview: Weak Report To Cement The September Fed Cut,1,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_2,August Job Report Preview: Weak Report To Cement The September Fed Cut,2,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_3,August Job Report Preview: Weak Report To Cement The September Fed Cut,3,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_4,August Job Report Preview: Weak Report To Cement The September Fed Cut,4,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_5,August Job Report Preview: Weak Report To Cement The September Fed Cut,5,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_6,August Job Report Preview: Weak Report To Cement The September Fed Cut,6,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_August_Job_Report_Pr_7,August Job Report Preview: Weak Report To Cement The September Fed Cut,7,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__0,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,0,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__1,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,1,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__2,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,2,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__3,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,3,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__4,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,4,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__5,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,5,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__6,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,6,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_BRT_Apartments:_Buy__7,BRT Apartments: Buy The Dip Opportunity As Portfolio Growth Continues,7,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_0,Is Alphabet's Golden Era Over (Rating Downgrade),0,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_1,Is Alphabet's Golden Era Over (Rating Downgrade),1,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_2,Is Alphabet's Golden Era Over (Rating Downgrade),2,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_3,Is Alphabet's Golden Era Over (Rating Downgrade),3,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_4,Is Alphabet's Golden Era Over (Rating Downgrade),4,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_5,Is Alphabet's Golden Era Over (Rating Downgrade),5,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_6,Is Alphabet's Golden Era Over (Rating Downgrade),6,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Is_Alphabet's_Golden_7,Is Alphabet's Golden Era Over (Rating Downgrade),7,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_0,Market Efficiency Is Impossible: Here Is Why And Why It Matters,0,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_1,Market Efficiency Is Impossible: Here Is Why And Why It Matters,1,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_2,Market Efficiency Is Impossible: Here Is Why And Why It Matters,2,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_3,Market Efficiency Is Impossible: Here Is Why And Why It Matters,3,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_4,Market Efficiency Is Impossible: Here Is Why And Why It Matters,4,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_5,Market Efficiency Is Impossible: Here Is Why And Why It Matters,5,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_6,Market Efficiency Is Impossible: Here Is Why And Why It Matters,6,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Market_Efficiency_Is_7,Market Efficiency Is Impossible: Here Is Why And Why It Matters,7,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Is_the_stock_market__0,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,0,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Is_the_stock_market__1,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,1,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Is_the_stock_market__2,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,2,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Is_the_stock_market__3,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,3,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Is_the_stock_market__4,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,4,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Is_the_stock_market__5,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,5,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Is_the_stock_market__6,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,6,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Is_the_stock_market__7,Is the stock market open tomorrow for Labor Day? Does the post office deliver mail?,7,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_0,"Reeling from Trump's tariffs, India and China seek a business reboot",0,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_1,"Reeling from Trump's tariffs, India and China seek a business reboot",1,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_2,"Reeling from Trump's tariffs, India and China seek a business reboot",2,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_3,"Reeling from Trump's tariffs, India and China seek a business reboot",3,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_4,"Reeling from Trump's tariffs, India and China seek a business reboot",4,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_5,"Reeling from Trump's tariffs, India and China seek a business reboot",5,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_6,"Reeling from Trump's tariffs, India and China seek a business reboot",6,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Reeling_from_Trump's_7,"Reeling from Trump's tariffs, India and China seek a business reboot",7,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_0,The trade in US body parts that's completely legal - but ripe for exploitation,0,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_1,The trade in US body parts that's completely legal - but ripe for exploitation,1,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_2,The trade in US body parts that's completely legal - but ripe for exploitation,2,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_3,The trade in US body parts that's completely legal - but ripe for exploitation,3,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_4,The trade in US body parts that's completely legal - but ripe for exploitation,4,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_5,The trade in US body parts that's completely legal - but ripe for exploitation,5,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_6,The trade in US body parts that's completely legal - but ripe for exploitation,6,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_The_trade_in_US_body_7,The trade in US body parts that's completely legal - but ripe for exploitation,7,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_0,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,0,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_1,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,1,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_2,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,2,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_3,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,3,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_4,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,4,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_5,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,5,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_6,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,6,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Bitcoin_price_today:_7,Bitcoin price today: dips to $109k on firm inflation data; set for monthly drop,7,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_0,DeFi Development launches Solana treasury vehicle in UK market,0,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_1,DeFi Development launches Solana treasury vehicle in UK market,1,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_2,DeFi Development launches Solana treasury vehicle in UK market,2,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_3,DeFi Development launches Solana treasury vehicle in UK market,3,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_4,DeFi Development launches Solana treasury vehicle in UK market,4,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_5,DeFi Development launches Solana treasury vehicle in UK market,5,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_6,DeFi Development launches Solana treasury vehicle in UK market,6,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_DeFi_Development_lau_7,DeFi Development launches Solana treasury vehicle in UK market,7,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_0,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,0,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_1,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,1,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_2,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,2,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_3,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,3,basic_stochastic,5,0.4285714285714286,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_4,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,4,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_5,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,5,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_6,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,6,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Bybit_Adds_Tokenized_7,Bybit Adds Tokenized Gold (XAUT) to TON Network With Earn Yields Up to 100%,7,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__0,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,0,basic_stochastic,4,0.5714285714285714,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__1,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,1,basic_stochastic,7,0.1428571428571429,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__2,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,2,basic_stochastic,6,0.2857142857142857,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__3,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,3,basic_stochastic,2,0.8571428571428572,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__4,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,4,basic_stochastic,3,0.7142857142857143,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__5,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,5,basic_stochastic,1,1.0,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__6,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,6,basic_stochastic,8,0.0,20250831,evaluated
+20250831_next_day_Gate_Launches_GUSD:__7,Gate Launches GUSD: A Stable Investment Backed by Real-World Assets,7,basic_stochastic,5,0.4285714285714286,20250831,evaluated

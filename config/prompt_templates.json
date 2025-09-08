@@ -4,6 +4,8 @@
   "basic_examples_note": "Produce only ONE line for the headline below. Do not echo instructions or examples.",
   
   "paragraph_prompt": "Headline: \"{headline}\"\n\nWrite a single paragraph (3–5 sentences) forecasting what happens next. First sentence: state the main prediction. Name 2–3 specific assets or sectors affected, state direction and a rough magnitude (e.g., up 1–3% / lower demand). Include a concrete timeframe (e.g., within 2–4 weeks / next quarter), and give key drivers. Use plain text only. Do not restate instructions. Forecast is:",
+
+  "paragraph_with_article_prompt": "Headline: \"{headline}\"\n\nContext (article, cleaned excerpt):\n{article_excerpt}\n\nWrite a single paragraph (3–5 sentences) forecasting what happens next using the headline and context. First sentence: state the main prediction. Name 2–3 specific assets or sectors affected, state direction and a rough magnitude (e.g., up 1–3% / lower demand). Include a concrete timeframe (e.g., within 2–4 weeks / next quarter), and give key drivers. Use only the headline/context; do not include instructions or boilerplate. Forecast is:",
   
   "evaluation_prompt": "Prediction (one line, required template):\n{prediction}\n\nNext-day headlines (evidence):\n{headlines}\n\nTasks:\n1) Validate format. If invalid, output exactly: INVALID\n2) If valid, judge whether the Claim occurred within the stated Horizon given the evidence. Ignore Prob for scoring.\n3) Output exactly two lines:\nScore: <0-10>\nReason: <≤25 words>\n\nScoring guide: 0–3 wrong/irrelevant; 4–6 partial/unclear; 7–8 mostly supported; 9–10 strongly supported and specific.",
   

@@ -142,6 +142,23 @@ class DailyPipeline:
             except Exception as e:
                 logger.warning(f"Article scraping step failed; continuing without articles: {e}")
 
+            # Step 1c: Attach cleaned article excerpts to headlines when available
+            try:
+                from data_collection.article_cleaning import build_link_to_excerpt_map
+                link_map = build_link_to_excerpt_map(date, self.storage)
+                if link_map:
+                    attached = 0
+                    for h in headlines:
+                        link = h.get("link")
+                        if link and link in link_map:
+                            h["article_excerpt"] = link_map[link]
+                            attached += 1
+                    logger.info(f"Attached article excerpts to {attached} headlines (cleaned or raw)")
+                else:
+                    logger.info("No article excerpts available to attach")
+            except Exception as e:
+                logger.warning(f"Failed to attach article excerpts: {e}")
+
             # Step 2: Generate predictions (support multi-horizon)
             logger.info("Step 2: Generating predictions...")
             horizons = getattr(self, 'horizons', None)
