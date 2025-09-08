@@ -28,6 +28,7 @@ RUNS = [
     'NEWCOMPOSITERUN2',
     'SEMANTICRUN',
     'SEMANTICRUN_TIGHT_Q25',
+    'SEMANTICRUN_TIGHT_Q25_ARTICLES',
     'COMPOSITERUN',
 ]
 
@@ -177,7 +178,7 @@ def write_cross_run_comparison(md_path, csv_path, averages):
     lines.append("- Plots: `reports/cross_run_daily_quality.png`, `reports/cross_run_daily_leak.png`")
     lines.append("")
     lines.append("#### Per-run overall averages")
-    for run in ['COMPOSITERUN','NEWCOMPOSITERUN','NEWCOMPOSITERUN2','SEMANTICRUN','SEMANTICRUN_TIGHT_Q25']:
+    for run in ['COMPOSITERUN','NEWCOMPOSITERUN','NEWCOMPOSITERUN2','SEMANTICRUN','SEMANTICRUN_TIGHT_Q25','SEMANTICRUN_TIGHT_Q25_ARTICLES']:
         if run not in averages: continue
         a = averages[run]
         lines.append(f"- {run}: quality={a['quality']:.3f}, zeros={a['zeros']:.3f}, <0.2={a['<0.2']:.3f}, leak={a['leak']:.3f}, words={a['words']:.1f}")
@@ -202,7 +203,7 @@ def write_synthesis(md_path, csv_path, averages):
     lines.append("")
     lines.append("#### Quantitative Recap (overall averages)")
     lines.append(f"- Source CSV: `{csv_path}`")
-    for run in ['COMPOSITERUN','NEWCOMPOSITERUN','NEWCOMPOSITERUN2','SEMANTICRUN','SEMANTICRUN_TIGHT_Q25']:
+    for run in ['COMPOSITERUN','NEWCOMPOSITERUN','NEWCOMPOSITERUN2','SEMANTICRUN','SEMANTICRUN_TIGHT_Q25','SEMANTICRUN_TIGHT_Q25_ARTICLES']:
         if run not in averages: continue
         a = averages[run]
         lines.append(f"- {run}: quality={a['quality']:.3f}, zeros={a['zeros']:.3f}, <0.2={a['<0.2']:.3f}, leak={a['leak']:.3f}, words={a['words']:.1f}")

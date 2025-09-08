@@ -1,0 +1,233 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250904_next_day_Great-West_Lifeco_In_0,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),0,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_1,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),1,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_2,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),2,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_3,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),3,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_4,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),4,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_5,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_6,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),6,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Great-West_Lifeco_In_7,Great-West Lifeco Inc. (GWO:CA) Presents At 2025 Scotiabank Financials Summit (Transcript),7,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__0,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,0,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__1,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,1,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__2,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,2,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__3,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,3,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__4,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__5,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,5,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__6,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,6,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_C3.ai:_Looking_Like__7,C3.ai: Looking Like A Victim Of AI With Negative Growth And Non-GAAP Operating Losses,7,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_0,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_1,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,1,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_2,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_3,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,3,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_4,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,4,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_5,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,5,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_6,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,6,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Genesco_Inc._(GCO)_P_7,Genesco Inc. (GCO) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 Transcript,7,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__0,VersaBank 2025 Q3 - Results - Earnings Call Presentation,0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__1,VersaBank 2025 Q3 - Results - Earnings Call Presentation,1,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__2,VersaBank 2025 Q3 - Results - Earnings Call Presentation,2,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__3,VersaBank 2025 Q3 - Results - Earnings Call Presentation,3,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__4,VersaBank 2025 Q3 - Results - Earnings Call Presentation,4,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__5,VersaBank 2025 Q3 - Results - Earnings Call Presentation,5,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__6,VersaBank 2025 Q3 - Results - Earnings Call Presentation,6,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_VersaBank_2025_Q3_-__7,VersaBank 2025 Q3 - Results - Earnings Call Presentation,7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__0,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,0,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__1,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,1,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__2,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__3,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__4,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__5,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,5,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__6,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,6,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_VersaBank_(VBNK:CA)__7,VersaBank (VBNK:CA) Q3 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_0,The Fed Is A Soap Opera...,0,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_1,The Fed Is A Soap Opera...,1,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_2,The Fed Is A Soap Opera...,2,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_3,The Fed Is A Soap Opera...,3,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_4,The Fed Is A Soap Opera...,4,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_5,The Fed Is A Soap Opera...,5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_6,The Fed Is A Soap Opera...,6,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_The_Fed_Is_A_Soap_Op_7,The Fed Is A Soap Opera...,7,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._0,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,0,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._1,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,1,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._2,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,2,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._3,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,3,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._4,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._5,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._6,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,6,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._7,Duluth Holdings Inc. 2025 Q2 - Results - Earnings Call Presentation,7,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._0,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,0,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._1,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._2,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._3,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._4,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._5,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,5,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._6,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,6,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Duluth_Holdings_Inc._7,Duluth Holdings Inc. (DLTH) Q2 2025 Earnings Call Transcript,7,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_0,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",0,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_1,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",1,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_2,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_3,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",3,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_4,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_5,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",5,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_6,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",6,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_AngloGold_Ashanti:_A_7,"AngloGold Ashanti: Another Solid Quarter, Poised To Keep Outperforming",7,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_0,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,0,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_1,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_2,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_3,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_4,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_5,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,5,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_6,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,6,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Relatively_Loose_Mac_7,Relatively Loose Macro Conditions Remain A Tailwind For Stocks,7,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_0","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",0,basic_stochastic,1,1.0,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_1","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",1,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_2","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",2,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_3","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",3,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_4","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",4,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_5","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_6","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",6,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+"20250904_next_day_Ulta_Beauty,_Inc._(U_7","Ulta Beauty, Inc. (ULTA) Presents At Goldman Sachs 32nd Annual Global Retailing Conference 2025 (Transcript)",7,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_0,Cimpress Navigates Product Transition Amid Economic Headwinds,0,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_1,Cimpress Navigates Product Transition Amid Economic Headwinds,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_2,Cimpress Navigates Product Transition Amid Economic Headwinds,2,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_3,Cimpress Navigates Product Transition Amid Economic Headwinds,3,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_4,Cimpress Navigates Product Transition Amid Economic Headwinds,4,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_5,Cimpress Navigates Product Transition Amid Economic Headwinds,5,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_6,Cimpress Navigates Product Transition Amid Economic Headwinds,6,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Cimpress_Navigates_P_7,Cimpress Navigates Product Transition Amid Economic Headwinds,7,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__0,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",0,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__1,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",1,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__2,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",2,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__3,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__4,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__5,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__6,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",6,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_‘She’s_a_very_proud__7,"‘She’s a very proud woman:’ My mother, 81, discovered her ‘millions’ in investments are gone. What can I do?",7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_0,HPE books record revenue — and shows off an attractive growth driver,0,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_1,HPE books record revenue — and shows off an attractive growth driver,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_2,HPE books record revenue — and shows off an attractive growth driver,2,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_3,HPE books record revenue — and shows off an attractive growth driver,3,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_4,HPE books record revenue — and shows off an attractive growth driver,4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_5,HPE books record revenue — and shows off an attractive growth driver,5,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_6,HPE books record revenue — and shows off an attractive growth driver,6,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_HPE_books_record_rev_7,HPE books record revenue — and shows off an attractive growth driver,7,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__0","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",0,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__1","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",1,basic_stochastic,1,1.0,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__2","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",2,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__3","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",3,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__4","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",4,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__5","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",5,basic_stochastic,8,0.0,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__6","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",6,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+"20250904_next_day_Shoe_Carnival,_Inc.__7","Shoe Carnival, Inc. (SCVL) Q2 2025 Earnings Call Transcript",7,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_0,"Salesforce: The Market Hates The Guidance, I Like The Value",0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_1,"Salesforce: The Market Hates The Guidance, I Like The Value",1,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_2,"Salesforce: The Market Hates The Guidance, I Like The Value",2,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_3,"Salesforce: The Market Hates The Guidance, I Like The Value",3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_4,"Salesforce: The Market Hates The Guidance, I Like The Value",4,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_5,"Salesforce: The Market Hates The Guidance, I Like The Value",5,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_6,"Salesforce: The Market Hates The Guidance, I Like The Value",6,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Salesforce:_The_Mark_7,"Salesforce: The Market Hates The Guidance, I Like The Value",7,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._0,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",0,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._1,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",1,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._2,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._3,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._4,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",4,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._5,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",5,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._6,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",6,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_AT&T_Inc._(T)_A&Inc._7,"AT&T Inc. (T) A&Inc. Presents At Bank Of America 2025 Media, Communications & Entertainment Conference (Transcript)",7,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_0,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_1,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,1,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_2,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_3,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_4,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,4,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_5,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,5,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_6,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,6,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Waterdrop_Inc._(WDH)_7,Waterdrop Inc. (WDH) Q2 2025 Earnings Call Transcript,7,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_0,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,0,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_1,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,1,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_2,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,2,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_3,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,3,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_4,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,4,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_5,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,5,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_6,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,6,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Goldman_Sachs_buys_$_7,Goldman Sachs buys $1 billion stake in T. Rowe Price as more banks start offering private-market investments to individuals,7,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_What’s_dragging_down_0,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,0,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_What’s_dragging_down_1,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_What’s_dragging_down_2,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_What’s_dragging_down_3,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,3,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_What’s_dragging_down_4,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_What’s_dragging_down_5,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,5,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_What’s_dragging_down_6,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,6,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_What’s_dragging_down_7,What’s dragging down Salesforce’s stock? It may be a bigger problem than AI.,7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_0,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_1,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,1,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_2,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,2,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_3,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,3,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_4,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,4,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_5,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,5,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_6,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,6,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Is_Credo_the_next_ho_7,Is Credo the next hot AI stock? Its massive growth is impressing Wall Street.,7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_0,Bonds are a disaster. Why you may want to buy more.,0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_1,Bonds are a disaster. Why you may want to buy more.,1,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_2,Bonds are a disaster. Why you may want to buy more.,2,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_3,Bonds are a disaster. Why you may want to buy more.,3,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_4,Bonds are a disaster. Why you may want to buy more.,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_5,Bonds are a disaster. Why you may want to buy more.,5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_6,Bonds are a disaster. Why you may want to buy more.,6,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Bonds_are_a_disaster_7,Bonds are a disaster. Why you may want to buy more.,7,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_0,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",0,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_1,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",1,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_2,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",2,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_3,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",3,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_4,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",4,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_5,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",5,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_6,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",6,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_A_big_part_of_the_ec_7,"A big part of the economy grew faster in August, ISM finds, but not because everything is A-OK",7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_0,Denial is driving the stock market higher — but what’s coming next can’t be ignored,0,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_1,Denial is driving the stock market higher — but what’s coming next can’t be ignored,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_2,Denial is driving the stock market higher — but what’s coming next can’t be ignored,2,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_3,Denial is driving the stock market higher — but what’s coming next can’t be ignored,3,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_4,Denial is driving the stock market higher — but what’s coming next can’t be ignored,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_5,Denial is driving the stock market higher — but what’s coming next can’t be ignored,5,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_6,Denial is driving the stock market higher — but what’s coming next can’t be ignored,6,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Denial_is_driving_th_7,Denial is driving the stock market higher — but what’s coming next can’t be ignored,7,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_0,NOWPayments to Participate in SiGMA Europe Rome 2025,0,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_1,NOWPayments to Participate in SiGMA Europe Rome 2025,1,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_2,NOWPayments to Participate in SiGMA Europe Rome 2025,2,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_3,NOWPayments to Participate in SiGMA Europe Rome 2025,3,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_4,NOWPayments to Participate in SiGMA Europe Rome 2025,4,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_5,NOWPayments to Participate in SiGMA Europe Rome 2025,5,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_6,NOWPayments to Participate in SiGMA Europe Rome 2025,6,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_NOWPayments_to_Parti_7,NOWPayments to Participate in SiGMA Europe Rome 2025,7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_0,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,0,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_1,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_2,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,2,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_3,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,3,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_4,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_5,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,5,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_6,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,6,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_CoinW_Celebrates_8_Y_7,CoinW Celebrates 8 Years of Commitment with 15M Users and Trillions in Trading Volume,7,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__0,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,0,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__1,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,1,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__2,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,2,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__3,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,3,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__4,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,4,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__5,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,5,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__6,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,6,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_Sadot_Group_engages__7,Sadot Group engages Bitcoin Bancorp for cryptocurrency treasury strategy,7,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_0,AlphaTON Capital raises $100 million to build TON digital asset treasury,0,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_1,AlphaTON Capital raises $100 million to build TON digital asset treasury,1,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_2,AlphaTON Capital raises $100 million to build TON digital asset treasury,2,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_3,AlphaTON Capital raises $100 million to build TON digital asset treasury,3,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_4,AlphaTON Capital raises $100 million to build TON digital asset treasury,4,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_5,AlphaTON Capital raises $100 million to build TON digital asset treasury,5,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_6,AlphaTON Capital raises $100 million to build TON digital asset treasury,6,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_AlphaTON_Capital_rai_7,AlphaTON Capital raises $100 million to build TON digital asset treasury,7,basic_stochastic,4,0.5714285714285714,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_0,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",0,basic_stochastic,1,1.0,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_1,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",1,basic_stochastic,3,0.7142857142857143,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_2,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",2,basic_stochastic,8,0.0,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_3,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",3,basic_stochastic,6,0.2857142857142857,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_4,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",4,basic_stochastic,7,0.1428571428571429,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_5,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",5,basic_stochastic,5,0.4285714285714286,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_6,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",6,basic_stochastic,2,0.8571428571428572,20250904,evaluated
+20250904_next_day_BitMEX_and_TradingVi_7,"BitMEX and TradingView Announce Trading Campaign, Offering 100,000 USDT in Rewards and More",7,basic_stochastic,4,0.5714285714285714,20250904,evaluated

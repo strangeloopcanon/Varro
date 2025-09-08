@@ -155,3 +155,18 @@ Notes
 #### Provenance
 - Run reports: `reports/SEMANTICRUN_TIGHT_Q25_20250819_REPORT.md`, `reports/SEMANTICRUN_20250819_REPORT.md`, `reports/NEWCOMPOSITERUN_20250818_REPORT.md`, `reports/NEWCOMPOSITERUN2_20250819_REPORT.md`, `reports/COMPOSITERUN_20250802_20250811_REPORT.md`.
 - Cross‑run roll‑up: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_20250819.md` (this file distills and expands it).
+
+---
+
+### Postscript — Article‑Aware Validation (2025‑08‑29 → 2025‑09‑07)
+
+We re‑ran the best paragraph recipe (tight sampler; Q≈0.25; LLM=0; Semantic≈0.75) but augmented prompts with a cleaned article excerpt when available. The goal was to test whether our earlier conclusions hold under the harder, richer‑input setting.
+
+- Run namespace: `SEMANTICRUN_TIGHT_Q25_ARTICLES`.
+- Coverage: ~66% of headlines had a matched, cleaned excerpt; some days were lower (e.g., 10% on 2025‑09‑01) due to link canonicalization mismatches.
+- Outcome: Completed end‑to‑end with GSPO training and dated checkpoints. Cross‑run metrics (overall averages) show:
+  - Quality=0.527, Zeros=0.164, Very‑low<0.2=0.184, Leak=0.218, Words≈128.
+  - Prior tight baseline (no articles): Quality=0.643, Zeros=0.013, Leak=0.200.
+- Interpretation: Adding unstructured article context did not lift the paragraph‑quality metric and increased zero/very‑low shares. Qualitative inspection shows prompt echo and placeholder text in some outputs (e.g., “Write the forecast paragraph.”), indicating paragraph cleanup should be strengthened for article‑aware prompts. Semantic consistency vs next‑day headlines remained high (~0.93 on average), suggesting topic alignment is intact.
+- Conclusion: Our prior finding stands — the tight paragraph recipe performs best under headline‑only prompting. The article‑aware variant needs better excerpt coverage and stricter paragraph hygiene before it can plausibly exceed the baseline.
+- Next steps: (i) normalize links and add fallback (domain+title) matching to raise excerpt coverage; (ii) extend paragraph cleaning to strip echoed scaffolding and quoted titles; (iii) re‑run a 3‑day slice to measure impact before full re‑run.

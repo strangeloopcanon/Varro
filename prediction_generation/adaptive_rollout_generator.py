@@ -91,6 +91,17 @@ class AdaptiveRolloutGenerator:
                 ),
             )
             
+            # Optional: article-aware paragraph prompt
+            self.paragraph_with_article_prompt = prompt_config.get(
+                "paragraph_with_article_prompt",
+                (
+                    "Headline: \"{headline}\"\n\n"
+                    "Context (article, cleaned excerpt):\n{article_excerpt}\n\n"
+                    "Write a single paragraph (3–5 sentences) forecasting what happens next using the headline and context."
+                    " State the main prediction, name affected assets/sectors with direction/magnitude, a rough timeframe, and key driver(s)."
+                    " Use only the content; do not include instructions or boilerplate."
+                ),
+            )
             logger.info("Loaded prompt templates from config")
             
         except Exception as e:
@@ -109,7 +120,7 @@ class AdaptiveRolloutGenerator:
                 "macro_economist": "Headline: \"{headline}\"\n\nThink like a macro economist..."
             }
     
-    def generate_rollouts_for_headline(self, headline: str, num_rollouts: int = 8, horizon: str | None = None) -> List[Dict[str, Any]]:
+    def generate_rollouts_for_headline(self, headline: str, num_rollouts: int = 8, horizon: str | None = None, article_excerpt: str | None = None) -> List[Dict[str, Any]]:
         """Generate N rollouts for a single headline using same prompt with sampling diversity.
 
         Args:
@@ -119,7 +130,7 @@ class AdaptiveRolloutGenerator:
         """
         logger.info(f"Generating rollouts for headline: {headline[:50]}...")
 
-        rollouts = self._generate_basic_rollouts(headline, num_rollouts=num_rollouts, horizon=horizon)
+        rollouts = self._generate_basic_rollouts(headline, num_rollouts=num_rollouts, horizon=horizon, article_excerpt=article_excerpt)
         logger.info(f"Generated {len(rollouts)} rollouts using same prompt with sampling diversity")
         return rollouts
 
@@ -133,7 +144,7 @@ class AdaptiveRolloutGenerator:
         cfg = profiles.get(profile, profiles["default"])
         return make_sampler(temp=cfg["temp"], top_p=cfg["top_p"], top_k=cfg["top_k"])
     
-    def _generate_basic_rollouts(self, headline: str, num_rollouts: int = 8, horizon: str | None = None) -> List[Dict[str, Any]]:
+    def _generate_basic_rollouts(self, headline: str, num_rollouts: int = 8, horizon: str | None = None, article_excerpt: str | None = None) -> List[Dict[str, Any]]:
         """Generate N rollouts using basic stochastic approach with optional horizon directive.
 
         Behavior depends on output_format:
@@ -150,7 +161,10 @@ class AdaptiveRolloutGenerator:
             # Choose prompt by output format
             uses_think = False
             if self.output_format == "paragraph":
-                base_prompt = self.paragraph_prompt.format(headline=headline)
+                if article_excerpt:
+                    base_prompt = self.paragraph_with_article_prompt.format(headline=headline, article_excerpt=article_excerpt)
+                else:
+                    base_prompt = self.paragraph_prompt.format(headline=headline)
                 # For a small subset of rollouts, encourage brief reasoning in <think>...</think>
                 # Default policy: ~2 of 8 rollouts (25%) use think when num_rollouts>=8
                 try:
@@ -286,8 +300,9 @@ class AdaptiveRolloutGenerator:
 
         for headline_data in headlines:
             headline_text = headline_data["text"]
+            article_excerpt = headline_data.get("article_excerpt")
 
-            rollouts = self.generate_rollouts_for_headline(headline_text, num_rollouts=num_rollouts, horizon=horizon)
+            rollouts = self.generate_rollouts_for_headline(headline_text, num_rollouts=num_rollouts, horizon=horizon, article_excerpt=article_excerpt)
 
             prediction_entry = {
                 "headline": headline_text,

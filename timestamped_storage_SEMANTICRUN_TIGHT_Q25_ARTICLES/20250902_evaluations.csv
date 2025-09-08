@@ -1,0 +1,161 @@
+prediction_id,headline,rollout_id,method,ranking,reward,date,status
+20250902_next_day_Globe_Trade_Centre_S_0,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,0,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_1,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,1,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_2,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,2,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_3,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,3,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_4,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,4,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_5,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_6,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,6,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Globe_Trade_Centre_S_7,Globe Trade Centre S.A. (GBCEY) Q2 2025 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_0,Siemens: Capitalizing On A Datacenter And AI-Driven Market,0,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_1,Siemens: Capitalizing On A Datacenter And AI-Driven Market,1,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_2,Siemens: Capitalizing On A Datacenter And AI-Driven Market,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_3,Siemens: Capitalizing On A Datacenter And AI-Driven Market,3,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_4,Siemens: Capitalizing On A Datacenter And AI-Driven Market,4,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_5,Siemens: Capitalizing On A Datacenter And AI-Driven Market,5,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_6,Siemens: Capitalizing On A Datacenter And AI-Driven Market,6,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Siemens:_Capitalizin_7,Siemens: Capitalizing On A Datacenter And AI-Driven Market,7,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_This_one_move_could__0,This one move could give Trump a win on global tariffs — and calm the bond market,0,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_This_one_move_could__1,This one move could give Trump a win on global tariffs — and calm the bond market,1,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_This_one_move_could__2,This one move could give Trump a win on global tariffs — and calm the bond market,2,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_This_one_move_could__3,This one move could give Trump a win on global tariffs — and calm the bond market,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_This_one_move_could__4,This one move could give Trump a win on global tariffs — and calm the bond market,4,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_This_one_move_could__5,This one move could give Trump a win on global tariffs — and calm the bond market,5,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_This_one_move_could__6,This one move could give Trump a win on global tariffs — and calm the bond market,6,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_This_one_move_could__7,This one move could give Trump a win on global tariffs — and calm the bond market,7,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_0,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,0,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_1,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,1,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_2,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_3,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,3,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_4,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,4,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_5,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_6,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,6,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Wall_Street_Lunch:_P_7,Wall Street Lunch: PepsiCo Gains On News Of Elliott Investment's $4B Stake,7,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_0,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),0,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_1,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),1,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_2,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_3,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),3,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_4,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),4,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_5,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),5,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_6,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),6,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Royal_Gold_Poised_Fo_7,Royal Gold Poised For Higher Prices And Dividends As Gold Breaks Out (Technical Analysis),7,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_0,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,0,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_1,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,1,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_2,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,2,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_3,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,3,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_4,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,4,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_5,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_6,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,6,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Natural_Gas_Services_7,Natural Gas Services Group: Robust Performance And Growth Drivers Justify Its Current Valuation,7,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__0,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,0,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__1,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,1,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__2,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__3,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,3,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__4,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,4,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__5,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__6,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,6,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_eDreams_ODIGEO_S.A.__7,eDreams ODIGEO S.A. 2026 Q1 - Results - Earnings Call Presentation,7,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__0,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,0,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__1,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,1,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__2,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__3,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,3,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__4,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,4,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__5,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,5,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__6,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,6,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_EDreams_ODIGEO_S.A.__7,EDreams ODIGEO S.A. (EDDRF) Q1 2026 Earnings Call Transcript,7,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_0,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,0,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_1,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,1,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_2,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,2,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_3,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_4,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,4,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_5,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,5,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_6,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,6,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_NIO_Inc._(NIO)_Q2_20_7,NIO Inc. (NIO) Q2 2025 Earnings Call Transcript,7,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_0,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",0,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_1,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",1,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_2,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_3,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_4,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",4,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_5,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",5,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_6,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",6,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_SCHD:_Nvidia's_Earni_7,"SCHD: Nvidia's Earnings Scream ""Go Defensive""",7,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_0,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,0,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_1,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,1,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_2,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,2,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_3,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,3,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_4,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,4,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_5,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,5,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_6,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,6,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Kinder_Morgan:_The_B_7,Kinder Morgan: The Backbone Of The U.S. Economy Worth Paying Attention To,7,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_0,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,0,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_1,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,1,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_2,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_3,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,3,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_4,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,4,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_5,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,5,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_6,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,6,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Stock_traders’_six_f_7,Stock traders’ six favorite AI tools are faring much worse than the S&P 500,7,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_0,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",0,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_1,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",1,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_2,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",2,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_3,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",3,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_4,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",4,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_5,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_6,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",6,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_‘Tariffs_continue_to_7,"‘Tariffs continue to be unstable’: Manufacturing contracts for sixth month in a row, ISM finds.",7,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_0,How to invest in the cheapest sector of the stock market for long-term gains,0,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_1,How to invest in the cheapest sector of the stock market for long-term gains,1,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_2,How to invest in the cheapest sector of the stock market for long-term gains,2,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_3,How to invest in the cheapest sector of the stock market for long-term gains,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_4,How to invest in the cheapest sector of the stock market for long-term gains,4,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_5,How to invest in the cheapest sector of the stock market for long-term gains,5,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_6,How to invest in the cheapest sector of the stock market for long-term gains,6,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_How_to_invest_in_the_7,How to invest in the cheapest sector of the stock market for long-term gains,7,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_0,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,0,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_1,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,1,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_2,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,2,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_3,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,3,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_4,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,4,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_5,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,5,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_6,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,6,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Beer_sales_have_drop_7,Beer sales have dropped off. Modelo and Corona parent’s stock dives to a 5-year low.,7,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_0,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,0,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_1,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,1,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_2,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,2,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_3,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,3,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_4,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,4,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_5,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,5,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_6,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,6,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Bitcoin_price_today:_7,Bitcoin price today: bounces back to $111k amid Fed easing bets; US jobs data eyed,7,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_0,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,0,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_1,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,1,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_2,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,2,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_3,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_4,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,4,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_5,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_6,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,6,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Pioneering_AI_Vision_7,Pioneering AI Visionary Vincent Boucher & AGI Alpha Announce a Meta‑Agentic AGI Jobs Marketplace Platform,7,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_0,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,0,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_1,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,1,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_2,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,2,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_3,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,3,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_4,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,4,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_5,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,5,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_6,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,6,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_Excellion_Finance_Sc_7,Excellion Finance Scales Market-Neutral DeFi Strategies with Fordefi’s MPC Wallet,7,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_FiscalNote_explores__0,FiscalNote explores adding cryptocurrencies to corporate treasury,0,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_FiscalNote_explores__1,FiscalNote explores adding cryptocurrencies to corporate treasury,1,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_FiscalNote_explores__2,FiscalNote explores adding cryptocurrencies to corporate treasury,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_FiscalNote_explores__3,FiscalNote explores adding cryptocurrencies to corporate treasury,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_FiscalNote_explores__4,FiscalNote explores adding cryptocurrencies to corporate treasury,4,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_FiscalNote_explores__5,FiscalNote explores adding cryptocurrencies to corporate treasury,5,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_FiscalNote_explores__6,FiscalNote explores adding cryptocurrencies to corporate treasury,6,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_FiscalNote_explores__7,FiscalNote explores adding cryptocurrencies to corporate treasury,7,basic_stochastic,8,0.0,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_0,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,0,basic_stochastic,7,0.1428571428571429,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_1,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,1,basic_stochastic,6,0.2857142857142857,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_2,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,2,basic_stochastic,1,1.0,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_3,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,3,basic_stochastic,5,0.4285714285714286,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_4,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,4,basic_stochastic,2,0.8571428571428572,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_5,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,5,basic_stochastic,4,0.5714285714285714,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_6,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,6,basic_stochastic,3,0.7142857142857143,20250902,evaluated
+20250902_next_day_These_ex-Premier_Lea_7,These ex-Premier League stars lost millions in investments. Now they are being chased by HMRC,7,basic_stochastic,8,0.0,20250902,evaluated

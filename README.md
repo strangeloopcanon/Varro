@@ -198,6 +198,17 @@ Training Data → GSPO Training → Updated Model
 - **Training completed**: GSPO training successful with step-by-step processing
 - **Model saved**: `training/checkpoints/gspo/final_model`
 
+### Article‑Aware Validation Run (Aug 29 → Sep 7)
+- New run suffix: `SEMANTICRUN_TIGHT_Q25_ARTICLES` (stored under `timestamped_storage_SEMANTICRUN_TIGHT_Q25_ARTICLES/` and `training/checkpoints/gspo_SEMANTICRUN_TIGHT_Q25_ARTICLES/`).
+- Command used:
+  - `python scripts/run_semantic_with_articles.py --start_date 20250829 --end_date 20250907 --resume_from_last_model`
+- What changed: prompts include a cleaned article excerpt when available; articles are cleaned and attached in morning.
+- Results summary (overall averages; see cross‑run CSV/plots):
+  - Quality=0.527, Zeros=0.164, Very‑low<0.2=0.184, Leak=0.218, Words≈128.
+  - Baseline (SEMANTICRUN_TIGHT_Q25 without articles): Quality=0.643, Zeros=0.013, Leak=0.200.
+- Takeaway: The article‑aware setting completed end‑to‑end but underperformed the prior tight baseline on our paragraph‑quality metric. Excerpt coverage was ~66% and some prompts echoed scaffolding; improving excerpt matching and paragraph cleaning is the next lever.
+- Reports: `reports/CROSS_RUN_DAILY_METRICS_*.csv`, `reports/cross_run_daily_quality.png`, `reports/cross_run_daily_leak.png`, `reports/CROSS_RUN_COMPARISON_*.md`.
+
 ### **August 7th Pipeline Status**
 - ✅ **35 headlines** collected from RSS sources
 - ✅ **280 predictions** generated (35 × 8 rollouts)
