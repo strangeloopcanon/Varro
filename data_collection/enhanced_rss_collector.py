@@ -196,16 +196,22 @@ class EnhancedRSSCollector:
         if category in {"financial_news", "market_specific"}:
             return True
 
+        # Looser macro/economic capture for general news; keep broad but relevant
         financial_keywords = [
             # Macro / policy
-            'fed', 'federal reserve', 'interest rate', 'inflation', 'cpi', 'ppi', 'jobs report', 'payrolls',
-            'gdp', 'recession', 'unemployment', 'economy', 'economic', 'central bank', 'monetary', 'fiscal',
+            'fed', 'federal reserve', 'interest rate', 'interest rates', 'rate hike', 'rate cut',
+            'inflation', 'disinflation', 'deflation', 'cpi', 'ppi', 'pce', 'core', 'jobs report',
+            'payrolls', 'nonfarm', 'jobless claims', 'unemployment', 'labor market', 'wage', 'wages', 'salary',
+            'gdp', 'growth', 'recession', 'soft landing', 'economy', 'economic', 'central bank', 'monetary', 'fiscal',
+            'budget', 'deficit', 'debt ceiling', 'tariff', 'tariffs', 'sanction', 'sanctions', 'trade', 'exports', 'imports',
+            'ism', 'pmi', 'industrial production', 'retail sales', 'consumer confidence', 'housing', 'mortgage',
+            'home sales', 'housing starts', 'construction', 'auto sales',
             # Markets / assets
             'stocks', 'stock', 'market', 'equity', 'equities', 'index', 's&p', 'nasdaq', 'dow', 'vix',
-            'treasury', 'yield', 'bond', 'credit', 'spread', 'fx', 'currency', 'dollar', 'euro', 'yen',
-            'oil', 'brent', 'wti', 'gold', 'commodities', 'futures', 'options', 'etf',
+            'treasury', 'yield', 'yields', 'bond', 'credit', 'spread', 'spreads', 'fx', 'currency', 'dollar', 'euro', 'yen',
+            'oil', 'brent', 'wti', 'gas', 'natural gas', 'gold', 'commodities', 'futures', 'options', 'etf',
             # Micro / corporate
-            'earnings', 'revenue', 'profit', 'guidance', 'dividend', 'buyback', 'merger', 'acquisition', 'ipo',
+            'earnings', 'revenue', 'profit', 'guidance', 'dividend', 'buyback', 'merger', 'acquisition', 'ipo', 'spac',
             'downgrade', 'upgrade', 'outlook', 'forecast', 'bank', 'banking', 'financial',
             # Crypto
             'bitcoin', 'crypto', 'ethereum', 'stablecoin'
@@ -220,6 +226,14 @@ class EnhancedRSSCollector:
             import re as _re
             if _re.search(r"\([A-Z]{2,5}\)", title or ""):
                 return True
+        except Exception:
+            pass
+        # Looser economic cue: percentage with a macro term (e.g., inflation up 3.2%)
+        try:
+            import re as _re
+            if _re.search(r"\b(up|down|rose|falls?|increase|decrease)\b\s+\d{1,2}(\.\d+)?%", title_lower):
+                if any(x in title_lower for x in ['inflation','cpi','ppi','pce','unemployment','jobs','payroll','gdp','retail sales','pmi','ism','wage','prices']):
+                    return True
         except Exception:
             pass
         return False
