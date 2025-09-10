@@ -142,7 +142,7 @@ class EnhancedRSSCollector:
             source_name = self._extract_source_name(source_url)
             
             # Basic filtering for financial relevance
-            if self._is_financially_relevant(title):
+            if self._is_financially_relevant(title, category):
                 return {
                     "text": title,
                     "link": link,
@@ -179,19 +179,50 @@ class EnhancedRSSCollector:
         # Fallback: simple domain-based name
         return domain.replace('.com', '').replace('.co.uk', '')
     
-    def _is_financially_relevant(self, title: str) -> bool:
-        """Check if headline is financially relevant."""
+    def _is_financially_relevant(self, title: str, category: str | None = None) -> bool:
+        """Check if headline is financially relevant.
+
+        Relaxed behavior:
+        - If VARRO_RELAX_FIN_FILTER=1, accept all headlines (useful for expansion).
+        - For categories 'financial_news' or 'market_specific', accept without filtering.
+        - For 'general_news', apply a broader keyword filter.
+        """
+        try:
+            if str(os.getenv("VARRO_RELAX_FIN_FILTER", "0")).lower() in {"1","true","yes","on"}:
+                return True
+        except Exception:
+            pass
+
+        if category in {"financial_news", "market_specific"}:
+            return True
+
         financial_keywords = [
-            'fed', 'federal reserve', 'interest rate', 'inflation', 'earnings',
-            'stock', 'market', 'trading', 'investment', 'economy', 'gdp',
-            'unemployment', 'jobs', 'oil', 'gold', 'dollar', 'euro', 'bond',
-            'treasury', 'central bank', 'monetary', 'fiscal', 'trade',
-            'tariff', 'tariffs', 'deficit', 'surplus', 'recession',
-            'growth', 'economic', 'financial', 'bank', 'banking'
+            # Macro / policy
+            'fed', 'federal reserve', 'interest rate', 'inflation', 'cpi', 'ppi', 'jobs report', 'payrolls',
+            'gdp', 'recession', 'unemployment', 'economy', 'economic', 'central bank', 'monetary', 'fiscal',
+            # Markets / assets
+            'stocks', 'stock', 'market', 'equity', 'equities', 'index', 's&p', 'nasdaq', 'dow', 'vix',
+            'treasury', 'yield', 'bond', 'credit', 'spread', 'fx', 'currency', 'dollar', 'euro', 'yen',
+            'oil', 'brent', 'wti', 'gold', 'commodities', 'futures', 'options', 'etf',
+            # Micro / corporate
+            'earnings', 'revenue', 'profit', 'guidance', 'dividend', 'buyback', 'merger', 'acquisition', 'ipo',
+            'downgrade', 'upgrade', 'outlook', 'forecast', 'bank', 'banking', 'financial',
+            # Crypto
+            'bitcoin', 'crypto', 'ethereum', 'stablecoin'
         ]
-        
-        title_lower = title.lower()
-        return any(keyword in title_lower for keyword in financial_keywords)
+
+        title_lower = (title or "").lower()
+        if any(kw in title_lower for kw in financial_keywords):
+            return True
+
+        # Light ticker cue: 2–5 uppercase letters in parentheses, e.g., (AAPL), (TSLA)
+        try:
+            import re as _re
+            if _re.search(r"\([A-Z]{2,5}\)", title or ""):
+                return True
+        except Exception:
+            pass
+        return False
     
     def _deduplicate_headlines(self, headlines: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Remove duplicate headlines based on text similarity."""
