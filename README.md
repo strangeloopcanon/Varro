@@ -2,6 +2,10 @@
 
 ## 🔗 Quick Links
 - Final Report (So‑What + Story): `reports/FINAL_REPORT.md`
+- Cross-Run Comparison (latest metrics): `reports/CROSS_RUN_COMPARISON.md`
+- Article‑Aware Validation summary: `reports/ARTICLE_AWARE_VALIDATION.md`
+- Data & Artifacts Map: `paper/DATA_INVENTORY.md`
+- Metrics & definitions: `reports/METRICS.md`
 
 A daily financial prediction system using Group Sequence Policy Optimization (GSPO) with MLX, collecting news headlines, generating 8 rollouts per headline, tracking outcomes, and continuously training the model.
 
@@ -197,17 +201,13 @@ Training Data → GSPO Training → Updated Model
 ### **Completed Components**
 - ✅ RSS headline collection
 - ✅ 8-rollout generation per headline
-- ✅ LLM-based evaluation system (65% success rate)
+- ✅ LLM-based evaluation system
 - ✅ GSPO training algorithm
 - ✅ Daily pipeline orchestration
 - ✅ Model versioning and management
 - ✅ Continuous learning pipeline
 
-### **Latest Training Data (August 6th)**
-- **622 examples**: 77 unique headlines × 8 rollouts each
-- **Evaluation success rate**: 65% (improved from 40%)
-- **Training completed**: GSPO training successful with step-by-step processing
-- **Model saved**: `training/checkpoints/gspo/final_model`
+For the latest run-level metrics and conclusions, see `reports/CROSS_RUN_COMPARISON.md` and the canonical `reports/FINAL_REPORT.md`. An article‑aware validation (Aug 29 → Sep 7) is summarized in `reports/ARTICLE_AWARE_VALIDATION.md`.
 
 ### Article‑Aware Validation Run (Aug 29 → Sep 7)
 - New run suffix: `SEMANTICRUN_TIGHT_Q25_ARTICLES` (stored under `timestamped_storage_SEMANTICRUN_TIGHT_Q25_ARTICLES/` and `training/checkpoints/gspo_SEMANTICRUN_TIGHT_Q25_ARTICLES/`).
@@ -220,22 +220,10 @@ Training Data → GSPO Training → Updated Model
 - Takeaway: The article‑aware setting completed end‑to‑end but underperformed the prior tight baseline on our paragraph‑quality metric. Excerpt coverage was ~66% and some prompts echoed scaffolding; improving excerpt matching and paragraph cleaning is the next lever.
 - Reports: `reports/CROSS_RUN_DAILY_METRICS_*.csv`, `reports/cross_run_daily_quality.png`, `reports/cross_run_daily_leak.png`, `reports/CROSS_RUN_COMPARISON_*.md`.
 
-### **August 7th Pipeline Status**
-- ✅ **35 headlines** collected from RSS sources
-- ✅ **280 predictions** generated (35 × 8 rollouts)
-- ⏳ **Waiting for August 8th headlines** for evaluation
-- **Model used**: Trained model from August 6th
-
-### **Training Results (August 6th)**
-- **Total steps**: 622 (one per evaluated prediction)
-- **Checkpoints**: Saved every 50 steps
-- **Model**: Qwen3-0.6B with MLX-LM 0.25.2
-- **Evaluation improvements**: Dynamic letter mapping, enhanced prompts, robust extraction
-
-### **Next Steps**
-1. **August 8th**: Collect headlines and evaluate August 7th predictions
-2. **August 8th**: Train model on new evaluation data
-3. **Continue daily pipeline** for continuous learning
+### **Next Steps (evergreen)**
+1. Collect T+1 headlines and evaluate T predictions
+2. Train on new evaluation data and update the rolling model
+3. Continue daily cycle; review cross‑run CSV/plots for trend
 
 ## 🔧 Recent Improvements
 
@@ -270,6 +258,41 @@ A small CC‑BY sample dataset is now available in `data/sample/` to help you tr
 
 Copy or link the `data/sample` folder into your working timestamped storage, and run the morning/evening/night pipeline stages against it as a demonstration.
 
+## 🗃️ Storage & Housekeeping
+
+- Checkpoint locations: `training/checkpoints/gspo_<SUFFIX>/` and, for some runs, `timestamped_storage_*/checkpoints/`.
+- Typical sizes: ~1.1–3.2 GB per `final_model` directory; dated snapshots and step checkpoints multiply footprint.
+- Safe pruning (keep rolling `final_model`, remove step and dated snapshots):
+
+```bash
+# Review what would be removed (dry list)
+find training/checkpoints -maxdepth 2 -type d -name 'gspo_step_*' -print
+find training/checkpoints -maxdepth 2 -type d -name 'final_model_2*' -print
+
+# Remove step checkpoints
+find training/checkpoints -maxdepth 2 -type d -name 'gspo_step_*' -exec rm -rf {} +
+
+# Remove dated snapshots (keeps rolling 'final_model')
+find training/checkpoints -maxdepth 2 -type d -name 'final_model_2*' -exec rm -rf {} +
+
+# If present, prune dated snapshots under timestamped_storage as well
+find timestamped_storage_* -maxdepth 2 -type d -path '*/checkpoints/final_model_2*' -exec rm -rf {} +
+```
+
+Always review the printed paths before running the destructive commands.
+
+## 🧭 Key Learnings (Broader RL)
+
+- Structure as a prior: Lightweight output structure (paragraph schema) acts as an inductive bias that improves sample efficiency and stability at small scale, analogous to constraining the action space.
+- Entropy control > optimizer tweaks (at 0.6B): Tight decoding and token caps reduced degenerate modes more than optimizer changes; think of it as controlling policy support alongside KL.
+- Reward–detector alignment: If the scorer rewards specificity but the hygiene detector penalizes echoes, you optimize the gap. Align rewards with evaluation (or strip biases pre‑score) to move both quality and cleanliness together.
+- Groupwise normalization and baselines: Normalizing rewards within headline groups and using a simple EMA baseline reduced variance and stabilized updates (advantage‑like effects).
+- Validator‑assisted targets: For constrained formats, use validator selection and validity‑gated rewards; otherwise the policy chases sparse/invalid signals.
+- Label‑noise reduction: Deterministic extraction + fallback ranking materially improves learning; noise‑aware evaluation is as important as reward weightings.
+- Data > knobs: Improving excerpt matching and paragraph hygiene beat adding more noisy trajectories for article‑aware prompting.
+
+See `reports/FINAL_REPORT.md` for the full narrative and `reports/CROSS_RUN_COMPARISON.md` for latest metrics.
+
 ## 📄 License
 
 This project is licensed under the MIT License.
@@ -278,7 +301,7 @@ This project is licensed under the MIT License.
 
 - Final report: `reports/FINAL_REPORT.md` — canonical summary of experiments, conclusions, defaults, risks, and next steps (easy to find).
 - Synthesis (latest alias): `reports/ALL_RUNS_SYNTHESIS_SO_WHAT.md` — rolling latest synthesis; dated snapshot: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_YYYYMMDD.md`.
-- Cross-run comparison: `reports/CROSS_RUN_COMPARISON_20250819.md` — links to `reports/CROSS_RUN_DAILY_METRICS_20250819.csv` and plots (`reports/cross_run_daily_*.png`).
+- Cross-run comparison (evergreen): `reports/CROSS_RUN_COMPARISON.md` — links to the latest `reports/CROSS_RUN_DAILY_METRICS_YYYYMMDD.csv` and plots (`reports/cross_run_daily_*.png`).
 - Defaults & rationale: `reports/DEFAULTS_AND_RATIONALE_20250819.md` — recommended configs and why.
 - Run-specific reports: `reports/*_YYYYMMDD_REPORT.md` — per-run details (e.g., `SEMANTICRUN_TIGHT_Q25_20250819_REPORT.md`, `NEWCOMPOSITERUN_20250818_REPORT.md`).
 - Incidents/status: e.g., `reports/Evaluation_Fallback_Incident_20250802_20250811.md`, `reports/TEMP_STATUS_NEWCOMPOSITERUN.md`.

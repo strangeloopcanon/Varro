@@ -1,6 +1,6 @@
-### Varro Final Report — All Runs Synthesis (as of 2025-08-19)
+### Varro Final Report — All Runs Synthesis (as of 2025-09-07)
 
-This is the canonical, easy-to-find summary of what we've built, learned, and decided. Last updated: 2025-08-19. Source snapshot: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_20250819.md`.
+This is the canonical, easy-to-find summary of what we've built, learned, and decided. Last updated: 2025-09-07. Source snapshot: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_20250819.md`.
 
 #### Executive TL;DR
 - Paragraph forecasting is the productive path at current scale. With a positive, concrete prompt, `LLM=0 / Semantic≈0.75 / Format(Q)≈0.25`, and `sampler_profile=tight`, we get the highest quality and the lowest failure rates by a wide margin.
@@ -156,6 +156,8 @@ Notes
 - Run reports: `reports/SEMANTICRUN_TIGHT_Q25_20250819_REPORT.md`, `reports/SEMANTICRUN_20250819_REPORT.md`, `reports/NEWCOMPOSITERUN_20250818_REPORT.md`, `reports/NEWCOMPOSITERUN2_20250819_REPORT.md`, `reports/COMPOSITERUN_20250802_20250811_REPORT.md`.
 - Cross‑run roll‑up: `reports/ALL_RUNS_SYNTHESIS_SO_WHAT_20250819.md` (this file distills and expands it).
 
+See also: `reports/CROSS_RUN_COMPARISON.md` (latest metrics) and `reports/METRICS.md` (definitions).
+
 ---
 
 ### Postscript — Article‑Aware Validation (2025‑08‑29 → 2025‑09‑07)
@@ -170,3 +172,16 @@ We re‑ran the best paragraph recipe (tight sampler; Q≈0.25; LLM=0; Semantic�
 - Interpretation: Adding unstructured article context did not lift the paragraph‑quality metric and increased zero/very‑low shares. Qualitative inspection shows prompt echo and placeholder text in some outputs (e.g., “Write the forecast paragraph.”), indicating paragraph cleanup should be strengthened for article‑aware prompts. Semantic consistency vs next‑day headlines remained high (~0.93 on average), suggesting topic alignment is intact.
 - Conclusion: Our prior finding stands — the tight paragraph recipe performs best under headline‑only prompting. The article‑aware variant needs better excerpt coverage and stricter paragraph hygiene before it can plausibly exceed the baseline.
 - Next steps: (i) normalize links and add fallback (domain+title) matching to raise excerpt coverage; (ii) extend paragraph cleaning to strip echoed scaffolding and quoted titles; (iii) re‑run a 3‑day slice to measure impact before full re‑run.
+
+---
+
+### Implications for RL (Beyond This Project)
+
+- Inductive priors via structure: Light output schemas (e.g., “claim → assets → magnitude → timeframe → drivers”) constrain the policy’s effective action space and improve sample efficiency at small scale. This mirrors how architectural priors help classic RL.
+- Entropy as a first‑class control: Tight decoding and token caps function like strong entropy/KL regularization on the behavior policy, reducing reward‑hacking and degenerate modes more than optimizer tweaks in the small‑model regime.
+- Reward–detector alignment: Misalignment between what’s rewarded (specificity) and what’s penalized (echo/hygiene) creates gradient conflict. Align the reward with evaluation or strip biasing text pre‑score. Multi‑objective shaping is preferable to single noisy proxies.
+- Variance reduction by grouping: Normalizing rewards within natural groups (headlines) and using EMA baselines is an effective, simple advantage estimator for sequence‑level RLHF/GSPO at small scale.
+- Validity‑gated learning for constrained targets: When outputs must satisfy schemas, integrate validator selection or constrained decoding and gate rewards on validity to avoid sparse, unstable learning.
+- Label‑noise discipline: Deterministic extraction plus semantic‑ranking fallback reduced label noise—an often overlooked source of instability in RLHF‑style pipelines.
+- Evaluation design matters: Fixed‑panel A/Bs mitigate distribution drift and enable causal comparisons of policy changes—treat evaluation as part of the algorithm, not just reporting.
+- Data quality over quantity: Improving input coverage (article matching) and hygiene (cleaning) often dominates gains from additional noisy trajectories.
