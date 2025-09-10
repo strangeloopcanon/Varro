@@ -37,7 +37,7 @@ This system teaches a language model to "think like a trader" through meta-learn
 ## 🏗️ Architecture
 
 ### **Core Components**
-- **Enhanced RSS Collector**: Collects headlines from multiple financial sources
+- **Enhanced RSS Collector**: Collects headlines from multiple financial sources (expanded feed set; category‑aware filtering)
 - **Adaptive Rollout Generator**: Generates 8 diverse predictions per headline
 - **LLM Outcome Evaluator**: Evaluates predictions against next-day headlines
 - **GSPO Trainer**: Trains model using evaluation scores as rewards
@@ -90,6 +90,8 @@ Varro/
 - Override evaluation + retrain + morning: `python scripts/run_override_update.py --prediction_date 20250808 --headlines_date 20250810 --resume_from_last_model`
 - Manage models: `python scripts/manage_models.py --list | --info final_model_20250806 | --archive 7`
 - Baselines (MLE/KTO): `python scripts/run_baseline_comparisons.py`
+- A/B compare two checkpoints on fixed headlines (strict 1.7B):
+  `python scripts/ab_compare_qwen3_strict.py --date 20250904 --ckpt_a training/checkpoints/gspo_QWEN3_17B_STRICT_CHAT_ART_RERUN/final_model_20250829 --ckpt_b training/checkpoints/gspo_QWEN3_17B_STRICT_CHAT_ART_RERUN/final_model --run_suffix QWEN3_17B_STRICT_CHAT_ART_RERUN --num_rollouts 2 --sampler_profile tight --limit 12 --with_articles`
 
 ## 🚀 Quick Start
 
@@ -181,6 +183,15 @@ Next Day Headlines → Outcome Tracking → LLM Evaluation
 Training Data → GSPO Training → Updated Model
 ```
 
+## 📰 RSS Sources & Filtering
+
+- Feeds live in `config/rss_sources.json` under three categories:
+  - `financial_news` and `market_specific` → pass‑through (no keyword filter).
+  - `general_news` → broad finance/economic keyword filter (macro terms like CPI/PPI/PCE, jobs, PMI/ISM, retail sales, yields/spreads; assets like oil/gold/FX; corporate terms like earnings/dividends/M&A). Simple ticker cue `(AAPL)` also passes.
+- Deduplication removes exact duplicate titles (case/whitespace normalized) across feeds.
+- Environment override: set `VARRO_RELAX_FIN_FILTER=1` to bypass filtering entirely (admit all headlines).
+- Expect higher daily headline counts after the feed expansion and looser general‑news filter.
+
 ## 📈 Current Status
 
 ### **Completed Components**
@@ -248,6 +259,10 @@ Note: The older Ollama/Llama-based evaluator has been removed; the system uses a
 - **Trained model support**: Automatic integration of trained models
 - **Error handling**: Robust error recovery and logging
 - **Data organization**: Clean timestamped storage structure
+
+### **Data Collection (Latest)**
+- Expanded feed set (Reuters Markets/Business, CNBC Top/Markets, Yahoo Finance, WSJ Markets, Nasdaq Market News, FXStreet, CoinDesk) in addition to MarketWatch, Seeking Alpha, Investing.com, BBC/Reuters top news.
+- Category‑aware filtering for more macro/economic coverage on general news; toggleable via `VARRO_RELAX_FIN_FILTER`.
 
 ## 📦 Sample Data
 
