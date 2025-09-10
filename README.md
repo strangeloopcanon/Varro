@@ -113,7 +113,7 @@ python run_gspo_training.py --epochs 1
 python run_gspo_training.py --learning_rate 5e-7 --epochs 1
 
 # Train from checkpoint
-python run_gspo_training.py --load_checkpoint training/checkpoints/gspo/final_model
+python run_gspo_training.py --load_checkpoint training/checkpoints/gspo_<SUFFIX>/final_model
 
 # Optional training toggles
 # Use response-only loss masking (recommended, default on)
@@ -138,7 +138,7 @@ python run_daily_pipeline.py --mode evening --date 20250807
 python run_daily_pipeline.py --mode night --date 20250807
 
 # Use trained model for predictions
-python run_daily_pipeline.py --mode morning --trained-model training/checkpoints/gspo/final_model
+python run_daily_pipeline.py --mode morning --trained-model training/checkpoints/gspo_<SUFFIX>/final_model
 
 # Optional reproducibility hint (best-effort)
 python run_daily_pipeline.py --mode morning --seed 1234
