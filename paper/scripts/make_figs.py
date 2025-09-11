@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """
-Make paper figures for the article-aware validation.
+Make paper figures for the manuscript.
 
-Reads the latest reports/CROSS_RUN_DAILY_METRICS_*.csv and plots
-SEMANTICRUN_TIGHT_Q25 vs SEMANTICRUN_TIGHT_Q25_ARTICLES for:
- - Daily paragraph quality
- - Daily zeros share (very-low optional overlay)
+Reads the latest reports/CROSS_RUN_DAILY_METRICS_*.csv and produces:
 
-Outputs: paper/figs/article_aware_validation.png
+1) Article-aware validation trends comparing SEMANTICRUN_TIGHT_Q25 vs
+   SEMANTICRUN_TIGHT_Q25_ARTICLES for:
+   - Daily paragraph quality
+   - Daily zeros share
+   Output: paper/figs/article_aware_validation.png
+
+2) Cross-run overview bar charts (overall averages computed from the CSV):
+   - Quality avg (0–1)
+   - Zeros share (0–1)
+   - Leak share (0–1)
+   Output: paper/figs/cross_run_overview.png
 """
 
 from __future__ import annotations
@@ -97,14 +104,92 @@ def plot_article_validation(series: dict[str, list[tuple[datetime, float, float,
     print(out_path)
 
 
+def compute_overall_averages(csv_path: Path) -> list[tuple[str, float, float, float]]:
+    """Return list of (run, q_avg, zeros, leak) ordered by a sensible default."""
+    import csv as _csv
+    from collections import defaultdict
+
+    sums = defaultdict(lambda: {"q": 0.0, "z": 0.0, "l": 0.0, "n": 0})
+    with open(csv_path, newline="") as f:
+        reader = _csv.DictReader(f)
+        for row in reader:
+            run = row.get("run")
+            if not run:
+                continue
+            try:
+                q = float(row.get("quality_avg") or 0.0)
+                z = float(row.get("zeros_share") or 0.0)
+                l = float(row.get("leak_share") or 0.0)
+            except Exception:
+                continue
+            sums[run]["q"] += q
+            sums[run]["z"] += z
+            sums[run]["l"] += l
+            sums[run]["n"] += 1
+
+    def avg(d: dict) -> tuple[float, float, float]:
+        n = max(1, d.get("n", 0))
+        return d["q"] / n, d["z"] / n, d["l"] / n
+
+    # Preferred ordering for readability
+    preferred = [
+        "COMPOSITERUN",
+        "NEWCOMPOSITERUN",
+        "NEWCOMPOSITERUN2",
+        "SEMANTICRUN",
+        "SEMANTICRUN_TIGHT_Q25",
+        "SEMANTICRUN_TIGHT_Q25_ARTICLES",
+    ]
+    runs = list(sums.keys())
+    ordered = [r for r in preferred if r in runs] + [r for r in runs if r not in preferred]
+
+    out: list[tuple[str, float, float, float]] = []
+    for r in ordered:
+        q, z, l = avg(sums[r])
+        out.append((r, q, z, l))
+    return out
+
+
+def plot_cross_run_overview(overall: list[tuple[str, float, float, float]], out_path: Path):
+    runs = [r for r, *_ in overall]
+    q = [v for _, v, *_ in overall]
+    z = [v for *_, v, _ in overall]
+    l = [v for *_, v in overall]
+
+    import numpy as _np
+    x = _np.arange(len(runs))
+    width = 0.25
+
+    fig, ax = plt.subplots(figsize=(10.5, 4.5))
+    ax.bar(x - width, q, width, label="Quality", color="#1f77b4")
+    ax.bar(x, z, width, label="Zeros", color="#ff7f0e")
+    ax.bar(x + width, l, width, label="Leak", color="#2ca02c")
+    ax.set_xticks(x)
+    ax.set_xticklabels(runs, rotation=20, ha="right")
+    ax.set_ylim(0, 1)
+    ax.set_ylabel("Share / Score (0–1)")
+    ax.set_title("Cross‑Run Overview (overall averages)")
+    ax.grid(True, axis="y", alpha=0.3)
+    ax.legend()
+    FIGS.mkdir(parents=True, exist_ok=True)
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=150)
+    print(out_path)
+
+
 def main():
     csv_path = latest_cross_run_csv()
+    # 1) Article-aware validation trends
     runs = ["SEMANTICRUN_TIGHT_Q25", "SEMANTICRUN_TIGHT_Q25_ARTICLES"]
     series = load_series(csv_path, runs)
-    out = FIGS / "article_aware_validation.png"
-    plot_article_validation(series, out)
+    out1 = FIGS / "article_aware_validation.png"
+    plot_article_validation(series, out1)
+
+    # 2) Cross-run overview bars
+    overall = compute_overall_averages(csv_path)
+    out2 = FIGS / "cross_run_overview.png"
+    plot_cross_run_overview(overall, out2)
 
 
 if __name__ == "__main__":
     main()
-
