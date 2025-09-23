@@ -1,23 +1,23 @@
 {
   "general_news": [
     "https://feeds.bbci.co.uk/news/rss.xml",
-    "https://feeds.reuters.com/reuters/topNews",
-    "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+    "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+    "https://news.google.com/rss/search?q=source:Reuters&hl=en-US&gl=US&ceid=US:en"
   ],
   "financial_news": [
-    "https://feeds.reuters.com/reuters/businessNews",
-    "https://feeds.reuters.com/reuters/marketsNews",
     "https://feeds.marketwatch.com/marketwatch/topstories/",
     "https://seekingalpha.com/feed.xml",
     "https://finance.yahoo.com/news/rssindex",
     "https://www.cnbc.com/id/10001054/device/rss/rss.html",
     "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
-    "https://www.nasdaq.com/feed/rssoutbound?category=Market%20News"
+    "https://www.nasdaq.com/feed/rssoutbound?category=Market%20News",
+    "https://news.google.com/rss/search?q=source:Reuters%20business&hl=en-US&gl=US&ceid=US:en"
   ],
   "market_specific": [
     "https://www.investing.com/rss/news_301.rss",
     "https://www.fxstreet.com/rss",
-    "https://www.coindesk.com/arc/outboundfeeds/rss/"
+    "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "https://news.google.com/rss/search?q=source:Reuters%20markets&hl=en-US&gl=US&ceid=US:en"
   ],
   "source_names": {
     "bbci.co.uk": "BBC",
@@ -30,6 +30,7 @@
     "nasdaq.com": "Nasdaq",
     "fxstreet.com": "FXStreet",
     "coindesk.com": "CoinDesk",
-    "wsj.com": "WSJ"
+    "wsj.com": "WSJ",
+    "news.google.com": "Reuters"
   }
 } 
