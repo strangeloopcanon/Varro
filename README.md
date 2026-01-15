@@ -9,6 +9,8 @@
 
 A daily financial prediction system using Group Sequence Policy Optimization (GSPO) with MLX, collecting news headlines, generating 8 rollouts per headline, tracking outcomes, and continuously training the model.
 
+Disclaimer: This is research software and is not investment advice. Some stored artifacts (especially `timestamped_storage*/**/*_articles*.json`) may contain third-party content; ensure you have redistribution rights before publishing those files.
+
 ## 🎯 System Overview
 
 This system teaches a language model to "think like a trader" through meta-learning using GSPO. The model structures its reasoning with specific components:
@@ -254,9 +256,7 @@ Note: The older Ollama/Llama-based evaluator has been removed; the system uses a
 
 ## 📦 Sample Data
 
-A small CC‑BY sample dataset is now available in `data/sample/` to help you try the pipeline without live RSS feeds.
-
-Copy or link the `data/sample` folder into your working timestamped storage, and run the morning/evening/night pipeline stages against it as a demonstration.
+A small synthetic sample dataset is available in `data/sample/` to illustrate file formats and enable lightweight demos (see `data/sample/README.md`).
 
 ## 🗃️ Storage & Housekeeping
 
@@ -295,7 +295,9 @@ See `reports/FINAL_REPORT.md` for the full narrative and `reports/CROSS_RUN_COMP
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache License, Version 2.0. See `LICENSE`.
+
+Note: Run artifacts under `timestamped_storage*/` may include third-party content and are not automatically licensed for redistribution.
 
 ## 🗂️ Reports Index
 

@@ -1,6 +1,6 @@
 # Sample Data Directory
 
-This directory contains a small CC‑BY sample dataset to illustrate the Varro GSPO pipeline.
+This directory contains a small synthetic sample dataset (Apache‑2.0, same as the repo) to illustrate Varro’s file formats.
 
 ## Contents
 
@@ -11,16 +11,14 @@ This directory contains a small CC‑BY sample dataset to illustrate the Varro G
 
 ## Usage
 
-To experiment with the pipeline without live RSS feeds, copy or link this folder into your timestamped storage and prediction directories,
-then run the corresponding pipeline stages. For example:
+These files are primarily for browsing and understanding the expected JSON shapes.
+
+Optional (turn sample predictions/evaluations into a GSPO training JSON without running models):
 
 ```bash
-# Morning stage: use sample headlines
-python run_daily_pipeline.py --mode morning --input_dir data/sample
+export VARRO_RUN_DIR_SUFFIX=SAMPLE
+mkdir -p timestamped_storage_SAMPLE
+cp data/sample/20250101_*.json timestamped_storage_SAMPLE/
 
-# Evening stage: evaluate sample predictions
-python run_daily_pipeline.py --mode evening --input_dir data/sample
-
-# Night stage: train on sample evaluations
-python run_daily_pipeline.py --mode night --input_dir data/sample
+python run_daily_pipeline.py --mode night --date 20250101
 ```

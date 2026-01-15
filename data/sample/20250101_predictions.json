@@ -1,0 +1,109 @@
+{
+  "date": "20250101",
+  "data_type": "predictions",
+  "saved_at": "2025-01-01T09:05:00+00:00",
+  "total_headlines": 1,
+  "predictions": [
+    {
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "headline_data": {
+        "text": "Central bank signals potential rate cuts as inflation cools",
+        "link": "https://example.com/news/central-bank-dovish-20250101",
+        "source": "Sample",
+        "category": "financial_news",
+        "timestamp": "2025-01-01T09:00:00+00:00",
+        "url": "https://example.com/rss"
+      },
+      "rollouts": [
+        {
+          "rollout_id": 0,
+          "prediction": "Within the next 2–4 weeks, long-duration bonds (e.g., TLT) and rate-sensitive equities should drift higher as markets price a faster easing path. Expect a modest 1–3% move as real yields soften and risk appetite improves. Key drivers are softer inflation prints and dovish guidance; the main risk is sticky services inflation forcing a pause.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:00+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 1,
+          "prediction": "Over the next 2–4 weeks, the U.S. dollar (DXY) likely softens while gold (GLD) firms as rate-cut expectations rise. A 0.5–1.5% move is plausible if inflation continues to cool and forward rates reprice lower. The risk is a hawkish pushback or stronger growth data that lifts yields again.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:10+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 2,
+          "prediction": "In the next 1–3 weeks, broad equities (SPY/QQQ) should gain 1–3% as lower discount rates support multiples, led by growth and real estate. The catalyst is dovish central bank messaging combined with easing inflation momentum. Risk: a surprise rebound in inflation or a strong jobs report that re-accelerates yields.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:20+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 3,
+          "prediction": "Over the next month, credit spreads should tighten modestly and high-yield (HYG) could outperform as the market leans into a soft-landing narrative. A small 0.5–2% move is likely if inflation keeps cooling and recession fears stay muted. The risk is policy uncertainty or a sudden risk-off shock that widens spreads.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:30+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 4,
+          "prediction": "In the next 2–4 weeks, rate-sensitive sectors like utilities and REITs should see a modest bid (up ~1–3%) as expected cuts pull yields down. The drivers are cooler inflation and shifting forward-rate expectations; the key risk is renewed inflation pressure that forces the central bank to delay easing.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:40+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 5,
+          "prediction": "Within a month, the yield curve could steepen slightly as front-end yields fall faster than long-end yields on rate-cut expectations. This should benefit banks and cyclicals modestly if growth remains stable. The risk is weaker growth that pulls long yields down too, or a hawkish reset that lifts the front end.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:05:50+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 6,
+          "prediction": "Over the next 2–6 weeks, volatility (VIX) should drift lower as inflation uncertainty fades and risk appetite returns. Equities could grind higher while defensives underperform slightly. Risk: any inflation re-acceleration or geopolitical shock that reintroduces tail risk and lifts volatility.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:06:00+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        },
+        {
+          "rollout_id": 7,
+          "prediction": "In the next few weeks, mega-cap growth should remain supported as lower expected rates improve long-duration cashflow valuations. Expect a modest 1–3% uplift in growth-heavy indices if inflation prints confirm cooling. The main risk is a re-pricing higher in real yields from strong activity data.",
+          "method": "sample",
+          "immediate_reward": 1.0,
+          "timestamp": "2025-01-01T09:06:10+00:00",
+          "horizon": "next_day",
+          "offset_days": 1,
+          "matures_on": "20250102"
+        }
+      ],
+      "total_rollouts": 8,
+      "methods_used": [
+        "sample"
+      ],
+      "avg_immediate_reward": 1.0,
+      "sampler_profile": "tight",
+      "generated_at": "2025-01-01T09:06:15+00:00",
+      "horizon": "next_day"
+    }
+  ]
+}

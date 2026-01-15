@@ -36,20 +36,14 @@ class DailyPipeline:
         self.storage = TimestampedStorage()
         self.output_format = (output_format or "one_line")
 
-        # Use trained model if provided, otherwise use base model
-        if trained_model_path:
-            logger.info(f"Using trained model from: {trained_model_path}")
-            self.prediction_generator = AdaptiveRolloutGenerator(checkpoint_path=trained_model_path, sampler_profile=sampler_profile, output_format=self.output_format)
-        else:
-            logger.info("Using base model for predictions")
-            self.prediction_generator = AdaptiveRolloutGenerator(sampler_profile=sampler_profile, output_format=self.output_format)
-
         self.prediction_storage = PredictionStorage()
         self.outcome_tracker = OutcomeTracker()
-        self.evaluator = LLMOutcomeEvaluator()
         self.evaluation_storage = EvaluationStorage()
 
         # Generation settings
+        self.trained_model_path = trained_model_path
+        self.prediction_generator = None
+        self.evaluator = None
         self.num_rollouts = num_rollouts
         self.horizon = horizon
         self.auto_profile = auto_profile
@@ -89,6 +83,41 @@ class DailyPipeline:
 
         return config
 
+    def _ensure_prediction_generator(self, sampler_profile: str | None = None) -> AdaptiveRolloutGenerator:
+        """Lazily create the rollout generator (loads MLX model on first use)."""
+        effective_profile = sampler_profile or self.default_sampler_profile
+        if self.prediction_generator is None:
+            if self.trained_model_path:
+                logger.info(f"Using trained model from: {self.trained_model_path}")
+                self.prediction_generator = AdaptiveRolloutGenerator(
+                    checkpoint_path=self.trained_model_path,
+                    sampler_profile=effective_profile,
+                    output_format=self.output_format,
+                )
+            else:
+                logger.info("Using base model for predictions")
+                self.prediction_generator = AdaptiveRolloutGenerator(
+                    sampler_profile=effective_profile,
+                    output_format=self.output_format,
+                )
+            return self.prediction_generator
+
+        # Update sampler profile on an existing generator if requested.
+        try:
+            current = getattr(self.prediction_generator, "sampler_profile", None)
+            if effective_profile and current != effective_profile:
+                self.prediction_generator.sampler_profile = effective_profile
+                self.prediction_generator.sampler = self.prediction_generator._create_sampler(effective_profile)
+        except Exception as e:
+            logger.warning(f"Failed to apply sampler_profile='{effective_profile}' to generator: {e}")
+        return self.prediction_generator
+
+    def _ensure_evaluator(self) -> LLMOutcomeEvaluator:
+        """Lazily create the evaluator (loads MLX model on first use)."""
+        if self.evaluator is None:
+            self.evaluator = LLMOutcomeEvaluator()
+        return self.evaluator
+
     def run_morning_pipeline(self, date: str = None):
         """Run morning pipeline: collect headlines and generate predictions."""
         if date is None:
@@ -97,18 +126,15 @@ class DailyPipeline:
         logger.info(f"Starting morning pipeline for {date}")
 
         try:
+            effective_profile = self.default_sampler_profile
+
             # Optional: auto-select sampler profile based on previous day's metrics
             if self.auto_profile:
                 try:
                     prev_date = (datetime.strptime(date, "%Y%m%d") - timedelta(days=1)).strftime("%Y%m%d")
                     profile = self._choose_sampler_profile(prev_date, self.default_sampler_profile)
-                    if profile != getattr(self.prediction_generator, 'sampler_profile', 'default'):
-                        logger.info(f"Auto-profile selected '{profile}' (was '{self.prediction_generator.sampler_profile}') based on {prev_date} metrics")
-                    else:
-                        logger.info(f"Auto-profile using '{profile}' based on {prev_date} metrics")
-                    # Apply profile to generator
-                    self.prediction_generator.sampler_profile = profile
-                    self.prediction_generator.sampler = self.prediction_generator._create_sampler(profile)
+                    effective_profile = profile
+                    logger.info(f"Auto-profile selected '{profile}' based on {prev_date} metrics")
                 except Exception as e:
                     logger.warning(f"Auto-profile selection failed, using default profile '{self.default_sampler_profile}': {e}")
 
@@ -161,15 +187,16 @@ class DailyPipeline:
 
             # Step 2: Generate predictions (support multi-horizon)
             logger.info("Step 2: Generating predictions...")
+            generator = self._ensure_prediction_generator(sampler_profile=effective_profile)
             horizons = getattr(self, 'horizons', None)
             combined: List[Dict[str, Any]] = []
             if horizons:
                 for h in horizons:
                     logger.info(f"Generating predictions for horizon={h}...")
-                    preds_h = self.prediction_generator.generate_daily_predictions(headlines, num_rollouts=self.num_rollouts, horizon=h)
+                    preds_h = generator.generate_daily_predictions(headlines, num_rollouts=self.num_rollouts, horizon=h)
                     combined.extend(preds_h)
             else:
-                preds_h = self.prediction_generator.generate_daily_predictions(headlines, num_rollouts=self.num_rollouts, horizon=self.horizon)
+                preds_h = generator.generate_daily_predictions(headlines, num_rollouts=self.num_rollouts, horizon=self.horizon)
                 combined.extend(preds_h)
             predictions = combined
             # Enrich with horizon wiring: offset_days and matures_on for each rollout
@@ -244,7 +271,7 @@ class DailyPipeline:
 
             # Step 2: Evaluate predictions
             logger.info("Step 2: Evaluating predictions...")
-            evaluations = self.evaluator.batch_evaluate(outcomes)
+            evaluations = self._ensure_evaluator().batch_evaluate(outcomes)
 
             if not evaluations:
                 logger.error("No evaluations generated!")
