@@ -137,8 +137,8 @@ data/
 OLD_ARCHIVE/
 archive/
 .beads/
-# Run artifacts (kept out of git going forward; already-tracked files are unaffected)
-timestamped_storage*/**/*_articles.json
+# Run artifacts (generated locally)
+/timestamped_storage*/
 __pycache__/
 *.safetensors
 *.safetensors.npz

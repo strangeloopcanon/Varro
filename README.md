@@ -69,14 +69,14 @@ Varro/
 │   ├── outcome_tracker.py            # Match predictions with outcomes
 │   ├── llm_outcome_evaluator.py     # LLM-based evaluation
 │   └── evaluation_storage.py        # Evaluation score storage
-├── training/
+├── training/                        # Generated training artifacts (ignored by git)
 │   ├── checkpoints/                  # Model checkpoints
 │   └── stats/                       # Training statistics
 ├── config/
 │   ├── rss_sources.json             # RSS feed configuration
 │   ├── training_config.json         # Training parameters
 │   └── prompt_templates.json        # Prompt templates
-├── timestamped_storage/             # Daily data files
+├── timestamped_storage*/            # Generated run artifacts (ignored by git)
 ├── gspo_core.py                     # GSPO algorithm implementation
 ├── run_gspo_training.py             # Main training script
 ├── run_daily_pipeline.py            # Complete daily pipeline
