@@ -1,0 +1,448 @@
+{
+  "date": "20250101",
+  "data_type": "evaluations",
+  "saved_at": "2025-01-02T18:05:00+00:00",
+  "total_evaluations": 8,
+  "evaluations": [
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_0",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "Within the next 2–4 weeks, long-duration bonds (e.g., TLT) and rate-sensitive equities should drift higher as markets price a faster easing path. Expect a modest 1–3% move as real yields soften and risk appetite improves. Key drivers are softer inflation prints and dovish guidance; the main risk is sticky services inflation forcing a pause.",
+      "prediction": "Within the next 2–4 weeks, long-duration bonds (e.g., TLT) and rate-sensitive equities should drift higher as markets price a faster easing path. Expect a modest 1–3% move as real yields soften and risk appetite improves. Key drivers are softer inflation prints and dovish guidance; the main risk is sticky services inflation forcing a pause.",
+      "rollout_id": 0,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:00+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 2,
+      "reward": 0.8571428571428572,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_1",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "Over the next 2–4 weeks, the U.S. dollar (DXY) likely softens while gold (GLD) firms as rate-cut expectations rise. A 0.5–1.5% move is plausible if inflation continues to cool and forward rates reprice lower. The risk is a hawkish pushback or stronger growth data that lifts yields again.",
+      "prediction": "Over the next 2–4 weeks, the U.S. dollar (DXY) likely softens while gold (GLD) firms as rate-cut expectations rise. A 0.5–1.5% move is plausible if inflation continues to cool and forward rates reprice lower. The risk is a hawkish pushback or stronger growth data that lifts yields again.",
+      "rollout_id": 1,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:10+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 6,
+      "reward": 0.2857142857142857,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_2",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "In the next 1–3 weeks, broad equities (SPY/QQQ) should gain 1–3% as lower discount rates support multiples, led by growth and real estate. The catalyst is dovish central bank messaging combined with easing inflation momentum. Risk: a surprise rebound in inflation or a strong jobs report that re-accelerates yields.",
+      "prediction": "In the next 1–3 weeks, broad equities (SPY/QQQ) should gain 1–3% as lower discount rates support multiples, led by growth and real estate. The catalyst is dovish central bank messaging combined with easing inflation momentum. Risk: a surprise rebound in inflation or a strong jobs report that re-accelerates yields.",
+      "rollout_id": 2,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:20+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 1,
+      "reward": 1.0,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_3",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "Over the next month, credit spreads should tighten modestly and high-yield (HYG) could outperform as the market leans into a soft-landing narrative. A small 0.5–2% move is likely if inflation keeps cooling and recession fears stay muted. The risk is policy uncertainty or a sudden risk-off shock that widens spreads.",
+      "prediction": "Over the next month, credit spreads should tighten modestly and high-yield (HYG) could outperform as the market leans into a soft-landing narrative. A small 0.5–2% move is likely if inflation keeps cooling and recession fears stay muted. The risk is policy uncertainty or a sudden risk-off shock that widens spreads.",
+      "rollout_id": 3,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:30+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 5,
+      "reward": 0.4285714285714286,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_4",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "In the next 2–4 weeks, rate-sensitive sectors like utilities and REITs should see a modest bid (up ~1–3%) as expected cuts pull yields down. The drivers are cooler inflation and shifting forward-rate expectations; the key risk is renewed inflation pressure that forces the central bank to delay easing.",
+      "prediction": "In the next 2–4 weeks, rate-sensitive sectors like utilities and REITs should see a modest bid (up ~1–3%) as expected cuts pull yields down. The drivers are cooler inflation and shifting forward-rate expectations; the key risk is renewed inflation pressure that forces the central bank to delay easing.",
+      "rollout_id": 4,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:40+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 3,
+      "reward": 0.7142857142857143,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_5",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "Within a month, the yield curve could steepen slightly as front-end yields fall faster than long-end yields on rate-cut expectations. This should benefit banks and cyclicals modestly if growth remains stable. The risk is weaker growth that pulls long yields down too, or a hawkish reset that lifts the front end.",
+      "prediction": "Within a month, the yield curve could steepen slightly as front-end yields fall faster than long-end yields on rate-cut expectations. This should benefit banks and cyclicals modestly if growth remains stable. The risk is weaker growth that pulls long yields down too, or a hawkish reset that lifts the front end.",
+      "rollout_id": 5,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:05:50+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 7,
+      "reward": 0.1428571428571429,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_6",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "Over the next 2–6 weeks, volatility (VIX) should drift lower as inflation uncertainty fades and risk appetite returns. Equities could grind higher while defensives underperform slightly. Risk: any inflation re-acceleration or geopolitical shock that reintroduces tail risk and lifts volatility.",
+      "prediction": "Over the next 2–6 weeks, volatility (VIX) should drift lower as inflation uncertainty fades and risk appetite returns. Equities could grind higher while defensives underperform slightly. Risk: any inflation re-acceleration or geopolitical shock that reintroduces tail risk and lifts volatility.",
+      "rollout_id": 6,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:06:00+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 4,
+      "reward": 0.5714285714285714,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    },
+    {
+      "prediction_id": "20250101_next_day_Central_bank_signals_7",
+      "headline": "Central bank signals potential rate cuts as inflation cools",
+      "original_prediction": "In the next few weeks, mega-cap growth should remain supported as lower expected rates improve long-duration cashflow valuations. Expect a modest 1–3% uplift in growth-heavy indices if inflation prints confirm cooling. The main risk is a re-pricing higher in real yields from strong activity data.",
+      "prediction": "In the next few weeks, mega-cap growth should remain supported as lower expected rates improve long-duration cashflow valuations. Expect a modest 1–3% uplift in growth-heavy indices if inflation prints confirm cooling. The main risk is a re-pricing higher in real yields from strong activity data.",
+      "rollout_id": 7,
+      "method": "sample",
+      "immediate_reward": 1.0,
+      "timestamp": "2025-01-01T09:06:10+00:00",
+      "date": "20250101",
+      "next_day_headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "headlines_count": 2,
+      "tracking_created_at": "2025-01-02T18:00:00+00:00",
+      "status": "evaluated",
+      "ranking": 8,
+      "reward": 0.0,
+      "headlines": [
+        {
+          "text": "Bond yields slip after dovish central bank remarks",
+          "link": "https://example.com/news/yields-slip-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:00:00+00:00",
+          "url": "https://example.com/rss"
+        },
+        {
+          "text": "Stocks edge higher as markets price in faster rate cuts",
+          "link": "https://example.com/news/stocks-higher-rate-cuts-20250102",
+          "source": "Sample",
+          "category": "financial_news",
+          "timestamp": "2025-01-02T09:05:00+00:00",
+          "url": "https://example.com/rss"
+        }
+      ],
+      "evaluation_method": "find_best_8_rounds",
+      "llm_picks": 0,
+      "ranking_source": "semantic"
+    }
+  ]
+}

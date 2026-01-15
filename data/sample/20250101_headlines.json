@@ -1,0 +1,15 @@
+{
+  "date": "20250101",
+  "data_type": "headlines",
+  "saved_at": "2025-01-01T09:00:00+00:00",
+  "headlines": [
+    {
+      "text": "Central bank signals potential rate cuts as inflation cools",
+      "link": "https://example.com/news/central-bank-dovish-20250101",
+      "source": "Sample",
+      "category": "financial_news",
+      "timestamp": "2025-01-01T09:00:00+00:00",
+      "url": "https://example.com/rss"
+    }
+  ]
+}

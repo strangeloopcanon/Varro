@@ -136,6 +136,9 @@ data/
 !data/sample/**
 OLD_ARCHIVE/
 archive/
+.beads/
+# Run artifacts (generated locally)
+/timestamped_storage*/
 __pycache__/
 *.safetensors
 *.safetensors.npz
