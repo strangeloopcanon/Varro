@@ -9,7 +9,11 @@
 
 A daily financial prediction system using Group Sequence Policy Optimization (GSPO) with MLX, collecting news headlines, generating 8 rollouts per headline, tracking outcomes, and continuously training the model.
 
+Model inference/training is 100% local (no external LLM APIs). Headline collection reads public RSS feeds over the network.
+
 Disclaimer: This is research software and is not investment advice. Some stored artifacts (especially `timestamped_storage*/**/*_articles*.json`) may contain third-party content; ensure you have redistribution rights before publishing those files.
+
+![Cross-run daily quality](reports/cross_run_daily_quality.png)
 
 ## 🎯 System Overview
 
@@ -21,6 +25,17 @@ This system teaches a language model to "think like a trader" through meta-learn
 - **Timeframe**: When do you expect this to play out?
 - **Risk Factors**: What could go wrong with this prediction?
 - **World View**: What world does this news imagine or create?
+
+<details>
+<summary>Concrete example (synthetic)</summary>
+
+```text
+Headline: Central bank signals potential rate cuts as inflation cools
+
+One rollout (1 of 8):
+Within the next 2–4 weeks, long-duration bonds (e.g., TLT) and rate-sensitive equities should drift higher as markets price a faster easing path. Expect a modest 1–3% move as real yields soften and risk appetite improves. Key drivers are softer inflation prints and dovish guidance; the main risk is sticky services inflation forcing a pause.
+```
+</details>
 
 ## 🔄 Daily Pipeline Sequence
 
@@ -104,6 +119,17 @@ Varro/
 ### Installation
 ```bash
 pip install -r requirements.txt
+```
+
+### Verify Installation (Synthetic Sample, No Network)
+
+This checks that dependencies install correctly and that Varro can read/write its expected JSON shapes without running model inference.
+
+```bash
+mkdir -p timestamped_storage_SAMPLE
+cp data/sample/20250101_*.json timestamped_storage_SAMPLE/
+
+VARRO_RUN_DIR_SUFFIX=SAMPLE python run_daily_pipeline.py --mode night --date 20250101
 ```
 
 ### Run GSPO Training
